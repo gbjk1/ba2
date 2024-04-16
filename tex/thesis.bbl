@@ -7,8 +7,7 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -22,20 +21,15 @@
 \BIBdecl
 
 \bibitem{young2002technical}
-M.~Young, \emph{The Technical Writer's Handbook}.\hskip 1em plus 0.5em minus
-  0.4em\relax University Science Books, 2002.
+M.~Young, \emph{The Technical Writer's Handbook}.\hskip 1em plus 0.5em minus 0.4em\relax University Science Books, 2002.
 
 \bibitem{schimel2012writing}
-J.~Schimel, \emph{Writing Science: How to Write Papers That Get Cited and
-  Proposals That Get Funded}.\hskip 1em plus 0.5em minus 0.4em\relax Oxford
-  University Press, USA, 2012.
+J.~Schimel, \emph{Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded}.\hskip 1em plus 0.5em minus 0.4em\relax Oxford University Press, USA, 2012.
 
 \bibitem{alker2006}
-U.~Alker and U.~Weilenmann, \emph{Sprachleitfaden, Gendergerechter
-  Sprachgebrauch an der FH Campus Wien}, FH Campus Wien, 2006.
+U.~Alker and U.~Weilenmann, \emph{Sprachleitfaden, Gendergerechter Sprachgebrauch an der FH Campus Wien}, FH Campus Wien, 2006.
 
 \bibitem{petz2018}
-A.~Petz and R.~Oberpertinger, \emph{Checkliste Wissenschafltiche Arbeiten}, FH
-  Campus Wien, 2018.
+A.~Petz and R.~Oberpertinger, \emph{Checkliste Wissenschafltiche Arbeiten}, FH Campus Wien, 2018.
 
 \end{thebibliography}
