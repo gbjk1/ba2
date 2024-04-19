@@ -232,8 +232,8 @@ Date: \hspace{6cm} Signature:\\
 \label{chap:intro}
 
 Over the last years, there have been two significant shifts in enterprise IT systems. One of these shifts
-addresses the way companies deploy, scale and maintain the lifecycle of their software services: 
-Aapplications used to be primarily constructed as one large software
+addresses the way companies deploy, scale and maintain the lifecycle of their software services.
+Applications used to be primarily constructed as one large software
 unit that bundled all features, business logic, user interfaces and data access components.
 Increasing necessity for scalability, flexibility and maintainability made organizations tran-
 sition from such monolithic architectures to microservices, which are smaller, separated but
@@ -243,9 +243,15 @@ transitions from monoliths to microservices feasible. Kubernetes has since emerg
 go-to choice for managing containerized applications at scale, particularly in cloud-native
 environments. Its ability to automate tasks, scale applications, and support a wide range
 of use cases makes it a powerful tool for both large enterprises and small teams. 
-The second shift is concerned with the way companies secure their computing infrastructure.
+The second shift pertains to how companies secure their computing infrastructure and the 
+resource hosted on it. While there used to be single, easily identifiable network perimeters in the past, 
+modern infrastructures may consist of multiple internal networks, remote offices, mobile workers and cloud services. 
+This circumstance has rendered traditional, static, perimeter-based security no longer appropriate, because transgressing
+this perimeter once means further, unhindered access into a given system. Under a newer security model labeled "Zero Trust",
+the aim is to restrict such unhindered movement as much as possible by 
 
-while it used to be perimeter based, and having implicit trust once authenticated, 
+
+The default assumptio of any actor is that the requesting is deemed malicious, and has to prove itself otherwise
 
 no actor on a network, neither human users nor software components accessing resources on the network are given 
 implicit trust. 
@@ -266,14 +272,7 @@ the lifecycle of their software services,
 \section{Sub-chapter 1}
 \label{sec:Unterkapitel1}
 
-Textkörper mit Formel:
 
-\begin{equation}
-U(j\omega)=\int^{\infty}_{-\infty}{u(t) \cdot e^{-j\omega t}dt}
-\label{form:form1}
-\end{equation}
-
-Textkörper Fortsetzung mit Verweis auf Formel \ref{form:form1}. Und nicht zu vergessen: es gibt auch noch eine tolle Abbildung in Kapitel \ref{chap:intro}, nämlich Abbildung \ref{fig:buecher}. 
 
 \subsection{Under sub-chapter 11}
 \label{sec:UnterUnterkapitel11}
@@ -340,7 +339,7 @@ On Kubernetes security:
 
 put this in objectives and methodology: 
 
-Lack of research on Zero Trust AND Kubernetes 
+Lack of research on Zero Trust AND Kubernetes , how can zero trust principles be applied to kubernetes? 
 There is no research done on Zero Trust specifically in the context of Kubernetes. The goal of this paper is to do exactly that: investigate
 how zero trust can be achieved in a Kubernetes setup. 
 

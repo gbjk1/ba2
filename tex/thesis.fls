@@ -807,10 +807,6 @@ INPUT thesis.toc
 OUTPUT thesis.toc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT ./thesis.bbl
 INPUT thesis.bbl
 INPUT ./thesis.bbl
@@ -834,11 +830,6 @@ INPUT ./thesis.brf
 INPUT ./thesis.brf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
