@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  18 APR 2024 14:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  20 APR 2024 01:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -625,48 +625,24 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface.
 
-<images/buecher.png, id=73, 226.8475pt x 197.73875pt>
-File: images/buecher.png Graphic file (type png)
-<use images/buecher.png>
-Package pdftex.def Info: images/buecher.png  used on input line 234.
-(pdftex.def)             Requested size: 163.20892pt x 142.26378pt.
 
-Overfull \hbox (12.69069pt too wide) in paragraph at lines 263--265
-\T1/lmr/m/n/10.95 Textkörper mit Ref-eren-zen: Für weit-er-führende In-for-ma-tio-nen zum wis-senschaftlichen Schreiben
- []
+LaTeX Warning: Reference `fig:buecher' on page 1 undefined on input line 276.
 
 [1
 
 
 
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./images/buecher.png>]
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 chapter 2.
-<images/birne.png, id=99, 87.32625pt x 117.43875pt>
-File: images/birne.png Graphic file (type png)
-<use images/birne.png>
-Package pdftex.def Info: images/birne.png  used on input line 273.
-(pdftex.def)             Requested size: 87.32603pt x 117.43845pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 320.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [2
-
-
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./images/birne.png>] (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 336.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 336.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-chapter 3.
-[4
+[2
 
 
 ]
+chapter 3.
+[3
+
+
+] [4]
 chapter 4.
 [5
 
@@ -679,6 +655,11 @@ chapter 5.
 ] (./thesis.bbl (./thesis.brf)
 \tf@brf=\write4
 \openout4 = `thesis.brf'.
+
+
+
+LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
+               before end of `thebibliography' environment on input line 23.
 
 ) [7
 
@@ -705,22 +686,25 @@ chapter without number
 
 
 ] (./thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: E74BB89E555041C4F4240227E4A63F87;225.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17331 strings out of 476025
- 328019 string characters out of 5790016
- 1927388 words of memory out of 5000000
- 37468 multiletter control sequences out of 15000+600000
- 559112 words of font info for 60 fonts, out of 8000000 for 9000
+ 16800 strings out of 476025
+ 321744 string characters out of 5790016
+ 1863388 words of memory out of 5000000
+ 36989 multiletter control sequences out of 15000+600000
+ 553242 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,106p,10631b,1258s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on thesis.pdf (17 pages, 379351 bytes).
+ 108i,20n,106p,10631b,544s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on thesis.pdf (17 pages, 301586 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
