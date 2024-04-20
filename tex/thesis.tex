@@ -35,6 +35,7 @@
 
 %needed for font encoding
 \usepackage[T1]{fontenc}
+\usepackage{setspace}
 
 % want Arial? uncomment next two lines...
 %\usepackage{uarial}
@@ -114,9 +115,8 @@
 
 \vspace{6.2cm}
 
-\hspace*{-1.0cm} {\LARGE \textbf{Hello\\}}
+\hspace*{-1.0cm} {\LARGE \textbf{Constructing a Zero-Trust Kubernetes Cluster\\}}
 \vspace{0.2cm}
-\hspace*{-1.0cm} Subtitle\\
 
 \vspace{2.0cm}
 
@@ -140,19 +140,19 @@
 
 \hspace*{-1.0cm} \textbf{Author:} \\
 \vspace{0.2cm}
-\hspace*{-1.0cm} first name surname \\
+\hspace*{-1.0cm} Guntram Björn Klaus \\
 
 \vspace{0.7cm}
 
 \hspace*{-1.0cm} \textbf{Student identification number:}\\
 \vspace{0.2cm}
-\hspace*{-1.0cm} Number \\
+\hspace*{-1.0cm} c2110475170 \\
 
 \vspace{0.7cm}
 
 \hspace*{-1.0cm} \textbf{Supervisor:} \\
 \vspace{0.2cm}
-\hspace*{-1.0cm} Title first name surname \\
+\hspace*{-1.0cm} BSc. MSc. Bernhard Taufner \\
 
 \vspace{0.7cm}
 
@@ -199,8 +199,11 @@ Date: \hspace{6cm} Signature:\\
 
 \begin{table*}[htbp]
 		\begin{tabular}{ll}
-			IoT & Internet of Things \\
+      AKS & Azure Kubernetes Service \\
+      EKS & Elastic Kubernetes Service \\
+      GKE & Google Kubernetes Engine \\
 			IT  &  Information Technology \\
+      IoT & Internet of Things \\
 			MFA & Multifactor Authentication \\
 			NIST & National Institute of Standards and Technology \\
 			ZT & Zero Trust \\
@@ -231,9 +234,13 @@ Date: \hspace{6cm} Signature:\\
 \chapter{Introduction}
 \label{chap:intro}
 
+
+\section{Kubernetes and Zero Trust}
+\label{sec:Unterkapitel1}
 Over the last years, there have been two significant shifts in enterprise IT systems. 
 \newline 
 \newline
+\onehalfspacing
 One of these shifts addresses the way companies deploy, scale and maintain the lifecycle of their software services.
 Applications used to be primarily constructed as one large software
 unit that bundled all features, business logic, user interfaces and data access components.
@@ -253,127 +260,112 @@ a single local area network at a company site, modern infrastructures may consis
 remote offices, mobile workers, different types of virtualization and cloud services. This circumstance has rendered traditional, static, perimeter-based security 
 no longer appropriate, because transgressing this perimeter once means further, unhindered access into a given system. 
 Under a newer security model labeled "Zero Trust", the aim is to restrict such unhindered movement as much as possible 
-by adhering to certain principles and guidelines, one of them being to never grant implicit trust to any actor on the network 
-- hence the term "Zero" Trust. One fundamental piece of liteature on this topic is the NIST Special Publication 800-207, titled 
-"Zero Trust Architecture", which put the term "Zero Trust" on the map
-research still fresh
-
-Even though the principles of ZT have existed way before the term "Zero Trust" was coined
-
-but two fundamental pieces of literature on this topic 
-
-
+by adhering to certain principles and guidelines, the central one being to never grant implicit trust to any actor on a network 
+- hence the term "Zero" Trust. The principles of ZT have existed way before the term "Zero Trust" was coined.
+A fundamental piece of liteature, which tries to capture what "Zero Trust" concreteley means, is the NIST Special Publication 800-207, titled 
+"Zero Trust Architecture". It is the point of reference for understanding Zero Trust.
+\newline
+\newline
+As both topics of container orchestration with Kubernetes and improved security paradigms are evermore gaining traction in enterprise systems, 
+it is of paramount importance to explore how exactly this current new paradigm of Zero Trust can be applied to Kubernetes.  
 
 
-
-
-
-
-
-\newpage
-
-
-\section{Sub-chapter 1}
-\label{sec:Unterkapitel1}
-
-
-
-\subsection{Under sub-chapter 11}
-\label{sec:UnterUnterkapitel11}
-
-
-\subsection{Under sub-chapter 12}
-\label{sec:UnterUnterkapitel12} 
-
-\chapter{Chapter 2}
-\label{chap:back}
-
-
-
-\section{Sub-chapter 21}
-\label{sec:Unterkapitel21}
-
-
-\section{Sub-chapter 23}
-\label{sec:Unterkapitel23}
-
-
-
-
-
-
-\newpage
-\chapter{Related Work}
+\section{Related Work}
 
 Since the emergence and popularization of the concept of "Zero-Trust", a lot of work has been done on the topic, tying it into various 
-domains of IT: Cloud, on-premise infrastructure, IoT, Hardware, Blockchain and much more. Andrea Manzato, at the University of Padua, implements the 
+domains of IT: Cloud, on-premise infrastructure, IoT, Hardware, Blockchain and much more. 
+\newline
+\newline
+Andrea Manzato, at the University of Padua, implements the 
 Zero Trust model in an enterprise environement using solutions provided by 
 Microsoft Azure. It is investigated how the capabilities and configuration options of Microsoft Defender and Active Directory can be leveraged
 to protect enterprise resources. Attack scenarios on these technologies are simulated and automated remediation actions are presented. 
-The combination of Cloud and Zero Trust is heavily 
+\newline
 Dr. Wesam Almobaideen's master thesis, at Rochester Institute of Technology Dubai Campus, explores the topic of Zero-Trust specifically in 
 the context of MFA. A framework combining principles of ZT and MFA is designed and evaluated in terms of performance, security and user satisfaction.
-
+\newline
 In the context of IoT, Cem Bicer at the technical university of Vienna, explores and evaluates ZT for edge networks.
 The implementation of the thesis follows ZT guidelines as proposed by the National Institute of Standards and Technology (NIST) and additionally places 
 a blockchain network on top of the ZT architecture.
-
-Kang et. al present a survey 
-
-
+\newline
 Furthermore, zero trust in and of itself has been put under scrutiny. In "Theory and Application of Zero Trust Security: A Brief Survey", Kang et. al 
 investigates the current challenges faced when making use of Zero Trust, as well as progress that has been achieved so far when doing so.   
-
-It must be noted that research and knowledge on the theory and application of Zero Trust has not yet matured, and more extensive work is still required to 
+Here, it is noted that research and knowledge on the theory and application of Zero Trust has not yet matured, and more extensive work is still required to 
 obtain a deeper understanding and more accurate implementation of the paradigm in academia and industry.
+\newline
+In his master's thesis at Utrecht university, Michel Modderkolk proposes a more mature model of Zero Trust, branded "Zero Trust Maturity Model (ZeTuMM)".
+The work makes use of two scietific methods, "comparison analysis" and "focus area maturity modeling", in order to outline a more fully fledged ZT model.    
+\newline
+\newline
+Independent of ZT, Kubernetes security has been explored in the following works. 
+The paper titled "Designing an intrusion detection system for a Kubernetes cluster" by Hristov, P. (2022) focuses on addressing the security challenges associated with 
+cloud-based architectures, particularly those utilizing Kubernetes. The essay highlights the growing reliance 
+on digital platforms, which has led to an increased demand for automation and high-reliability systems. This reliance has, in turn, increased the use of tools and consequently, 
+the number of security concerns.
+\newline
+"A Systematic evaluation of CVEs and mitigation strategies for a Kubernetes stack" by Fred Nordell (2022) offers a detailed examination of CVE's and possible mitigation strategies
+\newline
+The thesis "Kubernetes Near Real-Time Monitoring and Secure Network Architectures" explores the security challenges and mitigation strategies in Kubernetes. It emphasizes the importance 
+of securing the Kubernetes control plane, implementing secure configurations, and protecting critical components 
+like the etcd data store. Additionally, it highlights the integration of security practices throughout the development, deployment, and operations lifecycle, advocating for a DevSecOps 
+approach that includes security automation, continuous security testing, and security monitoring.
+\newline
+"Testing the Security of a Kubernetes Cluster in a Production Environment" by Giangiulio and Malmberg at KTH Stockholm emphasizes the critical importance of comprehensive security measures for Kubernetes 
+clusters operating in production environments. It highlights the need for robust security practices, including data encryption, proper user and permissions management, 
+and the use of Role-Based Access Control (RBAC) to manage access to the cluster. Additionally, it underscores the significance of maintaining up-to-date Docker images, 
+using minimal Docker images to reduce potential vulnerabilities, and implementing network policies and secrets management to enhance security.
+\newline
+The thesis "A Security Framework for Multi-Cluster Kubernetes Architectures" also aims to address the security challenges in Kubernetes environments, particularly focusing on multi-cluster setups. 
+The study emphasizes the importance of continuous monitoring and management to mitigate security risks, highlighting the need for a robust security framework that balances security enhancements 
+with minimal performance impact.
+\newline
+\newline
+According to my knowledge as of April 2024, no major work has been done at the intersection of Zero Trust and Kubernetes. 
 
-In his master's thesis at Utrecht university, Michel Modderkolk proposes a more mature model of Zero Trust, outlining 
+\section{Objectives and Methodology}
 
-On Kubernetes security: 
--DESIGNING AN INTRUSION DETECTION SYSTEM FOR A KUBERNETES CLUSTER
--ENHANCING CLOUD SECURITY AND PRIVACY WITH ZERO- KNOWLEDGE ENCRYPTION AND VULNERABILITY ASSESSMENT IN KUBERNETES DEPLOYMENTS
--A Systematic evaluation of CVEs and mitigation strategies for a Kubernetes stack
--My previous work?
--Kubernetes Near Real-Time Monitoring and Secure Network Architectures
--A security framework for multi-cluster Kubernetes architectures
--Testing the Security of a Kubernetes Cluster in a Production Environment
--Study of Security Issues in Kubernetes (K8s) Architectures; Tradeoffs and Opportunities
-
-
-
-put this in objectives and methodology: 
-
-Lack of research on Zero Trust AND Kubernetes , how can zero trust principles be applied to kubernetes? 
-There is no research done on Zero Trust specifically in the context of Kubernetes. The goal of this paper is to do exactly that: investigate
-how zero trust can be achieved in a Kubernetes setup. 
-
-The boundaries are the following
-
-It is a self-managed Cluster (self managed control plane), instantiated by kubeadm or k3s, not a managed cluster like EKS, AKS, and GKE
-Free or opensource (or both) technolgies are used to
-
-Free versions of otherwise paid-services are used A side goal is to do so with least possible vendor lock-in.
-
-Use Ansible to have a replicable setup. 
-3 node cluster: 1 master, 2 worker nodes. 
-
-To formulate the goals outlined above, the single, coherent research question for this thesis is the following: 
-
-How can open-source..... be leveraged to achieve Zero Trust in Kubernetes? ( from berhard mail)
-
-technologies shall be presented to implement principles, one final technology shall be chosen, others might get explanation
-
-also create dummy applications that must first fetch token from keycloak to then access another service in another namespace
-which is then protected by Istio AuthorizationPolicy and RequestAuthentication 
-
-
-
+As there is no research done on ZT specifically in the context of Kubernetes, the objective of this thesis is to do exactly that.
+How are ZT principles applied in Kubernetes? How can ZT be achieved in a Kubernetes setup? The aim is to construct a Kubernetes environment 
+according to ZT principles as outlined in NIST Special Publication 800-207. To narrow down the scope of the research, the following limitations are placed.
+\newline
+\newline
+1) A self-managed cluster (a self-managed control plane) will be instantiated using kubeadm. It will not be a managed cluster like EKS, AKS, or GKE.
+The cluster will have one master node and two worker nodes.
+\newline
+2) In order to implement ZT guidelines, open source, free, or free versions of otherwise paid-services are used. Least possible vendor lock-in is preferred.
+\newline
+\newline
+Formulating above mentioned goals in a single, coherent sentence results in the following research question:
+How can free software projects and native Kubernetes solutions be leveraged to achieve a cloud-agnostic and zero-trust architecture in Kubernetes?
+\newline
+\newline
+\newline
+To do so, NIST Special Publication 800-207 is used as a primary point of reference. The paper will be thoroughly read and summarized in chapter two.
+Here, an in depth explanation for the importance of ZT shall be given. Core Kubernetes concepts which help understand the subsequent practical setup 
+are also explained in chapter 2. After explaining the pillars of ZT and Kubernetes, technologies and solutions are researched and picked, which will 
+then be practically implemented to achieve the corresponding ZT principle inside the Kubernetes environment. Code snippets shall be presented. Throughout 
+the practical setup, cross references to the NIST publication shall be made.
+To evaluate the setup, test namespaces will be created and simple test applications will be deployed inside them. User accounts will be created. 
+At the end of the paper we shall critique the environment and answer the question if a setup, which does a 100\% justice to ZT, is even possible. 
 
 \newpage
+\chapter{Concepts}
+
+\section{Kubernetes}
+
+Kubernetes Architecture (Components, Nodes, Pods,), Important for this thesis: CNI, Namespaces
+
+\section{Zero Trust}
+
+Summary of NIST 800-207 publication
+
+
+\chapter{Creating the cluster}
+
+\newpage
+\chapter{Discussion and Future Work}
+
 \chapter{Conclusion}
-
-\newpage
-\chapter{Future work}
 
 \newpage
 

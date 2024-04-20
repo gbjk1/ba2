@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  20 APR 2024 02:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  21 APR 2024 00:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -163,6 +163,8 @@ Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip65
@@ -426,10 +428,10 @@ Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
 )
 
 Package scrlayer-scrpage Warning: replacing deprecated \clearscrheadfoot by
-(scrlayer-scrpage)                \clearpairofpagestyles on input line 88.
+(scrlayer-scrpage)                \clearpairofpagestyles on input line 89.
 
 1: chapter
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 100.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 101.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -439,34 +441,34 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-Package scrbase Info: activating english \partname on input line 100.
-Package scrbase Info: activating english \chaptername on input line 100.
-Package scrbase Info: activating english \appendixname on input line 100.
-Package scrbase Info: activating english \figurename on input line 100.
-Package scrbase Info: activating english \tablename on input line 100.
-Package scrbase Info: activating english \contentsname on input line 100.
-Package scrbase Info: activating english \listfigurename on input line 100.
-Package scrbase Info: activating english \listtablename on input line 100.
-Package scrbase Info: activating english \bibname on input line 100.
-Package scrbase Info: activating english \indexname on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+Package scrbase Info: activating english \partname on input line 101.
+Package scrbase Info: activating english \chaptername on input line 101.
+Package scrbase Info: activating english \appendixname on input line 101.
+Package scrbase Info: activating english \figurename on input line 101.
+Package scrbase Info: activating english \tablename on input line 101.
+Package scrbase Info: activating english \contentsname on input line 101.
+Package scrbase Info: activating english \listfigurename on input line 101.
+Package scrbase Info: activating english \listtablename on input line 101.
+Package scrbase Info: activating english \bibname on input line 101.
+Package scrbase Info: activating english \indexname on input line 101.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -522,11 +524,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count301
-Package hyperref Info: Link coloring OFF on input line 100.
+Package hyperref Info: Link coloring OFF on input line 101.
 <images/logo.png, id=4, 113.82526pt x 83.8332pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 108.
+Package pdftex.def Info: images/logo.png  used on input line 109.
 (pdftex.def)             Requested size: 113.82497pt x 83.83298pt.
  [1
 
@@ -626,12 +628,32 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--260
+Underfull \hbox (badness 10000) in paragraph at lines 240--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--260
+Underfull \hbox (badness 10000) in paragraph at lines 240--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--324
 
  []
 
@@ -640,23 +662,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--260
 
 
 ] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 327--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--350
+
+ []
+
+[3] [4]
 chapter 2.
-[3
+
+Overfull \hbox (1.54362pt too wide) in paragraph at lines 356--357
+\T1/lmr/m/n/10.95 Kubernetes Ar-chi-tec-ture (Com-po-nents, Nodes, Pods,), Im-por-tant for this the-sis: CNI, Names-
+ []
+
+[5
 
 
 ]
 chapter 3.
-[4
-
-
-] [5]
-chapter 4.
 [6
 
 
 ]
-chapter 5.
+chapter 4.
 [7
+
+
+]
+chapter 5.
+[8
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -668,26 +715,26 @@ chapter 5.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 23.
 
-) [8
+) [9
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [9
+ [10
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [10
+ [11
 
 
 ]
 chapter without number
-[11
+[12
 
 
 
@@ -697,18 +744,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16794 strings out of 476025
- 321664 string characters out of 5790016
- 1863388 words of memory out of 5000000
- 36987 multiletter control sequences out of 15000+600000
- 553242 words of font info for 54 fonts, out of 8000000 for 9000
+ 16823 strings out of 476025
+ 322137 string characters out of 5790016
+ 1869388 words of memory out of 5000000
+ 37011 multiletter control sequences out of 15000+600000
+ 550474 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,106p,10631b,544s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,106p,10631b,544s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (18 pages, 281486 bytes).
+Output written on thesis.pdf (19 pages, 288307 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
