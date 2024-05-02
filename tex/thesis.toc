@@ -4,13 +4,33 @@
 \contentsline {section}{\numberline {1.2}Related Work}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Objectives and Methodology}{3}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Concepts}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Kubernetes}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Zero Trust}{5}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Creating the cluster}{7}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Discussion and Future Work}{8}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{9}{chapter.5}%
-\contentsline {chapter}{Bibliography}{10}{chapter.5}%
-\contentsline {chapter}{List of Figures}{11}{chapter*.6}%
-\contentsline {chapter}{List of Tables}{12}{chapter*.7}%
-\contentsline {chapter}{\nonumberline Appendix}{13}{chapter*.9}%
+\contentsline {section}{\numberline {2.1}Zero Trust}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Definition and principles}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}The network}{6}{subsection.2.1.2}%
+\contentsline {subsubsection}{\nonumberline No implicit trust}{6}{subsubsection*.7}%
+\contentsline {subsubsection}{\nonumberline External Device Consideration}{6}{subsubsection*.9}%
+\contentsline {subsubsection}{\nonumberline Trust Evaluation}{6}{subsubsection*.11}%
+\contentsline {subsubsection}{\nonumberline Infrastructure Diversity}{6}{subsubsection*.13}%
+\contentsline {subsubsection}{\nonumberline Local Network Skepticism}{6}{subsubsection*.15}%
+\contentsline {subsubsection}{\nonumberline Consistent Security Policy}{6}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {2.1.3}Logical components}{6}{subsection.2.1.3}%
+\contentsline {subsubsection}{\nonumberline Policy Engine}{7}{subsubsection*.19}%
+\contentsline {subsubsection}{\nonumberline Policy Administrator}{7}{subsubsection*.21}%
+\contentsline {subsubsection}{\nonumberline Policy Enforcement Point}{7}{subsubsection*.23}%
+\contentsline {section}{\numberline {2.2}Kubernetes}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Components}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Core Cluster Objects}{8}{subsection.2.2.2}%
+\contentsline {subsubsection}{\nonumberline Namespaces}{8}{subsubsection*.25}%
+\contentsline {subsubsection}{\nonumberline Pods, Replicasets, Deployments, Statefulsets}{9}{subsubsection*.27}%
+\contentsline {subsubsection}{\nonumberline ServiceAccount and RBAC}{9}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {2.2.3}Kubernetes Networking}{9}{subsection.2.2.3}%
+\contentsline {subsubsection}{\nonumberline Service, Ingress}{9}{subsubsection*.31}%
+\contentsline {subsubsection}{\nonumberline CNI plugins}{9}{subsubsection*.33}%
+\contentsline {chapter}{\numberline {3}Creating the cluster}{10}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Discussion and Future Work}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{12}{chapter.5}%
+\contentsline {chapter}{Bibliography}{13}{chapter.5}%
+\contentsline {chapter}{List of Figures}{14}{chapter*.34}%
+\contentsline {chapter}{List of Tables}{15}{chapter*.35}%
+\contentsline {chapter}{\nonumberline Appendix}{16}{chapter*.37}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

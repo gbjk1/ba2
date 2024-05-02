@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  29 APR 2024 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  2 MAY 2024 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -438,7 +438,11 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count294
 \l__pdf_internal_box=\box57
-) (./thesis.aux)
+) (./thesis.aux
+
+LaTeX Warning: Label `fig:architecture' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
@@ -684,26 +688,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--350
 [3] [4]
 chapter 2.
 
-Overfull \hbox (1.54362pt too wide) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 358--373
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 375.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [5
+
+
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 419--424
+
+ []
+
+[6]
+<./images/architecture.png, id=123, 629.35126pt x 336.25626pt>
+File: ./images/architecture.png Graphic file (type png)
+<use ./images/architecture.png>
+Package pdftex.def Info: ./images/architecture.png  used on input line 427.
+(pdftex.def)             Requested size: 266.26555pt x 142.26378pt.
+ [7 <./images/architecture.png>]
+Overfull \hbox (1.54362pt too wide) in paragraph at lines 460--461
 \T1/lmr/m/n/10.95 Kubernetes Ar-chi-tec-ture (Com-po-nents, Nodes, Pods,), Im-por-tant for this the-sis: CNI, Names-
  []
 
-[5
-
-
-] [6]
+<./images/kubernetes.png, id=136, 1029.8475pt x 623.32875pt>
+File: ./images/kubernetes.png Graphic file (type png)
+<use ./images/kubernetes.png>
+Package pdftex.def Info: ./images/kubernetes.png  used on input line 464.
+(pdftex.def)             Requested size: 376.07193pt x 227.62204pt.
+[8 <./images/kubernetes.png>] [9]
 chapter 3.
-[7
+[10
 
 
 ]
 chapter 4.
-[8
+[11
 
 
 ]
 chapter 5.
-[9
+[12
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -715,47 +743,50 @@ chapter 5.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 23.
 
-) [10
+) [13
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [11
+ [14
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [12
+ [15
 
 
 ]
 chapter without number
-[13
+[16
 
 
 
 
 ] (./thesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16824 strings out of 476025
- 322144 string characters out of 5790016
- 1869388 words of memory out of 5000000
- 37011 multiletter control sequences out of 15000+600000
- 550474 words of font info for 53 fonts, out of 8000000 for 9000
+ 16959 strings out of 476025
+ 325320 string characters out of 5790016
+ 1868388 words of memory out of 5000000
+ 37098 multiletter control sequences out of 15000+600000
+ 553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,106p,10631b,544s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,106p,10631b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (20 pages, 293032 bytes).
+Output written on thesis.pdf (23 pages, 480270 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
