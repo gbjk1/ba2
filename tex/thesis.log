@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  2 MAY 2024 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  3 MAY 2024 23:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -699,7 +699,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 419--424
+Underfull \hbox (badness 10000) in paragraph at lines 423--428
 
  []
 
@@ -707,31 +707,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 419--424
 <./images/architecture.png, id=123, 629.35126pt x 336.25626pt>
 File: ./images/architecture.png Graphic file (type png)
 <use ./images/architecture.png>
-Package pdftex.def Info: ./images/architecture.png  used on input line 427.
+Package pdftex.def Info: ./images/architecture.png  used on input line 431.
 (pdftex.def)             Requested size: 266.26555pt x 142.26378pt.
  [7 <./images/architecture.png>]
-Overfull \hbox (1.54362pt too wide) in paragraph at lines 460--461
-\T1/lmr/m/n/10.95 Kubernetes Ar-chi-tec-ture (Com-po-nents, Nodes, Pods,), Im-por-tant for this the-sis: CNI, Names-
- []
-
 <./images/kubernetes.png, id=136, 1029.8475pt x 623.32875pt>
 File: ./images/kubernetes.png Graphic file (type png)
 <use ./images/kubernetes.png>
-Package pdftex.def Info: ./images/kubernetes.png  used on input line 464.
+Package pdftex.def Info: ./images/kubernetes.png  used on input line 475.
 (pdftex.def)             Requested size: 376.07193pt x 227.62204pt.
-[8 <./images/kubernetes.png>] [9]
+ [8 <./images/kubernetes.png>] [9] [10]
 chapter 3.
-[10
-
-
-]
-chapter 4.
 [11
 
 
 ]
-chapter 5.
+chapter 4.
 [12
+
+
+]
+chapter 5.
+[13
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -743,26 +739,26 @@ chapter 5.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 23.
 
-) [13
+) [14
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [14
+ [15
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [15
+ [16
 
 
 ]
 chapter without number
-[16
+[17
 
 
 
@@ -775,18 +771,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16959 strings out of 476025
- 325320 string characters out of 5790016
+ 16962 strings out of 476025
+ 325355 string characters out of 5790016
  1868388 words of memory out of 5000000
  37098 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,106p,10631b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (23 pages, 480270 bytes).
+Output written on thesis.pdf (24 pages, 484556 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

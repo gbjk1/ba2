@@ -381,6 +381,8 @@ to a perfect degree, depending on a given use case or strategy.
 	\item Extensive data collection about asset state, network traffic, and access requests is done to have a clear picture of the current security posture of the infrastructure.
 \end{itemize}
 
+[cite NIST here]
+
 
 
 
@@ -411,7 +413,9 @@ requiring robust authentication and authorization measures for secure communicat
 
 \subsubsection{Consistent Security Policy}
 Consistent security policies and postures for assets and workflows transitioning between enterprise and external infrastructure are enforced. 
-This applies to devices moving across networks and workloads migrating between on-premises and cloud environments.
+This applies to devices moving across networks and workloads migrating between on-premises and cloud environments. 
+
+[cite NIST here]
 
 
 \subsection{Logical components}
@@ -453,25 +457,36 @@ resource side (such as the gateway component in front of the resource that regul
 (such as an agent on a laptop) or a single portal component that serves as a gatekeeper for communication channels. 
 The trust zone containing the enterprise resource is located beyond the PEP, as seen in figure 2.1.
 
+[cite NIST here]
+
 \section{Kubernetes}
 
 \subsection{Components}
 
-Kubernetes Architecture (Components, Nodes, Pods,), Important for this thesis: CNI, Namespaces
-
+A Kubernetes cluster is separated into a control plane and data plane. The control plane
+groups the components responsible for the underlying system of Kubernetes itself. The data
+plane hosts the actual user containers. Machines that run control-plane services are referred to as master-nodes, 
+whereas machines that host user applications are referred to as worker-nodes. There are four core control-plane components
+ which work together to manage the cluster and ensure that applications run smoothly. These components run as containers
+themselves inside the reserved ’kube-system’ namespace. 
+\newline
 \begin{figure}[htbp]
   \centering
       \includegraphics[height=8cm]{./images/kubernetes}
   \caption{Kubernetes Architecture [source: author]}
   \label{fig:architecture}
 \end{figure}
-
-Any enterprise environment can be designed with zero trust tenets in mind. Most organizations
-already have some elements of zero trust in their enterprise infrastructure or are on their way
-through implementation of information security and resiliency policies and best practices.
-Several deployment scenarios and use cases lend themselves readily to a zero trust architecture.
-For instance, ZTA has its roots in organizations that are geographically distributed and/or have a
-highly mobile workforce. That said, any organization can benefit from a zero trust architecture
+\newline
+The API server in Kubernetes acts as the gateway, offering a REST API 
+through which users and applications can communicate with the cluster, enabling resource management, access control, and 
+querying of cluster state and configurations. The Kubelet, an agent process on each node, ensures that pods are running healthy
+and up-to-date with the desired state. It does so by communicating with the API server.
+Etcd, a distributed key-value store, maintains the cluster's consistent state across multiple nodes, utilized by control plane
+components for storing cluster information like resource configurations and pod statuses.
+The kube-scheduler allocates pods to nodes based on resource availability and requirements, aiming to optimize successful pod 
+execution while enhancing cluster resilience by distributing pods across multiple nodes.
+The controller manager, operating on each node, oversees the cluster's state, responds to events like pod creation or deletion, and does 
+corrective measures to maintain cluster health, such as restarting unhealthy pods or scaling to meet demand. [cite k8s docs]
 
 \subsection{Core Cluster Objects}
 
@@ -482,7 +497,7 @@ Namespaces are used by Kubernetes objects like "Deployment," "Service," and "Con
 Globally existing and not namespaced objects are those that define the cluster as a whole or that apply to all applications across all namespaces. 
 Namespace isolation preserves the integrity of every deployment by averting unintentional interactions or interference between applications. 
 Custom authorization rules and access control techniques can be enforced by assigning distinct security policies to namespaces. 
-This aids in resource protection and limits unauthorised access between specific namespaces inside the cluster.
+This aids in resource protection and limits unauthorised access between specific namespaces inside the cluster. [cite k8s docs]
 
 
 \subsubsection{Pods, Replicasets, Deployments, Statefulsets}
@@ -493,16 +508,47 @@ resources such as network namespaces and filesystems. This tight coupling allows
 treated as a single unit for scheduling, management, and resource allocation. Pods expose
 the ports exposed by its containers, allowing external traffic to reach its intendend recipient.
 Pods are rarely instantiated by itself. Deployments, Replicasets and Statefulsets are higher 
-deployment configurations which specify pod settings. 
+deployment configurations which specify pod settings. [cite k8s docs]
 
 \subsubsection{ServiceAccount and RBAC}
+
+Pods can use a ServiceAccount as a security identity to access Kubernetes services and resources. 
+It controls pod access permissions and interactions with the cluster and serves as an authentication method for pods. 
+ServiceAccounts have the ability to mount Secrets into Pods, giving them access to private information like certificates, API keys, and passwords.
+\newline
+RBAC is an authorization system that regulates which individuals or groups are able to access resources and carry out particular tasks inside the cluster. 
+It offers a detailed method for controlling access rights and enforcing security regulations throughout the Kubernetes environment.
+Role objects define a set of permissions that can be granted to users or groups. They specify which resources can be accessed, what actions can be performed 
+on those resources, and the scope of the permissions (namespace-wide or cluster-wide). ClusterRole objects are similar to Roles, but they have a broader scope, 
+applying to all namespaces within the cluster. They are typically used to define permissions for system components or users who need access to resources across multiple namespaces.
+RoleBindings and ClusterRoleBindings assign the designated permissions to users or groups based on the association between Roles or ClusterRoles. 
+They specify how identities and the permissions they possess are mapped out. Such RoleBindings are bound to previously mentioned ServiceAccounts. [cite k8s docs]
 
 
 \subsection{Kubernetes Networking}
 
-\subsubsection{Service, Ingress}
+A key component of Kubernetes that guarantees smooth communication between containers, pods, and services inside a Kubernetes cluster is Kubernetes networking. 
+Networking is made uniform by the Kubernetes network model.
 
-\subsubsection{CNI plugins}
+\subsubsection{Pod Networking}
+Each pod in Kubernetes has its own IP address, containers within a pod can freely communicate with one another via localhost. With these pod IP addresses, pods 
+can communicate with any other pod in the cluster without requiring Network Address Translation (NAT). Network policies are used to establish pod isolation; 
+pods are treated in the same way as virtual machines (VMs) or hosts with distinct IP addresses. Because they operate in the same network namespace, containers inside of 
+pods share the IP address of the pod.
+
+\subsubsection{Service and Ingress}
+Access to a collection of pods is abstracted by Kubernetes services and is often represented by a virtual IP address within the cluster. Node ports or load balancers 
+allow access to these services from outside the cluster. Even when the underlying pods change, a service's virtual IP address and DNS name stay the same. Load balancing and 
+flexible access control are thus made possible.
+
+\subsubsection{Container Network Interface (Plugins)}
+The Container Network Interface (CNI) API provided by Kubernetes allows for the support of several network solutions. Third-party network implementations are increasingly
+utilized, even though Kubernetes' integrated network support, kubenet, provides basic connectivity. Pods can be connected to the network using network plugins, and pod IP addresses 
+can be assigned using IP Address Management (IPAM) plugins. Calico and Cilium, for instance, offer flexibility in selecting the optimal networking solutions for certain needs and settings by 
+providing both network and IPAM plugins and integrating with other CNI plugins.
+
+[cite tigera, cilium, k8s docs]
+
 
 
 \chapter{Creating the cluster}

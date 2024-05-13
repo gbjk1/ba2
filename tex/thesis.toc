@@ -13,24 +13,25 @@
 \contentsline {subsubsection}{\nonumberline Infrastructure Diversity}{6}{subsubsection*.13}%
 \contentsline {subsubsection}{\nonumberline Local Network Skepticism}{6}{subsubsection*.15}%
 \contentsline {subsubsection}{\nonumberline Consistent Security Policy}{6}{subsubsection*.17}%
-\contentsline {subsection}{\numberline {2.1.3}Logical components}{6}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Logical components}{7}{subsection.2.1.3}%
 \contentsline {subsubsection}{\nonumberline Policy Engine}{7}{subsubsection*.19}%
 \contentsline {subsubsection}{\nonumberline Policy Administrator}{7}{subsubsection*.21}%
 \contentsline {subsubsection}{\nonumberline Policy Enforcement Point}{7}{subsubsection*.23}%
 \contentsline {section}{\numberline {2.2}Kubernetes}{8}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Components}{8}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Core Cluster Objects}{8}{subsection.2.2.2}%
-\contentsline {subsubsection}{\nonumberline Namespaces}{8}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {2.2.2}Core Cluster Objects}{9}{subsection.2.2.2}%
+\contentsline {subsubsection}{\nonumberline Namespaces}{9}{subsubsection*.25}%
 \contentsline {subsubsection}{\nonumberline Pods, Replicasets, Deployments, Statefulsets}{9}{subsubsection*.27}%
 \contentsline {subsubsection}{\nonumberline ServiceAccount and RBAC}{9}{subsubsection*.29}%
-\contentsline {subsection}{\numberline {2.2.3}Kubernetes Networking}{9}{subsection.2.2.3}%
-\contentsline {subsubsection}{\nonumberline Service, Ingress}{9}{subsubsection*.31}%
-\contentsline {subsubsection}{\nonumberline CNI plugins}{9}{subsubsection*.33}%
-\contentsline {chapter}{\numberline {3}Creating the cluster}{10}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Discussion and Future Work}{11}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{12}{chapter.5}%
-\contentsline {chapter}{Bibliography}{13}{chapter.5}%
-\contentsline {chapter}{List of Figures}{14}{chapter*.34}%
-\contentsline {chapter}{List of Tables}{15}{chapter*.35}%
-\contentsline {chapter}{\nonumberline Appendix}{16}{chapter*.37}%
+\contentsline {subsection}{\numberline {2.2.3}Kubernetes Networking}{10}{subsection.2.2.3}%
+\contentsline {subsubsection}{\nonumberline Pod Networking}{10}{subsubsection*.31}%
+\contentsline {subsubsection}{\nonumberline Service and Ingress}{10}{subsubsection*.33}%
+\contentsline {subsubsection}{\nonumberline Container Network Interface (Plugins)}{10}{subsubsection*.35}%
+\contentsline {chapter}{\numberline {3}Creating the cluster}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Discussion and Future Work}{12}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{13}{chapter.5}%
+\contentsline {chapter}{Bibliography}{14}{chapter.5}%
+\contentsline {chapter}{List of Figures}{15}{chapter*.36}%
+\contentsline {chapter}{List of Tables}{16}{chapter*.37}%
+\contentsline {chapter}{\nonumberline Appendix}{17}{chapter*.39}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
