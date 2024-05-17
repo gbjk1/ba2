@@ -1,0 +1,12 @@
+apiVersion: security.istio.io/v1
+kind: RequestAuthentication
+metadata:
+  name: nebhis
+  namespace: nebhis
+spec:
+  selector:
+    matchLabels:
+      app: nebhis
+  jwtRules:
+  - issuer: "http://keycloak-service.keycloak.svc/realms/nebhis"
+    jwksUri: "http://keycloak-service.keycloak.svc/realms/nebhis/protocol/openid-connect/certs"

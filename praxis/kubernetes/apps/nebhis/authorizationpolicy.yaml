@@ -1,0 +1,16 @@
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: nebhis
+  namespace: nebhis
+spec:
+  selector:
+    matchLabels:
+      app: nebhis
+  rules:
+  - from:
+    - source:
+        requestPrincipals: ["*"]
+    when:
+      - key: request.auth.claims[iss]
+        values: ["http://keycloak-service.keycloak.svc/realms/nebhis"]
