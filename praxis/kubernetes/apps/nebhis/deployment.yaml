@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nebhis
+  namespace: nebhis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nebhis
+  template:
+    metadata:
+      labels:
+        app: nebhis
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
