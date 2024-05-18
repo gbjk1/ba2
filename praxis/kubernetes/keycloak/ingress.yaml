@@ -1,0 +1,18 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: keycloak-ingress
+#   namespace: keycloak
+# spec:
+#   ingressClassName: nginx-class
+#   rules:
+#   - host: keycloak.nebhis.lcl
+#     http:
+#       paths:
+#         - path: /
+#           pathType: Prefix
+#           backend:
+#             service:
+#               name: keycloak-service
+#               port:
+#                 number: 8080

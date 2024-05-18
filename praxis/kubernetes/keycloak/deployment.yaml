@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: keycloak
+  labels:
+    app: keycloak
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: keycloak
+  template:
+    metadata:
+      labels:
+        app: keycloak
+    spec:
+      containers:
+        - name: keycloak
+          image: bitnami/keycloak:21
+          ports:
+            - containerPort: 8080
+          env:
+            - name: KEYCLOAK_ADMIN_USER
+              value: admin
+            - name: KEYCLOAK_ADMIN_PASSWORD
+              value: nebhis
+            - name: KEYCLOAK_DATABASE_VENDOR
+              value: postgresql
+            - name: KEYCLOAK_DATABASE_HOST
+              value: "127.0.0.1"
+            - name: KEYCLOAK_DATABASE_PORT
+              value: "5432"
+            - name: KEYCLOAK_DATABASE_NAME
+              value: keycloak
+            - name: KEYCLOAK_DATABASE_USER
+              value: keycloak
+            - name: KEYCLOAK_DATABASE_PASSWORD
+              value: nebhis
+            - name: METRICS_ENABLED
+              value: "true"
+        - name: postgres
+          image: postgres:13
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              value: "keycloak"
+            - name: POSTGRES_PASSWORD
+              value: "nebhis"
+            - name: POSTGRES_DB
+              value: "keycloak"
+          volumeMounts:
+          - name: postgres-data
+            mountPath: /var/lib/postgresql/data
+      volumes:
+      - name: postgres-data
+        persistentVolumeClaim:
+          claimName: keycloak-postgres-pvc
