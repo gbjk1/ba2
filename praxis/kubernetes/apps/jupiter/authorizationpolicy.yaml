@@ -1,12 +1,12 @@
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:
-  name: nebhis
-  namespace: nebhis
+  name: jupiter
+  namespace: jupiter
 spec:
   selector:
     matchLabels:
-      app: nebhis
+      app: jupiter
   rules:
   - from:
     - source:

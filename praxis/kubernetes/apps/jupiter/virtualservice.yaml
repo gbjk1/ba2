@@ -1,16 +1,16 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: nebhis
-  namespace: nebhis
+  name: jupiter
+  namespace: jupiter
 spec:
   gateways:
-  - nebhis/nebhis
+  - jupiter/jupiter
   hosts:
-  - clusterapp.nebhis.lcl
+  - jupiter.nebhis.lcl
   http:
     - route:
         - destination:
-            host: nebhis
+            host: jupiter
             port:
               number: 8080
