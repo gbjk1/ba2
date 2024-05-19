@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: neptune
+  namespace: neptune
+spec:
+  gateways:
+  - neptune/neptune
+  hosts:
+  - neptune.nebhis.lcl
+  http:
+    - route:
+        - destination:
+            host: neptune
+            port:
+              number: 8080
