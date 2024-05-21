@@ -615,6 +615,12 @@ settings ensure that bridged traffic goes through the iptables chains. net.ipv4.
 With the modprobe command, these modules are loaded into the kernel and their functions are made available.
 Without these settings, Kubernetes components may experience problems with container filesystem management, network packet processing, and general traffic routing.
 
+\subsubsection{Swap}
+Disabling swap on Linux during Kubernetes setup, as done in lines 22-23 of figure 3.2, is necessary because Kubernetes depends on efficient memory management for container orchestration. 
+When swap is active, the kernel might swap container memory to disk. 
+This results in unpredictable performance and potential container instability. By turning off swap, Kubernetes ensures that container memory stays in physical RAM. 
+This allows Kubernetes to manage containers effectively without interference from swapping mechanisms.
+
 
 
 \newpage

@@ -32,6 +32,7 @@
 \contentsline {section}{\numberline {3.2}Bootstrapping the cluster with kubeadm}{11}{section.3.2}%
 \contentsline {subsubsection}{\nonumberline Overlay}{12}{subsubsection*.37}%
 \contentsline {subsubsection}{\nonumberline Bridge Netfilter}{12}{subsubsection*.39}%
+\contentsline {subsubsection}{\nonumberline Swap}{12}{subsubsection*.41}%
 \contentsline {section}{\numberline {3.3}Protocols and standards}{13}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}OpenID Connect}{13}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Multi-Factor Authentication}{13}{subsection.3.3.2}%
@@ -46,7 +47,7 @@
 \contentsline {chapter}{\numberline {4}Discussion and Future Work}{14}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Conclusion}{15}{chapter.5}%
 \contentsline {chapter}{Bibliography}{16}{chapter.5}%
-\contentsline {chapter}{List of Figures}{17}{chapter*.40}%
-\contentsline {chapter}{List of Tables}{18}{chapter*.41}%
-\contentsline {chapter}{\nonumberline Appendix}{19}{chapter*.43}%
+\contentsline {chapter}{List of Figures}{17}{chapter*.42}%
+\contentsline {chapter}{List of Tables}{18}{chapter*.43}%
+\contentsline {chapter}{\nonumberline Appendix}{19}{chapter*.45}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
