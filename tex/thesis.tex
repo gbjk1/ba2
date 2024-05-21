@@ -622,41 +622,62 @@ This results in unpredictable performance and potential container instability. B
 This allows Kubernetes to manage containers effectively without interference from swapping mechanisms.
 
 \subsubsection{Installation}
-After aforementioned base-settings, one can proceed with installing the container runtime, kubeadm, kubelet, and kubectl on all nodes. kubeadm is used to initalize the cluster. kubectl is used to interact with the 
-control plane of the cluster. 
+After aforementioned settings, one can proceed with installing the container runtime, kubeadm, kubelet, and kubectl on all nodes. kubeadm is then used to initalize the cluster. kubectl is used to interact with the 
+control plane of the cluster. The script as in figure 3.3 downloads GPG keys, installs and runs CRI-O. Figure 3.4 shows installation of Kubernetes binaries. Finally the control plane is initialized on the master node (192.168.20.3), as seen in figure 3.5, and worker nodes (192.168.20.4 and 192.168.20.5) are joined to the cluster, as seen in figure 3.7.
 
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=13cm]{./images/crio}
+  \caption{Container runtime installation [source: author]}
+  \label{fig:crio}
+\end{figure}
 
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=13cm]{./images/k8sbinaries}
+  \caption{Kubernetes components installation [source: author]}
+  \label{fig:binaries}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=13cm]{./images/master}
+  \caption{Control plane initialization [source: author]}
+  \label{fig:master}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=13cm]{./images/worker}
+  \caption{Join nodes to cluster [source: author]}
+  \label{fig:worker}
+\end{figure}
 
 \newpage
-\section{Protocols and standards}
+Having securely downloaded and installed dependencies, the following sections discuss fortifying the cluster according to Zero Trust principles. 
 
-\subsection{OpenID Connect}
+\section{Teleport}
+
+Touch on OIDC, MFA, auditing sessions, minimal access, encryption, etc when accessing the cluster and how Teleport is cool
 
 OpenID Connect serves as a straightforward identity service that builds upon the OAuth 2.0 framework. It enables client applications to authenticate users through an authorization server or identity provider (IdP) and retrieve essential 
 client profile details in a standardized, RESTful approach. This service defines a RESTful HTTP API that utilizes JSON for data exchange.
 
 Explain Oauth2 and OpenID connect and then say the same can be done for app to app communication
 
+\section{Istio Service-Mesh}
 
-\subsection{Multi-Factor Authentication}
-\subsection{mTLS}
+Talk about how cool Istio is and how it takes network/authetication handling away from code deployed in containers, separation of concern.
 
+\section{Keycloak}
 
-\section{Teleport: Access to the cluster with commandline clients}
+Touch on OIDC and its combination with Istio, RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script
 
-\section{Istio: Handling app-communication using a service-mesh}
+\section{Vault Secret Management}
 
-\section{Keycloak: Implementing OIDC}
+\section{Grafana Monitoring}
 
-\section{Keycloak and Istio: AuthorizationPolicy and RequestAuthentication, python OIDC client with tokens}
-
-\section{Vault: Centralized secret management}
-
-\section{Monitoring}
-
-\section{Trivy: Continuous scanning}
-
-\section{}
+\section{Trivy}
 
 \newpage
 \chapter{Discussion and Future Work}

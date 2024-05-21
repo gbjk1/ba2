@@ -34,21 +34,16 @@
 \contentsline {subsubsection}{\nonumberline Bridge Netfilter}{12}{subsubsection*.39}%
 \contentsline {subsubsection}{\nonumberline Swap}{12}{subsubsection*.41}%
 \contentsline {subsubsection}{\nonumberline Installation}{12}{subsubsection*.43}%
-\contentsline {section}{\numberline {3.3}Protocols and standards}{13}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}OpenID Connect}{13}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Multi-Factor Authentication}{13}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}mTLS}{13}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Teleport: Access to the cluster with commandline clients}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Istio: Handling app-communication using a service-mesh}{13}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Keycloak: Implementing OIDC}{13}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Keycloak and Istio: AuthorizationPolicy and RequestAuthentication, python OIDC client with tokens}{13}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Vault: Centralized secret management}{13}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Monitoring}{13}{section.3.9}%
-\contentsline {section}{\numberline {3.10}Trivy: Continuous scanning}{13}{section.3.10}%
-\contentsline {chapter}{\numberline {4}Discussion and Future Work}{14}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{15}{chapter.5}%
-\contentsline {chapter}{Bibliography}{16}{chapter.5}%
-\contentsline {chapter}{List of Figures}{17}{chapter*.44}%
-\contentsline {chapter}{List of Tables}{18}{chapter*.45}%
-\contentsline {chapter}{\nonumberline Appendix}{19}{chapter*.47}%
+\contentsline {section}{\numberline {3.3}Teleport}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Istio Service-Mesh}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Keycloak}{14}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Vault Secret Management}{14}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Grafana Monitoring}{14}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Trivy}{14}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Discussion and Future Work}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{16}{chapter.5}%
+\contentsline {chapter}{Bibliography}{17}{chapter.5}%
+\contentsline {chapter}{List of Figures}{18}{chapter*.44}%
+\contentsline {chapter}{List of Tables}{19}{chapter*.45}%
+\contentsline {chapter}{\nonumberline Appendix}{20}{chapter*.47}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
