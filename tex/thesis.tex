@@ -581,19 +581,56 @@ and for the sake of demonstration, namespace "neptune" and namespace "jupiter" a
   \centering
       \includegraphics[height=8cm]{./images/setup}
   \caption{General Setup [source: author]}
-  \label{fig:architecture}
+  \label{fig:generalsetup}
 \end{figure}
 
 
 
 \section{Bootstrapping the cluster with kubeadm}
 
-Build the cluster according to 800-207, describe configuration and code snippets, reference the ZT principle, 
-referene the 800-207 section or section from other paper
+Before installing Kubernetes binaries on the nodes, certain settings and kernel parameters need to be configured on the Linux machines that make up the Kubernetes nodes. 
+The bash script as seen in figure 3.2 is executed on all three nodes.
+\newline
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[height=7.8cm]{./images/baseconfig}
+  \caption{Base k8s-node configuration [source: author]}
+  \label{fig:baseconfig}
+\end{figure}
+\newline
+This script places a k8s.conf file under the /etc/modules-load.d/ directory, specifying overlay and bridge netfilter. This ensures that the kernel modules overlay and bridge netfilter are always loaded at startup of the VM, 
+which are required for Kubernetes networking and storage requirement.
 
-Helm is used, explain what Helm does
+\subsubsection{Overlay}
+The overlay module is essential for Kubernetes because it activates the overlay storage driver used by container runtimes such as Docker to manage container filesystems efficiently. 
+This driver allows containers to share and layer filesystems, optimizing storage use and enhancing performance. By enabling the overlay module, Kubernetes ensures that container runtimes 
+can efficiently create, manage, and run containers, which is crucial for the effective functioning of the cluster.
 
-\section{Protocols and standards, OIDC and MFA, mTLS, encryption}
+\subsubsection{Bridge Netfilter}
+The bridge netfilter module is important because it allows the Linux bridge to interface with the iptables firewall, enabling packet filtering and NAT. 
+This capability is needed for Kubernetes to manage and route network traffic between pods, services, and external networks efficiently. net.bridge.bridge-nf-call-iptables and net.bridge.bridge-nf-call-ip6tables
+settings ensure that bridged traffic goes through the iptables chains. net.ipv4.ip-forward enables IP forwarding, allowing the Linux kernel to forward packets between (virtual) network interfaces.
+\newline
+\newline
+With the modprobe command, these modules are loaded into the kernel and their functions are made available.
+Without these settings, Kubernetes components may experience problems with container filesystem management, network packet processing, and general traffic routing.
+
+
+
+\newpage
+\section{Protocols and standards}
+
+\subsection{OpenID Connect}
+
+OpenID Connect serves as a straightforward identity service that builds upon the OAuth 2.0 framework. It enables client applications to authenticate users through an authorization server or identity provider (IdP) and retrieve essential 
+client profile details in a standardized, RESTful approach. This service defines a RESTful HTTP API that utilizes JSON for data exchange.
+
+Explain Oauth2 and OpenID connect and then say the same can be done for app to app communication
+
+
+\subsection{Multi-Factor Authentication}
+\subsection{mTLS}
+
 
 \section{Teleport: Access to the cluster with commandline clients}
 

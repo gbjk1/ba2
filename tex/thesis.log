@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  21 MAY 2024 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  21 MAY 2024 23:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -442,9 +442,6 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `fig:architecture' multiply defined.
 
-
-LaTeX Warning: Label `fig:architecture' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -706,13 +703,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--428
 
  []
 
-<./images/architecture.png, id=122, 629.35126pt x 336.25626pt>
+<./images/architecture.png, id=128, 629.35126pt x 336.25626pt>
 File: ./images/architecture.png Graphic file (type png)
 <use ./images/architecture.png>
 Package pdftex.def Info: ./images/architecture.png  used on input line 431.
 (pdftex.def)             Requested size: 266.26555pt x 142.26378pt.
 [5]
-<./images/kubernetes.png, id=141, 1029.8475pt x 623.32875pt>
+<./images/kubernetes.png, id=147, 1029.8475pt x 623.32875pt>
 File: ./images/kubernetes.png Graphic file (type png)
 <use ./images/kubernetes.png>
 Package pdftex.def Info: ./images/kubernetes.png  used on input line 475.
@@ -729,22 +726,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--579
 
  []
 
-<./images/setup.png, id=180, 553.06625pt x 488.82625pt>
+<./images/setup.png, id=186, 553.06625pt x 488.82625pt>
 File: ./images/setup.png Graphic file (type png)
 <use ./images/setup.png>
 Package pdftex.def Info: ./images/setup.png  used on input line 582.
 (pdftex.def)             Requested size: 257.53603pt x 227.62204pt.
+<./images/baseconfig.png, id=187, 1040.88875pt x 483.8075pt>
+File: ./images/baseconfig.png Graphic file (type png)
+<use ./images/baseconfig.png>
+Package pdftex.def Info: ./images/baseconfig.png  used on input line 596.
+(pdftex.def)             Requested size: 477.4805pt x 221.93158pt.
+
+Overfull \hbox (36.46277pt too wide) in paragraph at lines 596--597
+ [][] 
+ []
+
 [10
 
 
-] [11 <./images/setup.png>]
+] [11 <./images/setup.png> <./images/baseconfig.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 610--617
+
+ []
+
+[12] [13]
 chapter 4.
-[12
+[14
 
 
 ]
 chapter 5.
-[13
+[15
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -756,26 +768,26 @@ chapter 5.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 23.
 
-) [14
+) [16
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [15
+ [17
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [16
+ [18
 
 
 ]
 chapter without number
-[17
+[19
 
 
 
@@ -788,18 +800,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16996 strings out of 476025
- 325827 string characters out of 5790016
- 1869388 words of memory out of 5000000
- 37120 multiletter control sequences out of 15000+600000
+ 17024 strings out of 476025
+ 326356 string characters out of 5790016
+ 1870388 words of memory out of 5000000
+ 37137 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,106p,10631b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,106p,10631b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (24 pages, 534452 bytes).
+Output written on thesis.pdf (26 pages, 636492 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 313 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 
