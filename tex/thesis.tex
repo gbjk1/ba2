@@ -575,7 +575,7 @@ To give a general introduction of the setup, an authentication proxy is deployed
 VMs. 192.168.20.3, the master node, is running the control-plane (the "brain" of the cluster), consisting of kube-apiserver, etcd, kube-controller-manager and kube-scheduler. 192.168.20.4 and 192.168.20.5 are dedicated worker 
 nodes of the cluster running the data-plane (the "body" of the cluster), hosting deployed containers. Each node runs the Kubelet and the kube-proxy. The cluster is organized in multiple namespaces. The components
 and software solutions which ensure a Zero Trust approach are deployed in their respective, dedicated namespaces, such as istio-system, keycloak and teleport-agent, for example. To mimick actual business software hosted on Kubernetes
-and for the sake of demonstration, namespace "neptune" and namespace "jupiter" are created. Each of them run simple deployments such as a Nginx webserver. This setup will be explained in depth in the following sections. 
+and for the sake of demonstration, namespace "neptune" and namespace "jupiter" are created. Each of them run simple deployments such as a Nginx webserver. This setup, as shown in figure 3.1, will be explained in depth in the following sections. 
 
 \begin{figure}[htbp]
   \centering
@@ -604,8 +604,6 @@ Helm is used, explain what Helm does
 \section{Keycloak and Istio: AuthorizationPolicy and RequestAuthentication, python OIDC client with tokens}
 
 \section{Vault: Centralized secret management}
-
-\section{}
 
 \section{Monitoring}
 
