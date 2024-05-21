@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  20 MAY 2024 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  21 MAY 2024 20:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -442,6 +442,9 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `fig:architecture' multiply defined.
 
+
+LaTeX Warning: Label `fig:architecture' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
@@ -632,32 +635,32 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--270
+Underfull \hbox (badness 10000) in paragraph at lines 241--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--270
+Underfull \hbox (badness 10000) in paragraph at lines 241--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--270
+Underfull \hbox (badness 10000) in paragraph at lines 241--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--323
+Underfull \hbox (badness 10000) in paragraph at lines 275--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--323
+Underfull \hbox (badness 10000) in paragraph at lines 275--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--323
+Underfull \hbox (badness 10000) in paragraph at lines 275--324
 
  []
 
@@ -666,72 +669,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--323
 
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 326--349
+Underfull \hbox (badness 10000) in paragraph at lines 327--350
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--349
+Underfull \hbox (badness 10000) in paragraph at lines 327--350
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--349
+Underfull \hbox (badness 10000) in paragraph at lines 327--350
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--349
+Underfull \hbox (badness 10000) in paragraph at lines 327--350
 
  []
 
 [3]
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--372
+Underfull \hbox (badness 10000) in paragraph at lines 358--373
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 374.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 375.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [4
 
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 422--427
+Underfull \hbox (badness 10000) in paragraph at lines 423--428
 
  []
 
-<./images/architecture.png, id=106, 629.35126pt x 336.25626pt>
+<./images/architecture.png, id=122, 629.35126pt x 336.25626pt>
 File: ./images/architecture.png Graphic file (type png)
 <use ./images/architecture.png>
-Package pdftex.def Info: ./images/architecture.png  used on input line 430.
+Package pdftex.def Info: ./images/architecture.png  used on input line 431.
 (pdftex.def)             Requested size: 266.26555pt x 142.26378pt.
 [5]
-<./images/kubernetes.png, id=125, 1029.8475pt x 623.32875pt>
+<./images/kubernetes.png, id=141, 1029.8475pt x 623.32875pt>
 File: ./images/kubernetes.png Graphic file (type png)
 <use ./images/kubernetes.png>
-Package pdftex.def Info: ./images/kubernetes.png  used on input line 474.
+Package pdftex.def Info: ./images/kubernetes.png  used on input line 475.
 (pdftex.def)             Requested size: 376.07193pt x 227.62204pt.
  [6 <./images/architecture.png>] [7 <./images/kubernetes.png>] [8] [9]
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--570
+Underfull \hbox (badness 10000) in paragraph at lines 558--579
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--579
+
+ []
+
+<./images/setup.png, id=180, 553.06625pt x 488.82625pt>
+File: ./images/setup.png Graphic file (type png)
+<use ./images/setup.png>
+Package pdftex.def Info: ./images/setup.png  used on input line 582.
+(pdftex.def)             Requested size: 257.53603pt x 227.62204pt.
 [10
 
 
-]
+] [11 <./images/setup.png>]
 chapter 4.
-[11
+[12
 
 
 ]
 chapter 5.
-[12
+[13
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -743,26 +756,26 @@ chapter 5.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 23.
 
-) [13
+) [14
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [14
+ [15
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [15
+ [16
 
 
 ]
 chapter without number
-[16
+[17
 
 
 
@@ -775,18 +788,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16965 strings out of 476025
- 325382 string characters out of 5790016
+ 16997 strings out of 476025
+ 325839 string characters out of 5790016
  1869388 words of memory out of 5000000
- 37100 multiletter control sequences out of 15000+600000
+ 37120 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,106p,10631b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,20n,106p,10631b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (23 pages, 486068 bytes).
+Output written on thesis.pdf (24 pages, 534429 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 82 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 261 words of extra memory for PDF output out of 10000 (max. 10000000)
 

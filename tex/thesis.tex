@@ -206,6 +206,7 @@ Date: \hspace{6cm} Signature:\\
       IoT & Internet of Things \\
 			MFA & Multifactor Authentication \\
 			NIST & National Institute of Standards and Technology \\
+      VPN & Virtual Private Network \\
 			ZT & Zero Trust \\
 		\end{tabular}
 \end{table*}
@@ -555,23 +556,62 @@ providing both network and IPAM plugins and integrating with other CNI plugins.
 \section{Virtual Machines and Network}
 
 The base infrastrucure of the thesis project consists of 5 Virtual Machines which are running on a Proxmox infrastructure provided by FH Campus Wien. At the edge of the network sits an OPNsense 
-gateway, an open-source firewall and based on FreeBSD, which controls external traffic coming into 
+gateway, an open-source firewall based on FreeBSD, which controls external traffic coming into 
 this thesis' network. Its external interface on 10.140.0.50 is part of a broader WAN provided by institution's facilities. This gateway serves as the primary entry and exit point for all traffic 
-entering or leaving the internal network, playing a critical role in securing and directing network traffic. As this thesis focuses on the Kubernetes environment, and as OPNsense is not directly 
+entering or leaving the internal network, playing a critical role in securing and directing network traffic. The gateway runs a Wireguard agent - the general environment is accessed using SSH through  
+a Wireguard VPN tunnel. As this thesis focuses on the Kubernetes environment, and as OPNsense is not directly 
 part of the Kubernetes setup, there shall be no further in-depth description of this OPNsense gateway. 
 \newline
 \newline
 The LAN is segmented into a distinct subnet 192.168.20.0/24. Within this subnet, four VMs have been deployed, each assigned static IP addresses ranging from 192.168.20.1 to 192.168.20.5. 
-These VMs serve various roles within the network, hosting different services and agents required for the Kubernetes Cluster. A static IP assignment was chosen to ensure consistent network addressing, 
+These VMs serve various roles within the network, hosting different services and agents required for the Kubernetes environment and its Zero Trust character. A static IP address assignment was chosen to ensure consistent network addressing, 
 and to facilitate easier management and configuration of these VMs. The Ubuntu installation wizard was used to complete base configurations such as username, password, hostname and IP addresses. 
 Each of these VMs runs Ubuntu 22.04 LTS, a popular Linux distribution known for its stability, security features, and extensive software repositories. 
-This choice of operating system underscores a preference for a robust, community-supported platform capable of handling the demands of modern networked applications. 
+This choice of operating system emphasizes a preference for a robust, community-supported platform capable of handling the demands of modern networked applications. 
 With 8GB of RAM and 4 CPU cores allocated to each VM, they are well-equipped to run Kubernetes.
+\newline
+\newline
+To give a general introduction of the setup, an authentication proxy is deployed on a standalone VM on 192.168.20.2, apart from the Kubernetes cluster itself. The cluster is deployed on the remaining three 
+VMs. 192.168.20.3, the master node, is running the control-plane (the "brain" of the cluster), consisting of kube-apiserver, etcd, kube-controller-manager and kube-scheduler. 192.168.20.4 and 192.168.20.5 are dedicated worker 
+nodes of the cluster running the data-plane (the "body" of the cluster), hosting deployed containers. Each node runs the Kubelet and the kube-proxy. The cluster is organized in multiple namespaces. The components
+and software solutions which ensure a Zero Trust approach are deployed in their respective, dedicated namespaces, such as istio-system, keycloak and teleport-agent, for example. To mimick actual business software hosted on Kubernetes
+and for the sake of demonstration, namespace "neptune" and namespace "jupiter" are created. Each of them run simple deployments such as a Nginx webserver. This setup will be explained in depth in the following sections. 
 
-\section{Bootstrapping cluster with kubeadm}
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[height=8cm]{./images/setup}
+  \caption{General Setup [source: author]}
+  \label{fig:architecture}
+\end{figure}
+
+
+
+\section{Bootstrapping the cluster with kubeadm}
 
 Build the cluster according to 800-207, describe configuration and code snippets, reference the ZT principle, 
 referene the 800-207 section or section from other paper
+
+Helm is used, explain what Helm does
+
+\section{Protocols and standards, OIDC and MFA, mTLS, encryption}
+
+\section{Teleport: Access to the cluster with commandline clients}
+
+\section{Istio: Handling app-communication using a service-mesh}
+
+\section{Keycloak: Implementing OIDC}
+
+\section{Keycloak and Istio: AuthorizationPolicy and RequestAuthentication, python OIDC client with tokens}
+
+\section{Vault: Centralized secret management}
+
+\section{}
+
+\section{Monitoring}
+
+\section{Trivy: Continuous scanning}
+
+\section{}
 
 \newpage
 \chapter{Discussion and Future Work}

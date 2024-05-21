@@ -29,11 +29,19 @@
 \contentsline {subsubsection}{\nonumberline Container Network Interface (Plugins)}{9}{subsubsection*.35}%
 \contentsline {chapter}{\numberline {3}Creating the cluster}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Virtual Machines and Network}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Bootstrapping cluster with kubeadm}{10}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Discussion and Future Work}{11}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{12}{chapter.5}%
-\contentsline {chapter}{Bibliography}{13}{chapter.5}%
-\contentsline {chapter}{List of Figures}{14}{chapter*.36}%
-\contentsline {chapter}{List of Tables}{15}{chapter*.37}%
-\contentsline {chapter}{\nonumberline Appendix}{16}{chapter*.39}%
+\contentsline {section}{\numberline {3.2}Bootstrapping the cluster with kubeadm}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Protocols and standards, OIDC and MFA, mTLS, encryption}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Teleport: Access to the cluster with commandline clients}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Istio: Handling app-communication using a service-mesh}{11}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Keycloak: Implementing OIDC}{11}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Keycloak and Istio: AuthorizationPolicy and RequestAuthentication, python OIDC client with tokens}{11}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Vault: Centralized secret management}{11}{section.3.8}%
+\contentsline {section}{\numberline {3.10}Monitoring}{11}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Trivy: Continuous scanning}{11}{section.3.11}%
+\contentsline {chapter}{\numberline {4}Discussion and Future Work}{12}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{13}{chapter.5}%
+\contentsline {chapter}{Bibliography}{14}{chapter.5}%
+\contentsline {chapter}{List of Figures}{15}{chapter*.36}%
+\contentsline {chapter}{List of Tables}{16}{chapter*.37}%
+\contentsline {chapter}{\nonumberline Appendix}{17}{chapter*.39}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
