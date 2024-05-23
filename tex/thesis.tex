@@ -551,7 +551,7 @@ providing both network and IPAM plugins and integrating with other CNI plugins.
 
 
 
-\chapter{Creating the cluster}
+\chapter{Creating the Zero Trust Cluster}
 
 \section{Virtual Machines and Network}
 
@@ -689,6 +689,10 @@ This method strenghtens security by ensuring that users and devices are only gra
 
 \subsubsection{Multi-Factor Authentication}
 
+Multi-Factor Authentication (MFA) is a security measure that requires users to provide two or more verification factors to access a resource like an application or online account. These factors can include something the user knows (like a password), something 
+the user has (such as a security token or a smartphone), or something the user is (fingerprint, facial recognition). By requiring multiple types of verification, MFA significantly increases the difficulty for unauthorized individuals to gain access, even if one 
+factor is compromised. This method is a crucial part of Identity and Access Management policies, aiming to enhance security against cyber threats by adding layers of authentication beyond just a username and password. 
+
 
 
 \subsection{Installation and setup}
@@ -735,10 +739,6 @@ RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune a
 \section{Vault Secret Management}
 
 \subsection{Why use Vault?}
-
-\section{Grafana Monitoring}
-
-\subsection{Why monitoring?}
 
 \section{Trivy}
 
