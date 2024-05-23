@@ -42,14 +42,15 @@
 \contentsline {subsubsection}{\nonumberline Public-Facing Proxy and Just-In-Time Access}{15}{subsubsection*.51}%
 \contentsline {subsubsection}{\nonumberline Multi-Factor Authentication}{15}{subsubsection*.53}%
 \contentsline {subsection}{\numberline {3.3.2}Installation and setup}{15}{subsection.3.3.2}%
-\contentsline {subsubsection}{\nonumberline title}{16}{subsubsection*.55}%
+\contentsline {subsubsection}{\nonumberline Authy}{16}{subsubsection*.55}%
+\contentsline {subsubsection}{\nonumberline title}{16}{subsubsection*.57}%
 \contentsline {section}{\numberline {3.4}Istio}{16}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Service Meshes}{16}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Why use Istio?}{16}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Installation and setup}{16}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Keycloak}{16}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Why use Keycloak?}{16}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}OAuth2 and OIDC}{16}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.4.3}Installation and setup}{17}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Keycloak}{17}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Why use Keycloak?}{17}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}OAuth2 and OIDC}{17}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Installation and setup}{17}{subsection.3.5.3}%
 \contentsline {section}{\numberline {3.6}Vault Secret Management}{17}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Why use Vault?}{17}{subsection.3.6.1}%
@@ -58,7 +59,7 @@
 \contentsline {chapter}{\numberline {4}Discussion and Future Work}{18}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}%
 \contentsline {chapter}{Bibliography}{20}{chapter.5}%
-\contentsline {chapter}{List of Figures}{21}{chapter*.56}%
-\contentsline {chapter}{List of Tables}{22}{chapter*.57}%
-\contentsline {chapter}{\nonumberline Appendix}{23}{chapter*.59}%
+\contentsline {chapter}{List of Figures}{21}{chapter*.58}%
+\contentsline {chapter}{List of Tables}{22}{chapter*.59}%
+\contentsline {chapter}{\nonumberline Appendix}{23}{chapter*.61}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
