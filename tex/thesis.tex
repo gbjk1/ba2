@@ -658,6 +658,42 @@ Having securely downloaded and installed dependencies, the following sections di
 
 \section{Teleport}
 
+\subsection{Why Teleport?}
+
+Kubernetes clusters are administered and accessed by various different professionals: security engineers, database administrators, software developers, DevOps engineers, general system administrators and others. 
+Such access to the cluster must happen in a secure, granular and audited fashion in order for it to fulfill Zero Trust requirements. The default way of accessing the cluster is not per se insecure, however not in accordance with ZT, as commandline
+clients such as kubectl and helm are using a static client keys and certificates placed under .kube/config of the client machine. These credentials are permanently valid until they are manually invalidated.  
+\newline
+\newline
+One solution to achieve ZT access to the cluster is through using an authentication proxy, through which API request to the Kubernetes control-plane are passed. The open-source solution Teleport (community edition) was found to match ZT criteria
+for the following reasons. 
+
+\subsubsection{Identity-Driven Authentication and Authorization}
+Teleport acts as a gateway for accessing corporate resources, both on-premises and in the cloud, by leveraging identity-based authentication and authorization. This method eliminates the need for traditional VPNs and password management tools, 
+focusing instead on verifying the identity of users rather than their network location or credentials. This approach is central to the Zero Trust philosophy, which grants access based on the identity and purpose of the user, not their physical 
+location or network status, as aforementioned in section 2.1. 
+
+\subsubsection{Elimination of Static Credentials}
+Teleport issues short-lived identity certificates instead of static credentials. This practice minimizes the risk associated with credential theft, as these certificates automatically expire after a 
+certain period, contrasting sharply with the long-term validity of static credentials. This strategy is consistent with the Zero Trust ethos of minimizing vulnerabilities by avoiding the use of persistent secrets. 
+
+
+\subsubsection{Role-Based Access Control and Auditing}
+Teleport implements role-based access control, allowing access to resources within the corporate infrastructure based on the roles assigned to individual users' identities. Additionally, it can record all sessions and actions, 
+This provides organizations with the ability to monitor and trace access to their infrastructure securely. Such level of control and oversight is crucial for implementing ZT principles, which advocate for continuous verification of access rights and 
+thorough monitoring for potential security threats, as mentioned in NIST800-207, and as summarized in chapter 2. 
+
+\subsubsection{Public-Facing Proxy and Just-In-Time Access}
+Teleport runs a public-facing proxy service that facilitates secure access to resources without the necessity of a VPN. This feature enables just-in-time access, where users are granted temporary privileges to access specific resources or roles as required.
+This method strenghtens security by ensuring that users and devices are only granted access based on their immediate needs, reducing the likelihood of unauthorized access or lateral movement within the network.
+
+\subsubsection{Multi-Factor Authentication}
+
+
+
+\subsection{Installation and setup}
+
+\subsubsection{title}
 Touch on OIDC, MFA, auditing sessions, minimal access, encryption, etc when accessing the cluster and how Teleport is cool
 
 OpenID Connect serves as a straightforward identity service that builds upon the OAuth 2.0 framework. It enables client applications to authenticate users through an authorization server or identity provider (IdP) and retrieve essential 
@@ -665,19 +701,53 @@ client profile details in a standardized, RESTful approach. This service defines
 
 Explain Oauth2 and OpenID connect and then say the same can be done for app to app communication
 
-\section{Istio Service-Mesh}
+\section{Istio}
+
+\subsection{Service Meshes}
+
+In a microservices architecture, a service mesh is a special infrastructure layer integrated into an application that manages service-to-service communication. It finds other services, encrypts data, manages the flow of service requests to other services, 
+and does load balancing. It does so by injecting a so called proxy sidecar-container into Kubernetes pods. These sidecars intercept any incoming and outgoing traffic of the actual app container. That way, any logic driving matters of network communication
+is taken out of the app container and handled on its own plane of infrastructure. These sidecars deployed alongside app containers comprise the data-plane, while the control plane instance usually resides in its own dedicated namespace. The main benefits of 
+a sidecar approach are sophisticated routing capabilities, separation of concerns and enhanced security. 
+cite[dynatrace]
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=13cm]{./images/mesh}
+  \caption{Service Mesh visualization [source: RedHat]}
+  \label{fig:servicemesh}
+\end{figure}
+
+\subsection{Why use Istio?}
 
 Talk about how cool Istio is and how it takes network/authetication handling away from code deployed in containers, separation of concern.
 
+\subsection{Installation and setup}
+
 \section{Keycloak}
 
-Touch on OIDC and its combination with Istio, RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script
+\subsection{Why use Keycloak?}
+
+\subsection{OAuth2 and OIDC}
+
+HERE OIDC
+Touch on OIDC and its combination with Istio
+
+\subsection{Installation and setup}
+
+RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script
 
 \section{Vault Secret Management}
 
+\subsection{Why use Vault?}
+
 \section{Grafana Monitoring}
 
+\subsection{Why monitoring?}
+
 \section{Trivy}
+
+\subsection{Why Trivy?}
 
 \newpage
 \chapter{Discussion and Future Work}

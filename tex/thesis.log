@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  22 MAY 2024 01:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  23 MAY 2024 02:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -607,14 +607,14 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ] [5
 
 
-] (./thesis.toc)
+] (./thesis.toc [6
+
+
+])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [6
-
-
-]
+ [7]
 chapter 1.
 
 Class scrbook Warning: \float@addtolists detected!
@@ -703,13 +703,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--428
 
  []
 
-<./images/architecture.png, id=118, 629.35126pt x 336.25626pt>
+<./images/architecture.png, id=144, 629.35126pt x 336.25626pt>
 File: ./images/architecture.png Graphic file (type png)
 <use ./images/architecture.png>
 Package pdftex.def Info: ./images/architecture.png  used on input line 431.
 (pdftex.def)             Requested size: 266.26555pt x 142.26378pt.
 [5]
-<./images/kubernetes.png, id=137, 1029.8475pt x 623.32875pt>
+<./images/kubernetes.png, id=165, 1029.8475pt x 623.32875pt>
 File: ./images/kubernetes.png Graphic file (type png)
 <use ./images/kubernetes.png>
 Package pdftex.def Info: ./images/kubernetes.png  used on input line 475.
@@ -726,12 +726,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--579
 
  []
 
-<./images/setup.png, id=176, 553.06625pt x 488.82625pt>
+<./images/setup.png, id=202, 553.06625pt x 488.82625pt>
 File: ./images/setup.png Graphic file (type png)
 <use ./images/setup.png>
 Package pdftex.def Info: ./images/setup.png  used on input line 582.
 (pdftex.def)             Requested size: 257.53603pt x 227.62204pt.
-<./images/baseconfig.png, id=177, 1040.88875pt x 483.8075pt>
+<./images/baseconfig.png, id=203, 1040.88875pt x 483.8075pt>
 File: ./images/baseconfig.png Graphic file (type png)
 <use ./images/baseconfig.png>
 Package pdftex.def Info: ./images/baseconfig.png  used on input line 596.
@@ -754,34 +754,45 @@ Overfull \hbox (5.40651pt too wide) in paragraph at lines 625--627
 \T1/lmr/m/n/10.95 After afore-men-tioned set-tings, one can pro-ceed with in-stalling the con-tainer run-time, kubeadm,
  []
 
-<./images/crio.png, id=190, 968.61874pt x 342.27875pt>
+<./images/crio.png, id=217, 968.61874pt x 342.27875pt>
 File: ./images/crio.png Graphic file (type png)
 <use ./images/crio.png>
 Package pdftex.def Info: ./images/crio.png  used on input line 630.
 (pdftex.def)             Requested size: 369.88582pt x 130.70444pt.
-<./images/k8sbinaries.png, id=191, 1045.9075pt x 226.8475pt>
+<./images/k8sbinaries.png, id=218, 1045.9075pt x 226.8475pt>
 File: ./images/k8sbinaries.png Graphic file (type png)
 <use ./images/k8sbinaries.png>
 Package pdftex.def Info: ./images/k8sbinaries.png  used on input line 637.
 (pdftex.def)             Requested size: 369.88582pt x 80.22508pt.
-<./images/master.png, id=192, 710.655pt x 49.18375pt>
+<./images/master.png, id=219, 710.655pt x 49.18375pt>
 File: ./images/master.png Graphic file (type png)
 <use ./images/master.png>
 Package pdftex.def Info: ./images/master.png  used on input line 644.
 (pdftex.def)             Requested size: 369.88582pt x 25.5997pt.
-<./images/worker.png, id=193, 981.6675pt x 50.1875pt>
+<./images/worker.png, id=220, 981.6675pt x 50.1875pt>
 File: ./images/worker.png Graphic file (type png)
 <use ./images/worker.png>
 Package pdftex.def Info: ./images/worker.png  used on input line 651.
 (pdftex.def)             Requested size: 369.88582pt x 18.90985pt.
-[12] [13 <./images/crio.png> <./images/k8sbinaries.png> <./images/master.png> <./images/worker.png>] [14]
+[12] [13 <./images/crio.png> <./images/k8sbinaries.png> <./images/master.png> <./images/worker.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 663--670
+
+ []
+
+[14]
+<./images/mesh.png, id=255, 813.0375pt x 358.33875pt>
+File: ./images/mesh.png Graphic file (type png)
+<use ./images/mesh.png>
+Package pdftex.def Info: ./images/mesh.png  used on input line 716.
+(pdftex.def)             Requested size: 369.88582pt x 163.0225pt.
+ [15] [16 <./images/mesh.png>]
 chapter 4.
-[15
+[17
 
 
 ]
 chapter 5.
-[16
+[18
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -793,26 +804,26 @@ chapter 5.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 23.
 
-) [17
+) [19
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [18
+ [20
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [19
+ [21
 
 
 ]
 chapter without number
-[20
+[22
 
 
 
@@ -825,18 +836,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17078 strings out of 476025
- 327621 string characters out of 5790016
+ 17130 strings out of 476025
+ 328351 string characters out of 5790016
  1869388 words of memory out of 5000000
- 37184 multiletter control sequences out of 15000+600000
+ 37208 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,106p,10631b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,106p,10631b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (27 pages, 830254 bytes).
+Output written on thesis.pdf (30 pages, 880950 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
- 106 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -35,15 +35,32 @@
 \contentsline {subsubsection}{\nonumberline Swap}{12}{subsubsection*.41}%
 \contentsline {subsubsection}{\nonumberline Installation}{12}{subsubsection*.43}%
 \contentsline {section}{\numberline {3.3}Teleport}{14}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Istio Service-Mesh}{14}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Keycloak}{14}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Vault Secret Management}{14}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Grafana Monitoring}{14}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Trivy}{14}{section.3.8}%
-\contentsline {chapter}{\numberline {4}Discussion and Future Work}{15}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{16}{chapter.5}%
-\contentsline {chapter}{Bibliography}{17}{chapter.5}%
-\contentsline {chapter}{List of Figures}{18}{chapter*.44}%
-\contentsline {chapter}{List of Tables}{19}{chapter*.45}%
-\contentsline {chapter}{\nonumberline Appendix}{20}{chapter*.47}%
+\contentsline {subsection}{\numberline {3.3.1}Why Teleport?}{14}{subsection.3.3.1}%
+\contentsline {subsubsection}{\nonumberline Identity-Driven Authentication and Authorization}{14}{subsubsection*.45}%
+\contentsline {subsubsection}{\nonumberline Elimination of Static Credentials}{14}{subsubsection*.47}%
+\contentsline {subsubsection}{\nonumberline Role-Based Access Control and Auditing}{14}{subsubsection*.49}%
+\contentsline {subsubsection}{\nonumberline Public-Facing Proxy and Just-In-Time Access}{15}{subsubsection*.51}%
+\contentsline {subsubsection}{\nonumberline Multi-Factor Authentication}{15}{subsubsection*.53}%
+\contentsline {subsection}{\numberline {3.3.2}Installation and setup}{15}{subsection.3.3.2}%
+\contentsline {subsubsection}{\nonumberline title}{15}{subsubsection*.55}%
+\contentsline {section}{\numberline {3.4}Istio}{15}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Service Meshes}{15}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Why use Istio?}{15}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Installation and setup}{15}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Keycloak}{15}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Why use Keycloak?}{15}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}OAuth2 and OIDC}{15}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Installation and setup}{16}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Vault Secret Management}{16}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Why use Vault?}{16}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}Grafana Monitoring}{16}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Why monitoring?}{16}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}Trivy}{16}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Why Trivy?}{16}{subsection.3.8.1}%
+\contentsline {chapter}{\numberline {4}Discussion and Future Work}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{18}{chapter.5}%
+\contentsline {chapter}{Bibliography}{19}{chapter.5}%
+\contentsline {chapter}{List of Figures}{20}{chapter*.56}%
+\contentsline {chapter}{List of Tables}{21}{chapter*.57}%
+\contentsline {chapter}{\nonumberline Appendix}{22}{chapter*.59}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
