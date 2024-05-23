@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  23 MAY 2024 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  23 MAY 2024 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -785,13 +785,13 @@ File: ./images/teleport.png Graphic file (type png)
 <use ./images/teleport.png>
 Package pdftex.def Info: ./images/teleport.png  used on input line 712.
 (pdftex.def)             Requested size: 341.43306pt x 191.2835pt.
- [15 <./images/teleport.png>]
-<./images/mesh.png, id=262, 813.0375pt x 358.33875pt>
+ [15]
+<./images/mesh.png, id=264, 813.0375pt x 358.33875pt>
 File: ./images/mesh.png Graphic file (type png)
 <use ./images/mesh.png>
 Package pdftex.def Info: ./images/mesh.png  used on input line 746.
 (pdftex.def)             Requested size: 369.88582pt x 163.0225pt.
- [16 <./images/mesh.png>] [17]
+ [16 <./images/teleport.png> <./images/mesh.png>] [17]
 chapter 4.
 [18
 
@@ -850,7 +850,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  108i,19n,106p,10631b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (31 pages, 1029022 bytes).
+Output written on thesis.pdf (31 pages, 1029096 bytes).
 PDF statistics:
  485 PDF objects out of 1000 (max. 8388607)
  414 compressed objects within 5 object streams

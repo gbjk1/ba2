@@ -381,7 +381,7 @@ to a perfect degree, depending on a given use case or strategy.
 	\item Extensive data collection about asset state, network traffic, and access requests is done to have a clear picture of the current security posture of the infrastructure.
 \end{itemize}
 
-[cite NIST here]
+[cite NIST here] [cite british gv]
 
 
 
@@ -415,7 +415,7 @@ requiring robust authentication and authorization measures for secure communicat
 Consistent security policies and postures for assets and workflows transitioning between enterprise and external infrastructure are enforced. 
 This applies to devices moving across networks and workloads migrating between on-premises and cloud environments. 
 
-[cite NIST here]
+[cite NIST here] [cite british gv]
 
 
 \subsection{Logical components}
@@ -662,7 +662,7 @@ Having securely downloaded and installed dependencies, the following sections di
 
 Kubernetes clusters are administered and accessed by various different professionals: security engineers, database administrators, software developers, DevOps engineers, general system administrators and others. 
 Such access to the cluster must happen in a secure, granular and audited fashion in order for it to fulfill Zero Trust requirements. The default way of accessing the cluster is not per se insecure, however not in accordance with ZT, as commandline
-clients such as kubectl and helm are using a static client keys and certificates placed under .kube/config of the client machine. These credentials are permanently valid until they are manually invalidated.  
+clients such as kubectl and helm are using a static client keys and certificates placed under .kube/config of the client machine. These credentials are permanently valid until they are manually invalidated. cite[k8s]
 \newline
 \newline
 One solution to achieve ZT access to the cluster is through using an authentication proxy, through which API request to the Kubernetes control-plane are passed. The open-source solution Teleport (community edition) was found to match ZT criteria
@@ -671,27 +671,27 @@ for the following reasons.
 \subsubsection{Identity-Driven Authentication and Authorization}
 Teleport acts as a gateway for accessing corporate resources, both on-premises and in the cloud, by leveraging identity-based authentication and authorization. This method eliminates the need for traditional VPNs and password management tools, 
 focusing instead on verifying the identity of users rather than their network location or credentials. This approach is central to the Zero Trust philosophy, which grants access based on the identity and purpose of the user, not their physical 
-location or network status, as aforementioned in section 2.1. 
+location or network status, as aforementioned in section 2.1. cite[teleport]
 
 \subsubsection{Elimination of Static Credentials}
 Teleport issues short-lived identity certificates instead of static credentials. This practice minimizes the risk associated with credential theft, as these certificates automatically expire after a 
-certain period, contrasting sharply with the long-term validity of static credentials. This strategy is consistent with the Zero Trust ethos of minimizing vulnerabilities by avoiding the use of persistent secrets. 
+certain period, contrasting sharply with the long-term validity of static credentials. This strategy is consistent with the Zero Trust ethos of minimizing vulnerabilities by avoiding the use of persistent secrets. cite[teleport]
 
 
 \subsubsection{Role-Based Access Control and Auditing}
 Teleport implements role-based access control, allowing access to resources within the corporate infrastructure based on the roles assigned to individual users' identities. Additionally, it can record all sessions and actions, 
 This provides organizations with the ability to monitor and trace access to their infrastructure securely. Such level of control and oversight is crucial for implementing ZT principles, which advocate for continuous verification of access rights and 
-thorough monitoring for potential security threats, as mentioned in NIST800-207, and as summarized in chapter 2. 
+thorough monitoring for potential security threats, as mentioned in NIST800-207, and as summarized in chapter 2. cite[teleport]
 
 \subsubsection{Public-Facing Proxy and Just-In-Time Access}
 Teleport runs a public-facing proxy service that facilitates secure access to resources without the necessity of a VPN. This feature enables just-in-time access, where users are granted temporary privileges to access specific resources or roles as required.
-This method strenghtens security by ensuring that users and devices are only granted access based on their immediate needs, reducing the likelihood of unauthorized access or lateral movement within the network.
+This method strenghtens security by ensuring that users and devices are only granted access based on their immediate needs, reducing the likelihood of unauthorized access or lateral movement within the network. cite[teleport]
 
 \subsubsection{Multi-Factor Authentication}
 
 Multi-Factor Authentication (MFA) is a security measure that requires users to provide two or more verification factors to access a resource like an application or online account. These factors can include something the user knows (like a password), something 
 the user has (such as a security token or a smartphone), or something the user is (fingerprint, facial recognition). By requiring multiple types of verification, MFA significantly increases the difficulty for unauthorized individuals to gain access, even if one 
-factor is compromised. This method is a crucial part of Identity and Access Management policies, aiming to enhance security against cyber threats by adding layers of authentication beyond just a username and password. 
+factor is compromised. This method is a crucial part of Identity and Access Management policies, aiming to enhance security against cyber threats by adding layers of authentication beyond just a username and password. cite[aws]
 
 
 \subsection{Installation and setup}
@@ -738,7 +738,7 @@ OIDC, MFA, auditing sessions, minimal access, encryption, etc
 In a microservices architecture, a service mesh is a special infrastructure layer integrated into an application that manages service-to-service communication. It finds other services, encrypts data, manages the flow of service requests to other services, 
 and does load balancing. It does so by injecting a so called proxy sidecar-container into Kubernetes pods. These sidecars intercept any incoming and outgoing traffic of the actual app container. That way, any logic driving matters of network communication
 is taken out of the app container and handled on its own plane of infrastructure. These sidecars deployed alongside app containers comprise the data-plane, while the control plane instance usually resides in its own dedicated namespace. The main benefits of 
-a sidecar approach are sophisticated routing capabilities, separation of concerns and enhanced security. 
+a sidecar approach are sophisticated routing capabilities, separation of concerns and enhanced security. cite[redhat] cite[istiodocs]
 cite[dynatrace]
 
 \begin{figure}[htbp]
