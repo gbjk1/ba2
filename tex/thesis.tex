@@ -694,8 +694,38 @@ the user has (such as a security token or a smartphone), or something the user i
 factor is compromised. This method is a crucial part of Identity and Access Management policies, aiming to enhance security against cyber threats by adding layers of authentication beyond just a username and password. 
 
 
-
 \subsection{Installation and setup}
+
+Teleport runs on a seperate VM on 192.168.20.2, next to the Kubernetes nodes. The script shown in figure 3.7...
+\begin{itemize}
+	\item Fetches teleports public PGP key
+	\item Adds Teleport repository to APT package manager
+	\item Installs Teleport
+	\item Generates certificate and private key for HTTPS GUI access
+	\item Configures and runs Teleport
+\end{itemize}
+
+
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=12cm]{./images/teleport}
+  \caption{Teleport installation [source: author]}
+  \label{fig:teleport}
+\end{figure}
+
+\subsubsection{Authy}
+
+Authy is a mobile application and service that offers two-factor authentication (2FA) for online accounts.
+Authy is designed to be compatible with multiple devices, enabling users to synchronize their 2FA tokens across different devices for added convenience and security. 
+Teleport requires integration to MFA from the very start. After creating a user using "
+
+
+
+
+
+
+Thus, access to the cluster covers most of ZT principles as described in NIST800-207. 
 
 \subsubsection{title}
 OIDC, MFA, auditing sessions, minimal access, encryption, etc
