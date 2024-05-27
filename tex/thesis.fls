@@ -868,9 +868,10 @@ INPUT ./images/mesh.png
 INPUT ./images/mesh.png
 INPUT ./images/mesh.png
 INPUT ./images/mesh.png
-INPUT ./images/tableaccess.png
-INPUT ./images/tableaccess.png
-INPUT ./images/tableaccess.png
+INPUT ./images/tablemesh.png
+INPUT ./images/tablemesh.png
+INPUT ./images/tablemesh.png
+INPUT ./images/tablemesh.png
 INPUT ./thesis.bbl
 INPUT thesis.bbl
 INPUT ./thesis.bbl
