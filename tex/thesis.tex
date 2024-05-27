@@ -668,6 +668,13 @@ clients such as kubectl and helm are using a static client keys and certificates
 One solution to achieve ZT access to the cluster is through using an authentication proxy, through which API request to the Kubernetes control-plane are passed. The open-source solution Teleport (community edition) was found to match ZT criteria
 for the following reasons. 
 
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=14cm]{./images/tableaccess}
+  \caption{Comparison of access solutions to cluster [source: author]}
+  \label{fig:tableaccess}
+\end{figure}
+
 \subsubsection{Identity-Driven Authentication and Authorization}
 Teleport acts as a gateway for accessing corporate resources, both on-premises and in the cloud, by leveraging identity-based authentication and authorization. This method eliminates the need for traditional VPNs and password management tools, 
 focusing instead on verifying the identity of users rather than their network location or credentials. This approach is central to the Zero Trust philosophy, which grants access based on the identity and purpose of the user, not their physical 
@@ -719,12 +726,7 @@ Teleport runs on a seperate VM on 192.168.20.2, next to the Kubernetes nodes. Th
 Authy is a mobile application and service that offers two-factor authentication (2FA) for online accounts.
 Authy is designed to be compatible with multiple devices, enabling users to synchronize their 2FA tokens across different devices for added convenience and security. 
 Teleport requires integration to MFA from the very start. After creating a user using "
-
-
-
-
-
-
+\newline
 Thus, access to the cluster covers most of ZT principles as described in NIST800-207. 
 
 \subsubsection{title}
@@ -751,6 +753,13 @@ cite[dynatrace]
 \subsection{Why use Istio?}
 
 network/authetication handling away from code deployed in containers, separation of concern.
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=14cm]{./images/tableaccess}
+  \caption{Comparison of access solutions to cluster [source: author]}
+  \label{fig:tableaccess}
+\end{figure}
 
 \subsection{Installation and setup}
 
