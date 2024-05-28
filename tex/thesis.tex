@@ -324,7 +324,7 @@ According to my knowledge as of April 2024, no major work has been done at the i
 
 \section{Objectives and Methodology}
 
-As there is no research done on ZT specifically in the context of Kubernetes, the objective of this thesis is to do exactly that.
+As there is no research done on ZT specifically in the context of Kubernetes, the objective of this thesis is to fill exactly this gap.
 How are ZT principles applied in Kubernetes? How can ZT be achieved in a Kubernetes setup? The aim is to construct a Kubernetes environment 
 according to ZT principles as outlined in NIST Special Publication 800-207. To narrow down the scope of the research, the following limitations are placed.
 \newline
@@ -656,17 +656,33 @@ control plane of the cluster. The script as in figure 3.3 downloads GPG keys, in
 \newpage
 Having securely downloaded and installed dependencies, the following sections discuss fortifying the cluster according to Zero Trust principles. 
 
+To achieve Zero Trust Principles, following technologies need to present. 
+
 \section{Teleport}
 
-\subsection{Why Teleport?}
+\subsection{Why use Teleport?}
 
-Kubernetes clusters are administered and accessed by various different professionals: security engineers, database administrators, software developers, DevOps engineers, general system administrators and others. 
-Such access to the cluster must happen in a secure, granular and audited fashion in order for it to fulfill Zero Trust requirements. The default way of accessing the cluster is not per se insecure, however not in accordance with ZT, as commandline
-clients such as kubectl and helm are using a static client keys and certificates placed under .kube/config of the client machine. These credentials are permanently valid until they are manually invalidated. cite[k8s]
+Kubernetes clusters are administered and accessed by various different professionals: security engineers, database administrators, software developers, DevOps engineers, general system administrators and others. Commandline clients such as 'kubectl' or 'helm' are used to manage the cluster.
+Such access must happen in a secure, granular and audited fashion in order for it to fulfill Zero Trust requirements. The default way of accessing the cluster is done by using static client keys and 
+certificates placed under .kube/config of the client machine. However, access to the cluster can also happen by means of a dedicated authentication-proxy solution. cite[k8s]
 \newline
 \newline
-One solution to achieve ZT access to the cluster is through using an authentication proxy, through which API request to the Kubernetes control-plane are passed. The open-source solution Teleport (community edition) was found to match ZT criteria
-for the following reasons. 
+Kubeconfig, Teleport, Okta and Hoop are ways of accessing the cluster which were taken into consideration for comparison. Kubeconfig means accessing the cluster thorugh a manually issued kubeconfig file. Teleport, Okta and Hoop were identified as authentication-proxy 
+solutions to the cluster, aiming to implement ZT. To identify the most appropriate solution for a ZT approach, following criteria was established: 
+\begin{itemize}
+	\item Kubernetes friendly
+	\item Is free and open source software (FOSS)
+	\item Centralized identity management
+	\item Offers Role Based Access Control
+	\item Offers Attribute Based Access Control
+	\item Provides MFA
+	\item Maturity of the project, release status 
+\end{itemize}
+
+Out of the box, Kubernetes offers its standard 
+
+These credentials are permanently valid until they are manually invalidated. Kubernetes itself does not offer one centralized way of creating, issuing and maitaining and invalidating these credentials, would neeStandard Kubeconfig not in accordance with ZT 
+The comparison is summarized in figure 3.7.
 
 \begin{figure}[htbp]
   \centering
@@ -745,19 +761,36 @@ cite[dynatrace]
 
 \begin{figure}[htbp]
   \centering
-      \includegraphics[width=13cm]{./images/mesh}
+      \includegraphics[width=11cm]{./images/mesh}
   \caption{Service Mesh visualization [source: RedHat]}
   \label{fig:servicemesh}
 \end{figure}
 
+\subsection{mTLS}
+
 \subsection{Why use Istio?}
 
 There are several ways of implementing a service mesh and there are different technologies to realize a service mesh on top of Kubernetes. Linkerd, Consul, Istio and Cilium Service Mesh are mature, free, and open source software solutions which were taken
-into consideration for this thesis. 
+into consideration for this thesis. The decision was based on the following criteria. 
+\begin{itemize}
+	\item Granularity of traffic routing
+	\item Option for mTLS
+	\item OIDC integration
+	\item Audit logging 
+	\item Access logging
+\end{itemize}
 
-Ulimately, Istio offers increased granularity for traffic routing through the resources named VirtualService, DestinationRule, AuthorizationPolicy and RequestAuthentication. The degree of granularity found in Istio documentation could not be found in the other mentioned projects.
-
-Linkerd and Ciliums eBPF mesh triumphs in aspects of performance and efficiency. This is not important criteria for this thesis. 
+According to the documentation, mTLS and access logging is provided by all solutions. Audit logging is not natively supported by any of the four solutions. Therefore it comes down to the degress of granularity offered by the service meshes.
+To evaluate granularity, adjectives 'weak', 'limited' and 'strong' are used. Granularity of traffic routing pertains to how detailed cluster traffic can be controlled as it moves from its origin pod to its destination pod. For traffic routing, each service mesh
+solution provides its set of resources with which rules are defined. Controlling traffic in Linkerd is achieved through a combination of the resources ServiceProfile, TrafficSplit, Server and ServerAuthorization. Through these definitions, Linkerd allows to regulate
+traffic only based on service's mTLS identity. It does not offer regulating traffic based on definite IP addresses, native Kubernetes service accounts, namespaces, HTTP method or OIDC credentials. Consul leverages its service-intentions, service-resolvers, 
+service-splitters and service-routers resources which allow for blocking traffic based on IP address and HTTP method. However, it does not natively understand underlying namespaces, service accounts and OIDC credentials. Cilium's service mesh is special as it does not
+inject sidecars. Rather, it leverages eBPF Linux kernel, which allows for running custom modules in kernel space of the node. This eBPF program, the Cilium agent, implements rules specified in CiliumNetworkPolicy resources. Cilium natively supports the concept of 
+Kubernetes namespaces and service accounts. It is possible to allow or deny traffic based on namespace, IP address, service account and HTTP method. However, to validate OIDC credentials, Cilium requires additional integration and configuration with other technologies. 
+Istio was found to support all these factors. Istio's VirtualService, DestinationRule, AuthorizationPolicy and RequestAuthentication resources enable traffic controlling also based on provided JWT tokens of the OIDC protocol, on top of other factors such as HTTP method and
+namespace. Linkerd and Ciliums eBPF mesh triumphs in terms of performance and efficiency, but not in terms of granularity and security. The degree of granularity offered by Istio could not be found in the other mentioned projects. It is therefore attributed with 'strong'
+granularity while Consul, Cilium and Linkerd are marked as 'Limited'. As such, Istio is the chosen solution for the setup. 
+The findings are summarized in figure 3.10.
 
 \begin{figure}[htbp]
   \centering
@@ -781,6 +814,7 @@ OIDC,  combination with Istio
 RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script
 
 \section{Vault Secret Management}
+
 
 \subsection{Why use Vault?}
 
