@@ -47,10 +47,10 @@
 \contentsline {section}{\numberline {3.4}Istio}{16}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Service Meshes}{16}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Why use Istio?}{16}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Installation and setup}{16}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Keycloak}{16}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Why use Keycloak?}{16}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}OAuth2 and OIDC}{16}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.4.3}Installation and setup}{18}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Keycloak}{18}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Why use Keycloak?}{18}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}OAuth2 and OIDC}{18}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Installation and setup}{18}{subsection.3.5.3}%
 \contentsline {section}{\numberline {3.6}Vault Secret Management}{18}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Why use Vault?}{18}{subsection.3.6.1}%

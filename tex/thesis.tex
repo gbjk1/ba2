@@ -752,7 +752,12 @@ cite[dynatrace]
 
 \subsection{Why use Istio?}
 
-network/authetication handling away from code deployed in containers, separation of concern.
+There are several ways of implementing a service mesh and there are different technologies to realize a service mesh on top of Kubernetes. Linkerd, Consul, Istio and Cilium Service Mesh are mature, free, and open source software solutions which were taken
+into consideration for this thesis. 
+
+Ulimately, Istio offers increased granularity for traffic routing through the resources named VirtualService, DestinationRule, AuthorizationPolicy and RequestAuthentication. The degree of granularity found in Istio documentation could not be found in the other mentioned projects.
+
+Linkerd and Ciliums eBPF mesh triumphs in aspects of performance and efficiency. This is not important criteria for this thesis. 
 
 \begin{figure}[htbp]
   \centering
