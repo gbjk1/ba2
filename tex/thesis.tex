@@ -656,32 +656,33 @@ control plane of the cluster. The script as in figure 3.3 downloads GPG keys, in
 \newpage
 Having securely downloaded and installed dependencies, the following sections discuss fortifying the cluster according to Zero Trust principles. 
 
-To achieve Zero Trust Principles, following technologies need to present. 
-
 \section{Teleport}
 
 \subsection{Why use Teleport?}
 
 Kubernetes clusters are administered and accessed by various different professionals: security engineers, database administrators, software developers, DevOps engineers, general system administrators and others. Commandline clients such as 'kubectl' or 'helm' are used to manage the cluster.
-Such access must happen in a secure, granular and audited fashion in order for it to fulfill Zero Trust requirements. The default way of accessing the cluster is done by using static client keys and 
+Such access must happen in a secure, granular and audited fashion in order for it to fulfill ZT requirements. The default way of accessing the cluster is done by using static client keys and 
 certificates placed under .kube/config of the client machine. However, access to the cluster can also happen by means of a dedicated authentication-proxy solution. cite[k8s]
 \newline
 \newline
-Kubeconfig, Teleport, Okta and Hoop are ways of accessing the cluster which were taken into consideration for comparison. Kubeconfig means accessing the cluster thorugh a manually issued kubeconfig file. Teleport, Okta and Hoop were identified as authentication-proxy 
+Kubeconfig, Teleport, Okta and Hoop are ways of accessing the cluster which were researched for suitability for the setup of this thesis. Kubeconfig means accessing the cluster thorugh a manually issued kubeconfig file. Teleport, Okta and Hoop were identified as authentication-proxy 
 solutions to the cluster, aiming to implement ZT. To identify the most appropriate solution for a ZT approach, following criteria was established: 
 \begin{itemize}
 	\item Kubernetes friendly
 	\item Is free and open source software (FOSS)
-	\item Centralized identity management
-	\item Offers Role Based Access Control
-	\item Offers Attribute Based Access Control
+	\item Centralized identity management taking care of rotating secrets
+	\item Offers Role Based Access Control (RBAC)
+	\item Offers Attribute Based Access Control (ABAC)
 	\item Provides MFA
-	\item Maturity of the project, release status 
+	\item Possibility to audit sessions 
 \end{itemize}
 
-Out of the box, Kubernetes offers its standard 
-
-These credentials are permanently valid until they are manually invalidated. Kubernetes itself does not offer one centralized way of creating, issuing and maitaining and invalidating these credentials, would neeStandard Kubeconfig not in accordance with ZT 
+Out of the box, Kubernetes offers its standard kubeconfig file, consumed by kubectl and helm, to manage Kubernetes clusters. This is inherently Kubernetes friendly, free and open source. This method offers RBAC as part of Kubernetes' integrated RBAC implementation, 
+achieved through Role, ClusterRole, RoleBinding and ClusterRoleBinding resources. This method fundamentally lacks the features needed to come closer to a ZT approach. Kubernetes itself does not offer one centralized way of creating, issuing and rotating these credentials. They
+are permanently valid until they are manually invalidated, creating a long-lived, single point of compromise. For this reason, authentiction proxies such as Teleport, Okta, and Hoop are more appropriate solutions for cluster access. Okta is a mature identity and access management platform
+offering robust security features for ZT. It can act as an access gateway infront of Kubernetes clusters. However, this feature is not free and open source software and cannot be self-hosted. It was therefore not taken into further consideration. Hoop.dev and Teleport remain 
+as promising solutions. Apart from paid subscriptions they both offer free, self hosted versions and therefore qualify for the setup. The decision for Teleport comes down to the fact that Teleport natively provides even more granular access control through ABAC. For example, it allows for specifying weekdays and time ranges for accessibility of certain resources. 
+Hoop.dev implements only session-based time constraints and requires additional plugin handling in order to achieve mature ABAC. 
 The comparison is summarized in figure 3.7.
 
 \begin{figure}[htbp]
@@ -690,6 +691,7 @@ The comparison is summarized in figure 3.7.
   \caption{Comparison-summary of access solutions to cluster [source: author]}
   \label{fig:tableaccess}
 \end{figure}
+With Teleport, critical features are implemented, which help shaping the cluster towards Zero Trust. This includes Identity-Driven Authentication, elimination of static credentials, RBAC, ABAC and MFA.
 
 \subsubsection{Identity-Driven Authentication and Authorization}
 Teleport acts as a gateway for accessing corporate resources, both on-premises and in the cloud, by leveraging identity-based authentication and authorization. This method eliminates the need for traditional VPNs and password management tools, 
@@ -700,8 +702,7 @@ location or network status, as aforementioned in section 2.1. cite[teleport]
 Teleport issues short-lived identity certificates instead of static credentials. This practice minimizes the risk associated with credential theft, as these certificates automatically expire after a 
 certain period, contrasting sharply with the long-term validity of static credentials. This strategy is consistent with the Zero Trust ethos of minimizing vulnerabilities by avoiding the use of persistent secrets. cite[teleport]
 
-
-\subsubsection{Role-Based Access Control and Auditing}
+\subsubsection{Role and Attribute Based Access Control and Auditing}
 Teleport implements role-based access control, allowing access to resources within the corporate infrastructure based on the roles assigned to individual users' identities. Additionally, it can record all sessions and actions, 
 This provides organizations with the ability to monitor and trace access to their infrastructure securely. Such level of control and oversight is crucial for implementing ZT principles, which advocate for continuous verification of access rights and 
 thorough monitoring for potential security threats, as mentioned in NIST800-207, and as summarized in chapter 2. cite[teleport]
@@ -768,6 +769,11 @@ cite[dynatrace]
 
 \subsection{mTLS}
 
+Transport Layer Security (TLS) is a widely-used encryption protocol that authenticates servers and encrypts communication between clients and servers, ensuring data privacy and integrity. It operates using public key cryptography, 
+which involves a pair of keys: a public key for encryption and a private key for decryption. Mutual TLS (mTLS) extends this concept by requiring both the client and server to authenticate each other using their respective TLS certificates. 
+This mutual authentication adds a layer of security, verifying the identities of both parties and enhancing the protection against various cyber attacks. This makes it especially useful in Zero Trust architectures. Since service meshes handle network
+communication between pods, they must have the possibility for mTLS to be considered an employable component for a ZT Kubernetes cluster.
+
 \subsection{Why use Istio?}
 
 There are several ways of implementing a service mesh and there are different technologies to realize a service mesh on top of Kubernetes. Linkerd, Consul, Istio and Cilium Service Mesh are mature, free, and open source software solutions which were taken
@@ -794,11 +800,12 @@ The findings are summarized in figure 3.10.
 
 \begin{figure}[htbp]
   \centering
-      \includegraphics[width=14cm]{./images/tablemesh}
+      \includegraphics[width=13cm]{./images/tablemesh}
   \caption{Comparison-summary of service-mesh solutions [source: author]}
   \label{fig:tablemesh}
 \end{figure}
 
+\newpage
 \subsection{Installation and setup}
 
 \section{Keycloak}
@@ -807,9 +814,22 @@ The findings are summarized in figure 3.10.
 
 \subsection{OAuth2 and OIDC}
 
-OIDC,  combination with Istio
+\subsection{RBAC and ABAC}
+Role-Based Access Control (RBAC) is a commonly implemented access control model that allocates permissions to users based on their organizational roles. In RBAC, roles are defined by job functions, and users receive access to resources and actions that correspond to 
+their roles. This model simplifies administration by enabling system administrators to manage permissions via roles rather than on an individual user basis. For instance, a software developer might have a role that permits access to certain repositories, whereas a
+database administrator might have a role that allows access to certain databases and system maintenance tools. The main benefit of RBAC is its ease of implementation and scalability in organizations with clear hierarchical structures.
+\newline
+Attribute-Based Access Control (ABAC) is a more adaptable and flexible access control model that grants access based on a combination of attributes pertaining to the user, the resource, and the environment. These attributes can include user details (such as department, job title, or clearance level), 
+resource characteristics (such as data sensitivity or classification), and contextual factors (such as time of day or location). ABAC policies leverage these attributes to create intricate, fine-grained rules for access control. For instance, an ABAC policy might permit a system engineer to access 
+certain servers only during business hours and exclusively from within the corporate network. This degree of granularity makes ABAC effective in environments where access requirements are complex and highly variable.
+\newline
+ABAC is more suitable for ZT because it provides the flexibility and granularity needed to implement dynamic and context-aware access controls essential for ZT. Unlike RBAC, which is relatively static and role-centric, ABAC can evaluate multiple attributes in real-time to 
+determine access permissions, ensuring that only authenticated and authorized users can access resources under specific conditions. This aligns with ZT's core tenet of minimizing trust and continuously verifying every access request based on a comprehensive set of criteria, 
+thereby enhancing security and reducing the risk of unauthorized access.
 
 \subsection{Installation and setup}
+
+
 
 RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script
 
