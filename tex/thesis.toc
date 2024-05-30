@@ -50,9 +50,9 @@
 \contentsline {subsection}{\numberline {3.4.3}Why use Istio?}{17}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Installation and setup}{19}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}Keycloak}{19}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Why use Keycloak?}{19}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}OAuth2 and OIDC}{19}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}RBAC and ABAC}{19}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.1}Identity and Access Management}{19}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}RBAC and ABAC}{19}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Why use Keycloak?}{20}{subsection.3.5.3}%
 \contentsline {subsection}{\numberline {3.5.4}Installation and setup}{20}{subsection.3.5.4}%
 \contentsline {section}{\numberline {3.6}Vault Secret Management}{20}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Why use Vault?}{20}{subsection.3.6.1}%

@@ -810,9 +810,20 @@ The findings are summarized in figure 3.10.
 
 \section{Keycloak}
 
-\subsection{Why use Keycloak?}
+\subsection{Identity and Access Management}
 
-\subsection{OAuth2 and OIDC}
+IAM refers to all policies, processes and technologies used control access to digital resources. Through IAM systems, it is ensured that only appropriate clients have access to resources under right circumstances. 
+For this thesis, IAM is implemented for authorized and granular pod to pod communication. In this context, the term "client" refers to a service issuing a HTTP request to another service hosted in the cluster.
+Using a IAM solution, the following things are taken care of. 
+\begin{itemize}
+	\item Identity Management: Creating client identities and their attributes.
+	\item Authentication: Verifying the identity of clients before granting access.
+	\item Authorization: Determining what resources an authenticated client or device can access and what actions they can perform.
+	\item Access Control: Policies and rules enforcing which clients can access which resources under which conditions.
+	\item Auditing: Logging client access and activities to ensure compliance and security.
+\end{itemize}
+
+The main drivers of IAM are the concepts of role-based and attribute-based access controls. 
 
 \subsection{RBAC and ABAC}
 Role-Based Access Control (RBAC) is a commonly implemented access control model that allocates permissions to users based on their organizational roles. In RBAC, roles are defined by job functions, and users receive access to resources and actions that correspond to 
@@ -827,11 +838,18 @@ ABAC is more suitable for ZT because it provides the flexibility and granularity
 determine access permissions, ensuring that only authenticated and authorized users can access resources under specific conditions. This aligns with ZT's core tenet of minimizing trust and continuously verifying every access request based on a comprehensive set of criteria, 
 thereby enhancing security and reducing the risk of unauthorized access.
 
+
+
+Authentik, Keycloak, Gluu and Okta are four IAM solutions which were inspected for the degree of granularity offered, the option for ABAC and as well as the option for auditing.  
+
+\subsection{Why use Keycloak?}
+
 \subsection{Installation and setup}
 
 
 
-RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script
+RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script: "With Istio's service mesh capabilities and Keycloak as an identity provider running in the cluster setup, we can achieve 
+tightly regulated traffic controls with aforementioned AuthorizationPolicy and RequestAuthentication policies. EXPLAIN HOW KEYCLOAK AND ISTIO SERVE AS PDP/PEP 
 
 \section{Vault Secret Management}
 
