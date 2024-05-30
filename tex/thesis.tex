@@ -823,7 +823,7 @@ Using a IAM solution, the following things are taken care of.
 	\item Auditing: Logging client access and activities to ensure compliance and security.
 \end{itemize}
 
-The main drivers of IAM are the concepts of role-based and attribute-based access controls. 
+The main drivers of IAM are the concepts of role-based and attribute-based access controls and the protocols Open ID Connect as well as OAuth2. 
 
 \subsection{RBAC and ABAC}
 Role-Based Access Control (RBAC) is a commonly implemented access control model that allocates permissions to users based on their organizational roles. In RBAC, roles are defined by job functions, and users receive access to resources and actions that correspond to 
@@ -838,6 +838,28 @@ ABAC is more suitable for ZT because it provides the flexibility and granularity
 determine access permissions, ensuring that only authenticated and authorized users can access resources under specific conditions. This aligns with ZT's core tenet of minimizing trust and continuously verifying every access request based on a comprehensive set of criteria, 
 thereby enhancing security and reducing the risk of unauthorized access.
 
+\subsection{OIDC and OAuth2}
+
+OpenID Connect (OIDC) and OAuth 2.0 are complementary protocols that together provide a framework for authentication and authorization on the web. OAuth 2.0 is the de facto standard authorization framework that allows third-party applications to 
+obtain limited access to a web service, either on behalf of a resource owner or by allowing the third-party application to access its own resources. It works by issuing tokens that represent the user's delegated permissions, enabling secure access
+without sharing passwords. OpenID Connect, built on top of OAuth 2.0, extends this protocol by adding an identity layer, allowing applications to verify the identity of the end-user based on the authentication performed by an authorization server. 
+OIDC standardizes the way identity information is exchanged using RESTful APIs, providing user profile information through an ID token. This integration of OIDC and OAuth 2.0 ensures that while OAuth 2.0 handles authorization and secure resource access, 
+OIDC handles user authentication and identity management.
+
+\subsubsection{Pod to pod OIDC flow}
+In the context of this thesis, a service running inside the Kubernetes cluster may only access another service if the request contains a valid OIDC token, as done through the following steps. 
+
+\begin{enumerate}
+	\item The client service sends a POST request to the authorization server's token endpoint. This request contains the clientID, a client secret, and the grant type.
+	\item The authorization server validates the client secret and issues a short-lived access token. 
+	\item The client receives the token and adds it to subsequent requests to the resource server. The token is added in the 'Authorization' HTTP header. 
+	\item The resource server validates the access token by veryfying its signature, using the public key obtained from the PKI endpoint of the authorization server. If the token is valid, the resource server returns the requested resource. 
+\end{enumerate}
+
+However, in this thesis' setup, the validation of the access token is not done by the resource service itself. This step is done by the Istio service mesh. The Istio sidecar-proxy in every appliaction pod abstracts this handling of OIDC tokens. That way,
+a request does not even reach the resource server in case of invalid credentials. 
+
+
 
 
 Authentik, Keycloak, Gluu and Okta are four IAM solutions which were inspected for the degree of granularity offered, the option for ABAC and as well as the option for auditing.  
@@ -848,8 +870,8 @@ Authentik, Keycloak, Gluu and Okta are four IAM solutions which were inspected f
 
 
 
-RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script: "With Istio's service mesh capabilities and Keycloak as an identity provider running in the cluster setup, we can achieve 
-tightly regulated traffic controls with aforementioned AuthorizationPolicy and RequestAuthentication policies. EXPLAIN HOW KEYCLOAK AND ISTIO SERVE AS PDP/PEP 
+RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script: "With Istio's service mesh capabilities and Keycloak as an identity provider running in the cluster setup, tightly regulated traffic controls with aforementioned AuthorizationPolicy and RequestAuthentication policies can be achieved. 
+EXPLAIN HOW KEYCLOAK AND ISTIO SERVE AS PDP/PEP.
 
 \section{Vault Secret Management}
 
