@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  30 MAY 2024 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  31 MAY 2024 01:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -802,7 +802,13 @@ File: ./images/tablemesh.png Graphic file (type png)
 <use ./images/tablemesh.png>
 Package pdftex.def Info: ./images/tablemesh.png  used on input line 803.
 (pdftex.def)             Requested size: 369.88582pt x 126.05675pt.
- [18] [19 <./images/tablemesh.png>] [20] [21]
+ [18] [19 <./images/tablemesh.png>] [20]
+<./images/tableiam.png, id=309, 1682.285pt x 550.055pt>
+File: ./images/tableiam.png Graphic file (type png)
+<use ./images/tableiam.png>
+Package pdftex.def Info: ./images/tableiam.png  used on input line 882.
+(pdftex.def)             Requested size: 369.88582pt x 120.93694pt.
+ [21 <./images/tableiam.png>]
 chapter 4.
 [22
 
@@ -853,18 +859,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17190 strings out of 476025
- 329591 string characters out of 5790016
+ 17205 strings out of 476025
+ 329939 string characters out of 5790016
  1869388 words of memory out of 5000000
- 37248 multiletter control sequences out of 15000+600000
+ 37261 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,106p,10631b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (35 pages, 1107890 bytes).
+Output written on thesis.pdf (35 pages, 1143624 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 454 compressed objects within 5 object streams
- 150 named destinations out of 1000 (max. 500000)
- 386 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 457 compressed objects within 5 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 391 words of extra memory for PDF output out of 10000 (max. 10000000)
 

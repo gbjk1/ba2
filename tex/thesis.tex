@@ -859,12 +859,30 @@ In the context of this thesis, a service running inside the Kubernetes cluster m
 However, in this thesis' setup, the validation of the access token is not done by the resource service itself. This step is done by the Istio service mesh. The Istio sidecar-proxy in every appliaction pod abstracts this handling of OIDC tokens. That way,
 a request does not even reach the resource server in case of invalid credentials. 
 
-
-
-
-Authentik, Keycloak, Gluu and Okta are four IAM solutions which were inspected for the degree of granularity offered, the option for ABAC and as well as the option for auditing.  
-
 \subsection{Why use Keycloak?}
+
+Authentik, Keycloak, Gluu and Okta are four IAM solutions which were inspected for the following criteria. 
+\begin{itemize}
+	\item Free and open source software (FOSS) 
+	\item OAuth2 support
+	\item OIDC support
+	\item MFA support
+	\item Degree of granularity
+	\item Option for auditing
+\end{itemize}
+
+
+
+Based on the documentations, all four solutions have comprehensive offerings for above mentioned criteria. OAuth2, OIDC, MFA and extensive granularity have become non-negotiable features of proper IAM solutions and are 
+achieved in equal measure across Authentik, Okta, Keycloak and Gluu. Out of these, there is no product which unambiguously surpasses the other when it comes to the requirements of this setup specifically. Nonetheless, 
+Keycloak was chosen because of its substantial community support on GitHub issues and StackOverflow, its great Kubernetes compatibility due to officially provided Helm charts and its clear, extensive documentation. 
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=13cm]{./images/tableiam}
+  \caption{Comparison-summary of IAM solutions [source: author]}
+  \label{fig:tableiam}
+\end{figure}
 
 \subsection{Installation and setup}
 
