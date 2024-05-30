@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  31 MAY 2024 01:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  31 MAY 2024 01:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -788,34 +788,39 @@ Package pdftex.def Info: ./images/tableaccess.png  used on input line 690.
 <./images/teleport.png, id=266, 974.64125pt x 546.04pt>
 File: ./images/teleport.png Graphic file (type png)
 <use ./images/teleport.png>
-Package pdftex.def Info: ./images/teleport.png  used on input line 736.
+Package pdftex.def Info: ./images/teleport.png  used on input line 738.
 (pdftex.def)             Requested size: 341.43306pt x 191.2835pt.
+<./images/teleportarch.png, id=267, 751.80875pt x 388.45125pt>
+File: ./images/teleportarch.png Graphic file (type png)
+<use ./images/teleportarch.png>
+Package pdftex.def Info: ./images/teleportarch.png  used on input line 753.
+(pdftex.def)             Requested size: 398.33858pt x 205.8189pt.
  [16 <./images/teleport.png>]
-<./images/mesh.png, id=277, 813.0375pt x 358.33875pt>
+<./images/mesh.png, id=284, 813.0375pt x 358.33875pt>
 File: ./images/mesh.png Graphic file (type png)
 <use ./images/mesh.png>
-Package pdftex.def Info: ./images/mesh.png  used on input line 765.
+Package pdftex.def Info: ./images/mesh.png  used on input line 776.
 (pdftex.def)             Requested size: 312.9803pt x 137.9417pt.
- [17 <./images/mesh.png>]
-<./images/tablemesh.png, id=288, 1614.03pt x 550.055pt>
+ [17 <./images/teleportarch.png>] [18 <./images/mesh.png>]
+<./images/tablemesh.png, id=298, 1614.03pt x 550.055pt>
 File: ./images/tablemesh.png Graphic file (type png)
 <use ./images/tablemesh.png>
-Package pdftex.def Info: ./images/tablemesh.png  used on input line 803.
+Package pdftex.def Info: ./images/tablemesh.png  used on input line 814.
 (pdftex.def)             Requested size: 369.88582pt x 126.05675pt.
- [18] [19 <./images/tablemesh.png>] [20]
-<./images/tableiam.png, id=309, 1682.285pt x 550.055pt>
+ [19 <./images/tablemesh.png>] [20] [21]
+<./images/tableiam.png, id=319, 1682.285pt x 550.055pt>
 File: ./images/tableiam.png Graphic file (type png)
 <use ./images/tableiam.png>
-Package pdftex.def Info: ./images/tableiam.png  used on input line 882.
+Package pdftex.def Info: ./images/tableiam.png  used on input line 893.
 (pdftex.def)             Requested size: 369.88582pt x 120.93694pt.
- [21 <./images/tableiam.png>]
+ [22 <./images/tableiam.png>]
 chapter 4.
-[22
+[23
 
 
 ]
 chapter 5.
-[23
+[24
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -827,26 +832,26 @@ chapter 5.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 23.
 
-) [24
+) [25
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [25
+ [26
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [26
+ [27
 
 
 ]
 chapter without number
-[27
+[28
 
 
 
@@ -859,18 +864,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17205 strings out of 476025
- 329939 string characters out of 5790016
+ 17224 strings out of 476025
+ 330352 string characters out of 5790016
  1869388 words of memory out of 5000000
- 37261 multiletter control sequences out of 15000+600000
+ 37274 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,106p,10631b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (35 pages, 1143624 bytes).
+Output written on thesis.pdf (36 pages, 1196161 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 457 compressed objects within 5 object streams
- 151 named destinations out of 1000 (max. 500000)
- 391 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 396 words of extra memory for PDF output out of 10000 (max. 10000000)
 
