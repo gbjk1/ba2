@@ -1,0 +1,6 @@
+roles: kube,app,discovery
+authToken: [token]
+proxyAddr: teleport.nebhis.lcl:443
+kubeClusterName: nebhis-kubernetes
+labels:
+    teleport.internal/resource-id: cc23f660-6add-450b-82b9-2824114f8748
