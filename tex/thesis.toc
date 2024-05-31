@@ -43,16 +43,17 @@
 \contentsline {subsubsection}{\nonumberline Multi-Factor Authentication}{16}{subsubsection*.53}%
 \contentsline {subsection}{\numberline {3.3.2}Installation and setup}{16}{subsection.3.3.2}%
 \contentsline {subsubsection}{\nonumberline Authy}{16}{subsubsection*.55}%
-\contentsline {section}{\numberline {3.4}Istio}{17}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Service Meshes}{17}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}mTLS}{17}{subsection.3.4.2}%
+\contentsline {subsubsection}{\nonumberline Architecture}{17}{subsubsection*.57}%
+\contentsline {section}{\numberline {3.4}Istio}{18}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Service Meshes}{18}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}mTLS}{18}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Why use Istio?}{18}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Installation and setup}{20}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}Keycloak}{20}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Identity and Access Management}{20}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}RBAC and ABAC}{20}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}OIDC and OAuth2}{21}{subsection.3.5.3}%
-\contentsline {subsubsection}{\nonumberline Pod to pod OIDC flow}{21}{subsubsection*.57}%
+\contentsline {subsubsection}{\nonumberline Pod to pod OIDC flow}{21}{subsubsection*.59}%
 \contentsline {subsection}{\numberline {3.5.4}Why use Keycloak?}{21}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}Installation and setup}{22}{subsection.3.5.5}%
 \contentsline {section}{\numberline {3.6}Vault Secret Management}{22}{section.3.6}%
@@ -62,7 +63,7 @@
 \contentsline {chapter}{\numberline {4}Discussion and Future Work}{23}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Conclusion}{24}{chapter.5}%
 \contentsline {chapter}{Bibliography}{25}{chapter.5}%
-\contentsline {chapter}{List of Figures}{26}{chapter*.58}%
-\contentsline {chapter}{List of Tables}{27}{chapter*.59}%
-\contentsline {chapter}{\nonumberline Appendix}{28}{chapter*.61}%
+\contentsline {chapter}{List of Figures}{26}{chapter*.60}%
+\contentsline {chapter}{List of Tables}{27}{chapter*.61}%
+\contentsline {chapter}{\nonumberline Appendix}{28}{chapter*.63}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

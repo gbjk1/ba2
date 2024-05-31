@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  31 MAY 2024 01:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  1 JUN 2024 01:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -632,32 +632,32 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--271
+Underfull \hbox (badness 10000) in paragraph at lines 243--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--271
+Underfull \hbox (badness 10000) in paragraph at lines 243--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--271
+Underfull \hbox (badness 10000) in paragraph at lines 243--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--324
+Underfull \hbox (badness 10000) in paragraph at lines 277--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--324
+Underfull \hbox (badness 10000) in paragraph at lines 277--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--324
+Underfull \hbox (badness 10000) in paragraph at lines 277--326
 
  []
 
@@ -666,78 +666,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--324
 
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 327--350
+Underfull \hbox (badness 10000) in paragraph at lines 329--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--350
+Underfull \hbox (badness 10000) in paragraph at lines 329--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--350
+Underfull \hbox (badness 10000) in paragraph at lines 329--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--350
+Underfull \hbox (badness 10000) in paragraph at lines 329--352
 
  []
 
 [3]
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--373
+Underfull \hbox (badness 10000) in paragraph at lines 360--375
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 375.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 377.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [4
 
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 423--428
+Underfull \hbox (badness 10000) in paragraph at lines 425--430
 
  []
 
 <./images/architecture.png, id=146, 629.35126pt x 336.25626pt>
 File: ./images/architecture.png Graphic file (type png)
 <use ./images/architecture.png>
-Package pdftex.def Info: ./images/architecture.png  used on input line 431.
+Package pdftex.def Info: ./images/architecture.png  used on input line 433.
 (pdftex.def)             Requested size: 266.26555pt x 142.26378pt.
 [5]
 <./images/kubernetes.png, id=167, 1029.8475pt x 623.32875pt>
 File: ./images/kubernetes.png Graphic file (type png)
 <use ./images/kubernetes.png>
-Package pdftex.def Info: ./images/kubernetes.png  used on input line 475.
+Package pdftex.def Info: ./images/kubernetes.png  used on input line 477.
 (pdftex.def)             Requested size: 376.07193pt x 227.62204pt.
  [6 <./images/architecture.png>] [7 <./images/kubernetes.png>] [8] [9]
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--579
+Underfull \hbox (badness 10000) in paragraph at lines 560--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--579
+Underfull \hbox (badness 10000) in paragraph at lines 560--581
 
  []
 
 <./images/setup.png, id=204, 553.06625pt x 488.82625pt>
 File: ./images/setup.png Graphic file (type png)
 <use ./images/setup.png>
-Package pdftex.def Info: ./images/setup.png  used on input line 582.
+Package pdftex.def Info: ./images/setup.png  used on input line 584.
 (pdftex.def)             Requested size: 257.53603pt x 227.62204pt.
 <./images/baseconfig.png, id=205, 1040.88875pt x 483.8075pt>
 File: ./images/baseconfig.png Graphic file (type png)
 <use ./images/baseconfig.png>
-Package pdftex.def Info: ./images/baseconfig.png  used on input line 596.
+Package pdftex.def Info: ./images/baseconfig.png  used on input line 598.
 (pdftex.def)             Requested size: 477.4805pt x 221.93158pt.
 
-Overfull \hbox (36.46277pt too wide) in paragraph at lines 596--597
+Overfull \hbox (36.46277pt too wide) in paragraph at lines 598--599
  [][] 
  []
 
@@ -745,73 +745,84 @@ Overfull \hbox (36.46277pt too wide) in paragraph at lines 596--597
 
 
 ] [11 <./images/setup.png> <./images/baseconfig.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 610--617
+Underfull \hbox (badness 10000) in paragraph at lines 612--619
 
  []
 
 
-Overfull \hbox (5.40651pt too wide) in paragraph at lines 625--627
+Overfull \hbox (5.40651pt too wide) in paragraph at lines 627--629
 \T1/lmr/m/n/10.95 After afore-men-tioned set-tings, one can pro-ceed with in-stalling the con-tainer run-time, kubeadm,
  []
 
 <./images/crio.png, id=219, 968.61874pt x 342.27875pt>
 File: ./images/crio.png Graphic file (type png)
 <use ./images/crio.png>
-Package pdftex.def Info: ./images/crio.png  used on input line 630.
+Package pdftex.def Info: ./images/crio.png  used on input line 632.
 (pdftex.def)             Requested size: 369.88582pt x 130.70444pt.
 <./images/k8sbinaries.png, id=220, 1045.9075pt x 226.8475pt>
 File: ./images/k8sbinaries.png Graphic file (type png)
 <use ./images/k8sbinaries.png>
-Package pdftex.def Info: ./images/k8sbinaries.png  used on input line 637.
+Package pdftex.def Info: ./images/k8sbinaries.png  used on input line 639.
 (pdftex.def)             Requested size: 369.88582pt x 80.22508pt.
 <./images/master.png, id=221, 710.655pt x 49.18375pt>
 File: ./images/master.png Graphic file (type png)
 <use ./images/master.png>
-Package pdftex.def Info: ./images/master.png  used on input line 644.
+Package pdftex.def Info: ./images/master.png  used on input line 646.
 (pdftex.def)             Requested size: 369.88582pt x 25.5997pt.
 <./images/worker.png, id=222, 981.6675pt x 50.1875pt>
 File: ./images/worker.png Graphic file (type png)
 <use ./images/worker.png>
-Package pdftex.def Info: ./images/worker.png  used on input line 651.
+Package pdftex.def Info: ./images/worker.png  used on input line 653.
 (pdftex.def)             Requested size: 369.88582pt x 18.90985pt.
 [12] [13 <./images/crio.png> <./images/k8sbinaries.png> <./images/master.png> <./images/worker.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 663--670
+Underfull \hbox (badness 10000) in paragraph at lines 665--672
 
  []
 
 <./images/tableaccess.png, id=247, 1973.3725pt x 341.275pt>
 File: ./images/tableaccess.png Graphic file (type png)
 <use ./images/tableaccess.png>
-Package pdftex.def Info: ./images/tableaccess.png  used on input line 690.
+Package pdftex.def Info: ./images/tableaccess.png  used on input line 692.
 (pdftex.def)             Requested size: 398.33858pt x 68.88908pt.
 [14] [15 <./images/tableaccess.png>]
 <./images/teleport.png, id=266, 974.64125pt x 546.04pt>
 File: ./images/teleport.png Graphic file (type png)
 <use ./images/teleport.png>
-Package pdftex.def Info: ./images/teleport.png  used on input line 738.
-(pdftex.def)             Requested size: 341.43306pt x 191.2835pt.
-<./images/teleportarch.png, id=267, 751.80875pt x 388.45125pt>
+Package pdftex.def Info: ./images/teleport.png  used on input line 740.
+(pdftex.def)             Requested size: 327.20668pt x 183.3182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--765
+
+ []
+
+[16 <./images/teleport.png>]
+<./images/teleportarch.png, id=283, 751.80875pt x 388.45125pt>
 File: ./images/teleportarch.png Graphic file (type png)
 <use ./images/teleportarch.png>
-Package pdftex.def Info: ./images/teleportarch.png  used on input line 753.
-(pdftex.def)             Requested size: 398.33858pt x 205.8189pt.
- [16 <./images/teleport.png>]
-<./images/mesh.png, id=284, 813.0375pt x 358.33875pt>
+Package pdftex.def Info: ./images/teleportarch.png  used on input line 782.
+(pdftex.def)             Requested size: 284.52756pt x 147.01434pt.
+ [17 <./images/teleportarch.png>]
+<./images/mesh.png, id=293, 813.0375pt x 358.33875pt>
 File: ./images/mesh.png Graphic file (type png)
 <use ./images/mesh.png>
-Package pdftex.def Info: ./images/mesh.png  used on input line 776.
+Package pdftex.def Info: ./images/mesh.png  used on input line 802.
 (pdftex.def)             Requested size: 312.9803pt x 137.9417pt.
- [17 <./images/teleportarch.png>] [18 <./images/mesh.png>]
-<./images/tablemesh.png, id=298, 1614.03pt x 550.055pt>
+ [18 <./images/mesh.png>]
+<./images/tablemesh.png, id=300, 1614.03pt x 550.055pt>
 File: ./images/tablemesh.png Graphic file (type png)
 <use ./images/tablemesh.png>
-Package pdftex.def Info: ./images/tablemesh.png  used on input line 814.
+Package pdftex.def Info: ./images/tablemesh.png  used on input line 840.
 (pdftex.def)             Requested size: 369.88582pt x 126.05675pt.
  [19 <./images/tablemesh.png>] [20] [21]
-<./images/tableiam.png, id=319, 1682.285pt x 550.055pt>
+<./images/tableiam.png, id=321, 1682.285pt x 550.055pt>
 File: ./images/tableiam.png Graphic file (type png)
 <use ./images/tableiam.png>
-Package pdftex.def Info: ./images/tableiam.png  used on input line 893.
+Package pdftex.def Info: ./images/tableiam.png  used on input line 919.
 (pdftex.def)             Requested size: 369.88582pt x 120.93694pt.
  [22 <./images/tableiam.png>]
 chapter 4.
@@ -864,18 +875,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17224 strings out of 476025
- 330352 string characters out of 5790016
+ 17226 strings out of 476025
+ 330380 string characters out of 5790016
  1869388 words of memory out of 5000000
  37274 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,106p,10631b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (36 pages, 1196161 bytes).
+Output written on thesis.pdf (36 pages, 1197656 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 465 compressed objects within 5 object streams
- 156 named destinations out of 1000 (max. 500000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 158 named destinations out of 1000 (max. 500000)
  396 words of extra memory for PDF output out of 10000 (max. 10000000)
 

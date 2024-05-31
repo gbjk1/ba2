@@ -201,10 +201,12 @@ Date: \hspace{6cm} Signature:\\
 		\begin{tabular}{ll}
       AKS & Azure Kubernetes Service \\
       EKS & Elastic Kubernetes Service \\
+      FOSS & Free and Open Source Software \\
       GKE & Google Kubernetes Engine \\
 			IT  &  Information Technology \\
       IoT & Internet of Things \\
 			MFA & Multifactor Authentication \\
+      mTLS & Mutual Transport Layer Security \\
 			NIST & National Institute of Standards and Technology \\
       VPN & Virtual Private Network \\
 			ZT & Zero Trust \\
@@ -681,8 +683,8 @@ Out of the box, Kubernetes offers its standard kubeconfig file, consumed by kube
 achieved through Role, ClusterRole, RoleBinding and ClusterRoleBinding resources. This method fundamentally lacks the features needed to come closer to a ZT approach. Kubernetes itself does not offer one centralized way of creating, issuing and rotating these credentials. They
 are permanently valid until they are manually invalidated, creating a long-lived, single point of compromise. For this reason, authentiction proxies such as Teleport, Okta, and Hoop are more appropriate solutions for cluster access. Okta is a mature identity and access management platform
 offering robust security features for ZT. It can act as an access gateway infront of Kubernetes clusters. However, this feature is not free and open source software and cannot be self-hosted. It was therefore not taken into further consideration. Hoop.dev and Teleport remain 
-as promising solutions. Apart from paid subscriptions they both offer free, self hosted versions and therefore qualify for the setup. The decision for Teleport comes down to the fact that Teleport natively provides even more granular access control through ABAC. For example, it allows for specifying weekdays and time ranges for accessibility of certain resources. 
-Hoop.dev implements only session-based time constraints and requires additional plugin handling in order to achieve mature ABAC. 
+as promising solutions. Apart from paid subscriptions they both offer free, self hosted versions and therefore qualify for the setup. The decision for Teleport comes down to the fact that Teleport natively provides even more granular access control through ABAC, implemented by Teleport predicate 
+language. 
 The comparison is summarized in figure 3.7.
 
 \begin{figure}[htbp]
@@ -735,7 +737,7 @@ Teleport runs on a seperate VM on 192.168.20.2, next to the Kubernetes nodes. Th
 
 \begin{figure}[htbp]
   \centering
-      \includegraphics[width=12cm]{./images/teleport}
+      \includegraphics[width=11.5cm]{./images/teleport}
   \caption{Teleport installation [source: author]}
   \label{fig:teleport}
 \end{figure}
@@ -746,18 +748,42 @@ Authy is a mobile application and service that offers two-factor authentication 
 Authy is designed to be compatible with multiple devices, enabling users to synchronize their 2FA tokens across different devices for added convenience and security. 
 Teleport requires integration to MFA from the very start. When accessing the Teleport UI as well as when using the tsh commandline client, users are prompted for One-Time password tokens (OTP). 
 \newline
-teleport-agent-namespace, grpahic with proxying
+\subsubsection{Architecture}
+Figure 3.9 provides an overview of the Teleport setup. The key components are the user, the Teleport proxy, 
+the Teleport agent, and finally the Kubernetes API server. The user has "tsh" installed on their local machine, 
+which is a commandline client used to interact with a given Teleport server. By running "tsh login --proxy=teleport.nebhis.lcl --user=teleport-admin", the user 
+"teleport-admin" authenticates to the Teleport cluster "teleport.nebhis.lcl", hosted on 192.168.20.2. This Teleport proxy acts as an intermediary infront of the Kubernetes cluster, enforcing MFA and mTLS. 
+Running "tsh kube login nebhis-kubernetes" puts the registered cluster "nebhis-kubernetes" in the current context of the kubectl commandline client by modyfying the kubeconfig file under the .kube/config 
+directory of the client machine. Subsequently, any Kubernetes API requests executed with kubectl or helm are proxied through the Teleport proxy. 
+The Teleport Proxy establishes an encrypted tunnel to the Teleport agent running on a worker node within the "teleport-agent" namespace inside the Kubernetes cluster. 
+Finally, the Teleport agent forwards requests to the Kubernetes API Server, which ultimately processes the requests and manages cluster resources. The API server is running on the master node inside the "kube-system" control plane namespace.
+This means that the Teleport proxy authenticates the actions "tsh login" and "tsh kube login", and then establishes an encrypted tunnel to 
+the teleport-agent which issues the kubectl command to the API. The respective responsibilities of the proxy and the agent are: 
+\newline
+\newline
+Teleport Proxy:
+\begin{itemize}
+	\item Authentication and Authorization, check if user is eligible for Kubernetes access
+	\item Reverse proxying for Kubernetes API requests
+	\item Audit logging and traffic encryption
+\end{itemize}
+
+Teleport Agent:
+\begin{itemize}
+	\item Registering the Kubernetes cluster with the proxy
+	\item Manage service accounts and their credentials for Teleport to interact with the Kubernetes API
+	\item Synchronize configurations between the Kubernetes cluster and the Teleport Proxy
+\end{itemize}
+
+
 
 \begin{figure}[htbp]
   \centering
-      \includegraphics[width=14cm]{./images/teleportarch}
+      \includegraphics[width=10cm]{./images/teleportarch}
   \caption{Teleport Kubernetes Setup [source: author]}
   \label{fig:teleportarch}
 \end{figure}
-user login example
-\newline
-time based policy as example of ABAC
-\newline
+
 Thus, access to the cluster covers most of ZT principles as described in NIST800-207. 
 
 
