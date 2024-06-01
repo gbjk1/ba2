@@ -58,11 +58,11 @@
 \contentsline {subsection}{\numberline {3.5.4}Why use Keycloak?}{24}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}Installation and setup}{24}{subsection.3.5.5}%
 \contentsline {subsubsection}{\nonumberline Keycloak combined with Istio}{25}{subsubsection*.63}%
-\contentsline {section}{\numberline {3.6}Cluster end result}{26}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Discussion and Future Work}{27}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{28}{chapter.5}%
-\contentsline {chapter}{Bibliography}{29}{chapter.5}%
-\contentsline {chapter}{List of Figures}{30}{chapter*.64}%
-\contentsline {chapter}{List of Tables}{31}{chapter*.65}%
-\contentsline {chapter}{\nonumberline Appendix}{32}{chapter*.67}%
+\contentsline {section}{\numberline {3.6}Cluster End Result}{26}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Discussion and Future Work}{28}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{29}{chapter.5}%
+\contentsline {chapter}{Bibliography}{30}{chapter.5}%
+\contentsline {chapter}{List of Figures}{31}{chapter*.64}%
+\contentsline {chapter}{List of Tables}{32}{chapter*.65}%
+\contentsline {chapter}{\nonumberline Appendix}{33}{chapter*.67}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
