@@ -983,7 +983,14 @@ Keycloak was chosen because of its substantial community support on GitHub issue
 \subsection{Installation and setup}
 
 Keycloak was installed using Kubernetes manifests directly. The Keycloak Docker image provided by Bitnami is used in the deployment object. 
-Within the cluster, the Keycloak pod is exposed via a service object named "keycloak-service". Hence, applications can reach Keycloak under the cluster domain "keycloak-service.keycloak.svc.cluster.local". 
+Within the cluster, the Keycloak pod is exposed via a service object named "keycloak-service". Hence, applications can reach Keycloak under the cluster domain "keycloak-service.keycloak.svc.cluster.local".
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=8cm]{./images/keycloakservice}
+  \caption{Service object exposing Keycloak [source: author]}
+  \label{fig:keycloakservice}
+\end{figure}
 
 \section{Cluster end result}
 
