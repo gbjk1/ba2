@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  1 JUN 2024 01:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  1 JUN 2024 02:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -442,6 +442,9 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `fig:architecture' multiply defined.
 
+
+LaTeX Warning: Label `fig:teleportvalues' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
@@ -788,50 +791,61 @@ Package pdftex.def Info: ./images/tableaccess.png  used on input line 692.
 <./images/teleport.png, id=266, 974.64125pt x 546.04pt>
 File: ./images/teleport.png Graphic file (type png)
 <use ./images/teleport.png>
-Package pdftex.def Info: ./images/teleport.png  used on input line 740.
+Package pdftex.def Info: ./images/teleport.png  used on input line 736.
 (pdftex.def)             Requested size: 327.20668pt x 183.3182pt.
+ [16 <./images/teleport.png>]
+<./images/teleporthelm.png, id=282, 788.9475pt x 171.64125pt>
+File: ./images/teleporthelm.png Graphic file (type png)
+<use ./images/teleporthelm.png>
+Package pdftex.def Info: ./images/teleporthelm.png  used on input line 752.
+(pdftex.def)             Requested size: 327.20668pt x 71.18526pt.
+<./images/teleportvalues.png, id=283, 602.25pt x 130.4875pt>
+File: ./images/teleportvalues.png Graphic file (type png)
+<use ./images/teleportvalues.png>
+Package pdftex.def Info: ./images/teleportvalues.png  used on input line 759.
+(pdftex.def)             Requested size: 327.20668pt x 70.89824pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--751
+Underfull \hbox (badness 10000) in paragraph at lines 766--770
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--765
+Underfull \hbox (badness 10000) in paragraph at lines 771--784
 
  []
 
-[16 <./images/teleport.png>]
-<./images/teleportarch.png, id=283, 751.80875pt x 388.45125pt>
+[17 <./images/teleporthelm.png> <./images/teleportvalues.png>]
+<./images/teleportarch.png, id=299, 751.80875pt x 388.45125pt>
 File: ./images/teleportarch.png Graphic file (type png)
 <use ./images/teleportarch.png>
-Package pdftex.def Info: ./images/teleportarch.png  used on input line 782.
+Package pdftex.def Info: ./images/teleportarch.png  used on input line 801.
 (pdftex.def)             Requested size: 284.52756pt x 147.01434pt.
- [17 <./images/teleportarch.png>]
-<./images/mesh.png, id=293, 813.0375pt x 358.33875pt>
+ [18 <./images/teleportarch.png>]
+<./images/mesh.png, id=306, 813.0375pt x 358.33875pt>
 File: ./images/mesh.png Graphic file (type png)
 <use ./images/mesh.png>
-Package pdftex.def Info: ./images/mesh.png  used on input line 802.
+Package pdftex.def Info: ./images/mesh.png  used on input line 821.
 (pdftex.def)             Requested size: 312.9803pt x 137.9417pt.
- [18 <./images/mesh.png>]
-<./images/tablemesh.png, id=300, 1614.03pt x 550.055pt>
+ [19 <./images/mesh.png>]
+<./images/tablemesh.png, id=313, 1614.03pt x 550.055pt>
 File: ./images/tablemesh.png Graphic file (type png)
 <use ./images/tablemesh.png>
-Package pdftex.def Info: ./images/tablemesh.png  used on input line 840.
+Package pdftex.def Info: ./images/tablemesh.png  used on input line 859.
 (pdftex.def)             Requested size: 369.88582pt x 126.05675pt.
- [19 <./images/tablemesh.png>] [20] [21]
-<./images/tableiam.png, id=321, 1682.285pt x 550.055pt>
+ [20 <./images/tablemesh.png>] [21] [22]
+<./images/tableiam.png, id=334, 1682.285pt x 550.055pt>
 File: ./images/tableiam.png Graphic file (type png)
 <use ./images/tableiam.png>
-Package pdftex.def Info: ./images/tableiam.png  used on input line 919.
+Package pdftex.def Info: ./images/tableiam.png  used on input line 940.
 (pdftex.def)             Requested size: 369.88582pt x 120.93694pt.
- [22 <./images/tableiam.png>]
+ [23 <./images/tableiam.png>]
 chapter 4.
-[23
+[24
 
 
 ]
 chapter 5.
-[24
+[25
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -843,26 +857,26 @@ chapter 5.
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 23.
 
-) [25
+) [26
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [26
+ [27
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [27
+ [28
 
 
 ]
 chapter without number
-[28
+[29
 
 
 
@@ -875,18 +889,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17226 strings out of 476025
- 330380 string characters out of 5790016
+ 17259 strings out of 476025
+ 331226 string characters out of 5790016
  1869388 words of memory out of 5000000
- 37274 multiletter control sequences out of 15000+600000
+ 37299 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,106p,10631b,621s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (36 pages, 1197656 bytes).
+Output written on thesis.pdf (37 pages, 1271251 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 158 named destinations out of 1000 (max. 500000)
- 396 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 482 compressed objects within 5 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 

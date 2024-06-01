@@ -722,7 +722,7 @@ factor is compromised. This method is a crucial part of Identity and Access Mana
 
 \subsection{Installation and setup}
 
-Teleport runs on a seperate VM on 192.168.20.2, next to the Kubernetes nodes. The script shown in figure 3.7...
+Teleport runs on a seperate VM on 192.168.20.2, next to the Kubernetes nodes. The script shown in figure 3.8...
 \begin{enumerate}
 	\item Fetches teleports public PGP key
 	\item Adds Teleport repository to APT package manager
@@ -731,10 +731,6 @@ Teleport runs on a seperate VM on 192.168.20.2, next to the Kubernetes nodes. Th
 	\item Configures and runs Teleport
 \end{enumerate}
 
-
-
-
-
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=11.5cm]{./images/teleport}
@@ -742,11 +738,34 @@ Teleport runs on a seperate VM on 192.168.20.2, next to the Kubernetes nodes. Th
   \label{fig:teleport}
 \end{figure}
 
+To enroll the Kubernetes cluster on Teleport, a Helm-based installation was chosen. Helm is a package manager for Kubernetes which simplifies the deployment and management of applications by 
+using Helm charts, which are pre-configured templates for Kubernetes resources. It allows for parameterizing Kubernetes YAML definitions. When installing a Helm chart, the parameters of the 
+Kubernetes configuration are replaced with concrete values from a dedicated values file. The script in figure 3.9... 
+\begin{enumerate}
+	\item Creates the teleport-agent namespace
+	\item Adds the teleport helm chart to the helm repository
+	\item Updates and installs the agent using parameters defined in nebhis-cluster-values.yaml, as shown in figure 3.10.
+\end{enumerate}
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=11.5cm]{./images/teleporthelm}
+  \caption{Teleport agent installation [source: author]}
+  \label{fig:teleportvalues}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=11.5cm]{./images/teleportvalues}
+  \caption{Teleport values [source: author]}
+  \label{fig:teleportvalues}
+\end{figure}
+
 \subsubsection{Authy}
 
 Authy is a mobile application and service that offers two-factor authentication (2FA) for online accounts.
 Authy is designed to be compatible with multiple devices, enabling users to synchronize their 2FA tokens across different devices for added convenience and security. 
-Teleport requires integration to MFA from the very start. When accessing the Teleport UI as well as when using the tsh commandline client, users are prompted for One-Time password tokens (OTP). 
+Teleport requires integration to MFA from the very start. When accessing the Teleport UI as well as when using the tsh commandline client, users are prompted for One-Time password tokens (OTP) issued by Authy. 
 \newline
 \subsubsection{Architecture}
 Figure 3.9 provides an overview of the Teleport setup. The key components are the user, the Teleport proxy, 
@@ -786,7 +805,7 @@ Teleport Agent:
 
 Thus, access to the cluster covers most of ZT principles as described in NIST800-207. 
 
-
+\newpage
 \section{Istio}
 
 \subsection{Service Meshes}
@@ -844,6 +863,8 @@ The findings are summarized in figure 3.10.
 
 \newpage
 \subsection{Installation and setup}
+
+Like the Teleport agent, Istio was installed using its officially provided Helm chart. 
 
 \section{Keycloak}
 
