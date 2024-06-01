@@ -49,21 +49,23 @@
 \contentsline {subsection}{\numberline {3.4.2}mTLS}{19}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Why use Istio?}{19}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Installation and setup}{21}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Keycloak}{21}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Identity and Access Management}{21}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}RBAC and ABAC}{21}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}OIDC and OAuth2}{22}{subsection.3.5.3}%
-\contentsline {subsubsection}{\nonumberline Pod to pod OIDC flow}{22}{subsubsection*.59}%
-\contentsline {subsection}{\numberline {3.5.4}Why use Keycloak?}{22}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Installation and setup}{23}{subsection.3.5.5}%
-\contentsline {section}{\numberline {3.6}Vault Secret Management}{23}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Why use Vault?}{23}{subsection.3.6.1}%
-\contentsline {section}{\numberline {3.7}Trivy}{23}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Why Trivy?}{23}{subsection.3.7.1}%
-\contentsline {chapter}{\numberline {4}Discussion and Future Work}{24}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}%
-\contentsline {chapter}{Bibliography}{26}{chapter.5}%
-\contentsline {chapter}{List of Figures}{27}{chapter*.60}%
-\contentsline {chapter}{List of Tables}{28}{chapter*.61}%
-\contentsline {chapter}{\nonumberline Appendix}{29}{chapter*.63}%
+\contentsline {subsubsection}{\nonumberline Architecture}{21}{subsubsection*.59}%
+\contentsline {section}{\numberline {3.5}Keycloak}{22}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Identity and Access Management}{22}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}RBAC and ABAC}{22}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}OIDC and OAuth2}{23}{subsection.3.5.3}%
+\contentsline {subsubsection}{\nonumberline Pod to pod OIDC flow}{23}{subsubsection*.61}%
+\contentsline {subsection}{\numberline {3.5.4}Why use Keycloak?}{24}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Installation and setup}{24}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Cluster end result}{25}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Vault Secret Management}{25}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Why use Vault?}{25}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}Trivy}{25}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Why Trivy?}{25}{subsection.3.8.1}%
+\contentsline {chapter}{\numberline {4}Discussion and Future Work}{26}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}%
+\contentsline {chapter}{Bibliography}{28}{chapter.5}%
+\contentsline {chapter}{List of Figures}{29}{chapter*.62}%
+\contentsline {chapter}{List of Tables}{30}{chapter*.63}%
+\contentsline {chapter}{\nonumberline Appendix}{31}{chapter*.65}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

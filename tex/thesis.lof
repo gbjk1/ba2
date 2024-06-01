@@ -17,7 +17,9 @@
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Teleport Kubernetes Setup [source: author]}}{18}{figure.3.11}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Service Mesh visualization [source: RedHat]}}{19}{figure.3.12}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Comparison-summary of service-mesh solutions [source: author]}}{20}{figure.3.13}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Comparison-summary of IAM solutions [source: author]}}{23}{figure.3.14}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Installing Istio components [source: author]}}{21}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Istio architecture [source: author]}}{22}{figure.3.15}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Comparison-summary of IAM solutions [source: author]}}{24}{figure.3.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -93,7 +93,7 @@
 %Left header shows chapter and chapter name, will not display on first chapter page use \ihead*{\leftmark} to show on every page
 \ihead{\leftmark} 	
 %\ohead*{\rightmark}	%optional right header
-\ifoot*{Student}		%left footer shows student name
+\ifoot*{Guntram Björn Klaus}		%left footer shows student name
 \ofoot*{\thepage}		%right footer shows pagination
 %---------------------------------------------------------------------
 
@@ -864,7 +864,45 @@ The findings are summarized in figure 3.10.
 \newpage
 \subsection{Installation and setup}
 
-Like the Teleport agent, Istio was installed using its officially provided Helm chart. 
+Like the Teleport agent, Istio was installed using its officially provided Helm chart. First, custom resource definitions (CRD) need to be added to Kubernetes. CRDs allow to extend the Kubernetes API with additional objects beyond the default ones, as
+outlined in section 2.2.2 "Core Cluster Objects". Using the script shown in 3.14... 
+
+\begin{enumerate}
+	\item Namespace istio-system is created
+	\item Istio Helm charts are added to the Helm repository
+	\item Istio-base is installed, rolling out CRDs 
+	\item Istiod service is installed (control plane)
+	\item Istio-ingressgateway is installed in a separate namespace, controlling traffic entering the cluster
+\end{enumerate}
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=13cm]{./images/istioinstall}
+  \caption{Installing Istio components [source: author]}
+  \label{fig:istioinstall}
+\end{figure}
+
+\subsubsection{Architecture}
+Istiod is the central component of the Istio service mesh architecture, responsible for managing the configuration and operation of the service mesh. 
+It handles configuration management by distributing configuration information to the Envoy proxies, ensures service discovery by keeping track of all 
+services in the cluster, and manages security through the creation, distribution, and rotation of certificates for securing communications within the mesh. 
+Additionally, Istiod collects telemetry data from the proxies for monitoring and analysis, and automates the injection of Envoy sidecar proxies into Kubernetes pods, ensuring that all traffic flows through the mesh.
+\newline
+\newline
+The Istio IngressGateway is a critical component of the Istio service mesh that manages incoming traffic from outside the cluster, providing a gateway for external traffic into the mesh. 
+It handles traffic management by routing incoming requests to the appropriate services based on configured rules, supports load balancing and enforces authentication and authorization policies.
+Istio's architecture including its Ingressgateway, sidecars, and control plance is depicted in figure 3.15.
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=13cm]{./images/istioarchitecture}
+  \caption{Istio architecture [source: author]}
+  \label{fig:istioarchitecture}
+\end{figure}
+
+
+
+
 
 \section{Keycloak}
 
@@ -944,7 +982,10 @@ Keycloak was chosen because of its substantial community support on GitHub issue
 
 \subsection{Installation and setup}
 
+Keycloak was installed using Kubernetes manifests directly. The Keycloak Docker image provided by Bitnami is used in the deployment object. 
+Within the cluster, the Keycloak pod is exposed via a service object named "keycloak-service". Hence, applications can reach Keycloak under the cluster domain "keycloak-service.keycloak.svc.cluster.local". 
 
+\section{Cluster end result}
 
 RequestAuthentication, AuthorizationPolicy, strict TLS,  examples with Neptune and Jupiter settings, python script: "With Istio's service mesh capabilities and Keycloak as an identity provider running in the cluster setup, tightly regulated traffic controls with aforementioned AuthorizationPolicy and RequestAuthentication policies can be achieved. 
 EXPLAIN HOW KEYCLOAK AND ISTIO SERVE AS PDP/PEP.
