@@ -187,6 +187,9 @@ Date: \hspace{6cm} Signature:\\
 \chapter*{Abstract}
 (E.g. ``This thesis investigates...'')
 
+Teleport, Istio and Keycloak are established as
+solid solutions for the ZT Kubernetes cluster
+
 % --- German Abstract ----------------------------------------------------
 \cleardoublepage
 \chapter*{Kurzfassung}
@@ -1078,17 +1081,11 @@ due to fast changing landsacape IT security and Kubernetes. Thus, future work mi
 
 This thesis aims to construct a Kubernetes cluster inspired by Zero Trust principles according to NIST Special Publication 800-207. Before concrete implementation is executed, 
 viable technologies are first compared based on factors which are important to fulfill Zero Trust requirements. The significance of this work lies in its practical demonstration of 
-applying Zero Trust principles to a Kubernetes environment, providing a blueprint for enhancing security in modern containerized applications. Teleport, Istio and Keycloak are established as
-solid solutions for the ZT Kubernetes cluster. In a production context, provided with ZT principles and recommandations, one must evaluate the granularity of policies and the strictness of the environment as a whole,
-as well as find the balance between developer restriction and security.  
-
-- Plain network communication is blocked bt network policies, and where network-wise a service is reachable, one must present a token 
-
-- there is no checklist which unequivocally decides if something is ZT, something can have ZT characteristics, and in this thesis it was attempted to achieve many of these characteristics. most of them were tried to be imolemented here 
-
-cant expect 100\% zero trust
-
-ZERO TRUST is not a one size fits all solution blindly applied and never looked at again, its a continuous process assessing the security posture of the environment and making changes accordingly, attitude of everyone involved
+applying Zero Trust principles to a Kubernetes environment, providing a blueprint for enhancing security in modern containerized applications. Teleport, Istio and Keycloak are set up as
+central components of the cluster, providing MFA, microsegementation, minimal access, continuous verification and more. In a production context, provided with ZT principles and recommendations, 
+one must evaluate the granularity of policies and the strictness of the environment as a whole, as well as find the balance between developer restriction and security. There is no definite checklist
+to tick off after which one can expect to have a 100\% Zero Trust Kubernetes environment. Applying ZT to Kubernetes is a continuous process assessing the security posture of the environment and making the necessary 
+adaptations. 
 
 
 
