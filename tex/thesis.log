@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  2 JUN 2024 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  2 JUN 2024 00:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -669,78 +669,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--330
 
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 333--356
+Underfull \hbox (badness 10000) in paragraph at lines 333--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--356
+Underfull \hbox (badness 10000) in paragraph at lines 333--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--356
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--356
+Underfull \hbox (badness 10000) in paragraph at lines 333--355
 
  []
 
 [3]
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--379
+Underfull \hbox (badness 10000) in paragraph at lines 363--378
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 381.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 380.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [4
 
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 429--434
+Underfull \hbox (badness 10000) in paragraph at lines 428--433
 
  []
 
-<./images/architecture.png, id=132, 629.35126pt x 336.25626pt>
+<./images/architecture.png, id=134, 629.35126pt x 336.25626pt>
 File: ./images/architecture.png Graphic file (type png)
 <use ./images/architecture.png>
-Package pdftex.def Info: ./images/architecture.png  used on input line 437.
+Package pdftex.def Info: ./images/architecture.png  used on input line 436.
 (pdftex.def)             Requested size: 266.26555pt x 142.26378pt.
 [5]
-<./images/kubernetes.png, id=152, 1029.8475pt x 623.32875pt>
+<./images/kubernetes.png, id=154, 1029.8475pt x 623.32875pt>
 File: ./images/kubernetes.png Graphic file (type png)
 <use ./images/kubernetes.png>
-Package pdftex.def Info: ./images/kubernetes.png  used on input line 481.
+Package pdftex.def Info: ./images/kubernetes.png  used on input line 480.
 (pdftex.def)             Requested size: 376.07193pt x 227.62204pt.
  [6 <./images/architecture.png>] [7 <./images/kubernetes.png>] [8] [9]
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--585
+Underfull \hbox (badness 10000) in paragraph at lines 567--588
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--585
+Underfull \hbox (badness 10000) in paragraph at lines 567--588
 
  []
 
-<./images/setup.png, id=190, 553.06625pt x 488.82625pt>
+<./images/setup.png, id=192, 553.06625pt x 488.82625pt>
 File: ./images/setup.png Graphic file (type png)
 <use ./images/setup.png>
-Package pdftex.def Info: ./images/setup.png  used on input line 588.
+Package pdftex.def Info: ./images/setup.png  used on input line 591.
 (pdftex.def)             Requested size: 257.53603pt x 227.62204pt.
-<./images/baseconfig.png, id=191, 1040.88875pt x 483.8075pt>
+<./images/baseconfig.png, id=193, 1040.88875pt x 483.8075pt>
 File: ./images/baseconfig.png Graphic file (type png)
 <use ./images/baseconfig.png>
-Package pdftex.def Info: ./images/baseconfig.png  used on input line 602.
+Package pdftex.def Info: ./images/baseconfig.png  used on input line 605.
 (pdftex.def)             Requested size: 477.4805pt x 221.93158pt.
 
-Overfull \hbox (36.46277pt too wide) in paragraph at lines 602--603
+Overfull \hbox (36.46277pt too wide) in paragraph at lines 605--606
  [][] 
  []
 
@@ -748,157 +743,157 @@ Overfull \hbox (36.46277pt too wide) in paragraph at lines 602--603
 
 
 ] [11 <./images/setup.png> <./images/baseconfig.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 616--623
+Underfull \hbox (badness 10000) in paragraph at lines 619--626
 
  []
 
 
-Overfull \hbox (5.40651pt too wide) in paragraph at lines 631--633
+Overfull \hbox (5.40651pt too wide) in paragraph at lines 634--636
 \T1/lmr/m/n/10.95 After afore-men-tioned set-tings, one can pro-ceed with in-stalling the con-tainer run-time, kubeadm,
  []
 
-<./images/crio.png, id=204, 968.61874pt x 342.27875pt>
+<./images/crio.png, id=206, 968.61874pt x 342.27875pt>
 File: ./images/crio.png Graphic file (type png)
 <use ./images/crio.png>
-Package pdftex.def Info: ./images/crio.png  used on input line 636.
+Package pdftex.def Info: ./images/crio.png  used on input line 639.
 (pdftex.def)             Requested size: 369.88582pt x 130.70444pt.
-<./images/k8sbinaries.png, id=205, 1045.9075pt x 226.8475pt>
+<./images/k8sbinaries.png, id=207, 1045.9075pt x 226.8475pt>
 File: ./images/k8sbinaries.png Graphic file (type png)
 <use ./images/k8sbinaries.png>
-Package pdftex.def Info: ./images/k8sbinaries.png  used on input line 643.
+Package pdftex.def Info: ./images/k8sbinaries.png  used on input line 646.
 (pdftex.def)             Requested size: 369.88582pt x 80.22508pt.
-<./images/master.png, id=206, 710.655pt x 49.18375pt>
+<./images/master.png, id=208, 710.655pt x 49.18375pt>
 File: ./images/master.png Graphic file (type png)
 <use ./images/master.png>
-Package pdftex.def Info: ./images/master.png  used on input line 650.
+Package pdftex.def Info: ./images/master.png  used on input line 653.
 (pdftex.def)             Requested size: 369.88582pt x 25.5997pt.
-<./images/worker.png, id=207, 981.6675pt x 50.1875pt>
+<./images/worker.png, id=209, 981.6675pt x 50.1875pt>
 File: ./images/worker.png Graphic file (type png)
 <use ./images/worker.png>
-Package pdftex.def Info: ./images/worker.png  used on input line 657.
+Package pdftex.def Info: ./images/worker.png  used on input line 660.
 (pdftex.def)             Requested size: 369.88582pt x 18.90985pt.
 [12] [13 <./images/crio.png> <./images/k8sbinaries.png> <./images/master.png> <./images/worker.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 669--676
+Underfull \hbox (badness 10000) in paragraph at lines 672--679
 
  []
 
-<./images/tableaccess.png, id=233, 1973.3725pt x 341.275pt>
+<./images/tableaccess.png, id=235, 1973.3725pt x 341.275pt>
 File: ./images/tableaccess.png Graphic file (type png)
 <use ./images/tableaccess.png>
-Package pdftex.def Info: ./images/tableaccess.png  used on input line 696.
+Package pdftex.def Info: ./images/tableaccess.png  used on input line 699.
 (pdftex.def)             Requested size: 398.33858pt x 68.88908pt.
 [14] [15 <./images/tableaccess.png>]
-<./images/teleport.png, id=252, 974.64125pt x 546.04pt>
+<./images/teleport.png, id=254, 974.64125pt x 546.04pt>
 File: ./images/teleport.png Graphic file (type png)
 <use ./images/teleport.png>
-Package pdftex.def Info: ./images/teleport.png  used on input line 740.
+Package pdftex.def Info: ./images/teleport.png  used on input line 743.
 (pdftex.def)             Requested size: 327.20668pt x 183.3182pt.
  [16 <./images/teleport.png>]
-<./images/teleporthelm.png, id=267, 788.9475pt x 171.64125pt>
+<./images/teleporthelm.png, id=269, 788.9475pt x 171.64125pt>
 File: ./images/teleporthelm.png Graphic file (type png)
 <use ./images/teleporthelm.png>
-Package pdftex.def Info: ./images/teleporthelm.png  used on input line 756.
+Package pdftex.def Info: ./images/teleporthelm.png  used on input line 759.
 (pdftex.def)             Requested size: 327.20668pt x 71.18526pt.
-<./images/teleportvalues.png, id=268, 602.25pt x 130.4875pt>
+<./images/teleportvalues.png, id=270, 602.25pt x 130.4875pt>
 File: ./images/teleportvalues.png Graphic file (type png)
 <use ./images/teleportvalues.png>
-Package pdftex.def Info: ./images/teleportvalues.png  used on input line 763.
+Package pdftex.def Info: ./images/teleportvalues.png  used on input line 766.
 (pdftex.def)             Requested size: 327.20668pt x 70.89824pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--774
+Underfull \hbox (badness 10000) in paragraph at lines 773--777
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 775--788
+Underfull \hbox (badness 10000) in paragraph at lines 778--791
 
  []
 
 [17 <./images/teleporthelm.png> <./images/teleportvalues.png>]
-<./images/teleportarch.png, id=284, 751.80875pt x 388.45125pt>
+<./images/teleportarch.png, id=286, 751.80875pt x 388.45125pt>
 File: ./images/teleportarch.png Graphic file (type png)
 <use ./images/teleportarch.png>
-Package pdftex.def Info: ./images/teleportarch.png  used on input line 805.
+Package pdftex.def Info: ./images/teleportarch.png  used on input line 808.
 (pdftex.def)             Requested size: 284.52756pt x 147.01434pt.
  [18 <./images/teleportarch.png>]
-<./images/mesh.png, id=292, 813.0375pt x 358.33875pt>
+<./images/mesh.png, id=294, 813.0375pt x 358.33875pt>
 File: ./images/mesh.png Graphic file (type png)
 <use ./images/mesh.png>
-Package pdftex.def Info: ./images/mesh.png  used on input line 825.
+Package pdftex.def Info: ./images/mesh.png  used on input line 828.
 (pdftex.def)             Requested size: 312.9803pt x 137.9417pt.
  [19 <./images/mesh.png>]
-<./images/tablemesh.png, id=299, 1614.03pt x 550.055pt>
+<./images/tablemesh.png, id=301, 1614.03pt x 550.055pt>
 File: ./images/tablemesh.png Graphic file (type png)
 <use ./images/tablemesh.png>
-Package pdftex.def Info: ./images/tablemesh.png  used on input line 863.
+Package pdftex.def Info: ./images/tablemesh.png  used on input line 866.
 (pdftex.def)             Requested size: 369.88582pt x 126.05675pt.
  [20 <./images/tablemesh.png>]
-<./images/istioinstall.png, id=306, 603.25375pt x 229.85875pt>
+<./images/istioinstall.png, id=308, 603.25375pt x 229.85875pt>
 File: ./images/istioinstall.png Graphic file (type png)
 <use ./images/istioinstall.png>
-Package pdftex.def Info: ./images/istioinstall.png  used on input line 884.
+Package pdftex.def Info: ./images/istioinstall.png  used on input line 887.
 (pdftex.def)             Requested size: 369.88582pt x 140.93613pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 890--899
+Underfull \hbox (badness 10000) in paragraph at lines 893--902
 
  []
 
-<./images/istioarchitecture.png, id=307, 792.9625pt x 495.8525pt>
+<./images/istioarchitecture.png, id=309, 792.9625pt x 495.8525pt>
 File: ./images/istioarchitecture.png Graphic file (type png)
 <use ./images/istioarchitecture.png>
-Package pdftex.def Info: ./images/istioarchitecture.png  used on input line 902.
+Package pdftex.def Info: ./images/istioarchitecture.png  used on input line 905.
 (pdftex.def)             Requested size: 369.88582pt x 231.29536pt.
 [21 <./images/istioinstall.png>] [22 <./images/istioarchitecture.png>] [23]
-<./images/tableiam.png, id=336, 1682.285pt x 550.055pt>
+<./images/tableiam.png, id=338, 1682.285pt x 550.055pt>
 File: ./images/tableiam.png Graphic file (type png)
 <use ./images/tableiam.png>
-Package pdftex.def Info: ./images/tableiam.png  used on input line 982.
+Package pdftex.def Info: ./images/tableiam.png  used on input line 985.
 (pdftex.def)             Requested size: 369.88582pt x 120.93694pt.
 
-Overfull \hbox (74.61176pt too wide) in paragraph at lines 989--991
+Overfull \hbox (74.61176pt too wide) in paragraph at lines 992--994
 \T1/lmr/m/n/10.95 Hence, ap-pli-ca-tions can reach Key-cloak un-der the clus-ter do-main "keycloak-service.keycloak.svc.cluster.local". 
  []
 
-<./images/keycloakservice.png, id=337, 263.98625pt x 266.9975pt>
+<./images/keycloakservice.png, id=339, 263.98625pt x 266.9975pt>
 File: ./images/keycloakservice.png Graphic file (type png)
 <use ./images/keycloakservice.png>
-Package pdftex.def Info: ./images/keycloakservice.png  used on input line 994.
+Package pdftex.def Info: ./images/keycloakservice.png  used on input line 997.
 (pdftex.def)             Requested size: 142.26378pt x 143.88315pt.
 [24 <./images/tableiam.png>]
-Overfull \hbox (13.83528pt too wide) in paragraph at lines 1002--1003
+Overfull \hbox (13.83528pt too wide) in paragraph at lines 1005--1006
 []\T1/lmr/m/n/10.95 keycloak-service.keycloak.svc.cluster.local/realms/nebhis/protocol/openid-connect/token.
  []
 
 
-Overfull \hbox (10.2765pt too wide) in paragraph at lines 1003--1005
+Overfull \hbox (10.2765pt too wide) in paragraph at lines 1006--1008
 []\T1/lmr/m/n/10.95 keycloak-service.keycloak.svc.cluster.local/realms/nebhis/protocol/openid-connect/certs.
  []
 
-<./images/authorizationpolicy.png, id=346, 597.23125pt x 325.215pt>
+<./images/authorizationpolicy.png, id=348, 597.23125pt x 325.215pt>
 File: ./images/authorizationpolicy.png Graphic file (type png)
 <use ./images/authorizationpolicy.png>
-Package pdftex.def Info: ./images/authorizationpolicy.png  used on input line 1018.
+Package pdftex.def Info: ./images/authorizationpolicy.png  used on input line 1021.
 (pdftex.def)             Requested size: 284.52756pt x 154.93526pt.
-<./images/requestauthentication.png, id=347, 792.9625pt x 247.92625pt>
+<./images/requestauthentication.png, id=349, 792.9625pt x 247.92625pt>
 File: ./images/requestauthentication.png Graphic file (type png)
 <use ./images/requestauthentication.png>
-Package pdftex.def Info: ./images/requestauthentication.png  used on input line 1025.
+Package pdftex.def Info: ./images/requestauthentication.png  used on input line 1028.
 (pdftex.def)             Requested size: 312.9803pt x 97.85602pt.
 [25 <./images/keycloakservice.png>]
-<./images/finalcluster.png, id=356, 543.02875pt x 314.17375pt>
+<./images/finalcluster.png, id=358, 543.02875pt x 314.17375pt>
 File: ./images/finalcluster.png Graphic file (type png)
 <use ./images/finalcluster.png>
-Package pdftex.def Info: ./images/finalcluster.png  used on input line 1039.
+Package pdftex.def Info: ./images/finalcluster.png  used on input line 1042.
 (pdftex.def)             Requested size: 284.52756pt x 164.62248pt.
  [26 <./images/authorizationpolicy.png> <./images/requestauthentication.png>] [27 <./images/finalcluster.png>]
 chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1077
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1080
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1077
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1080
 
  []
 
@@ -937,18 +932,18 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17338 strings out of 476025
- 333825 string characters out of 5790016
+ 17340 strings out of 476025
+ 333842 string characters out of 5790016
  1869388 words of memory out of 5000000
- 37364 multiletter control sequences out of 15000+600000
+ 37365 multiletter control sequences out of 15000+600000
  553607 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,106p,10631b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (38 pages, 1743079 bytes).
+Output written on thesis.pdf (38 pages, 1743524 bytes).
 PDF statistics:
- 585 PDF objects out of 1000 (max. 8388607)
- 483 compressed objects within 5 object streams
- 175 named destinations out of 1000 (max. 500000)
- 396 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 488 compressed objects within 5 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 404 words of extra memory for PDF output out of 10000 (max. 10000000)
 

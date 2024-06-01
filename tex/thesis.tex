@@ -247,11 +247,11 @@ solid solutions for the ZT Kubernetes cluster
 Over the last years, there have been two significant shifts in enterprise IT systems. 
 \newline 
 \newline
-One of these shifts addresses the way companies deploy, scale and maintain the lifecycle of their software services.
+One of these shifts addresses the way companies deploy, scale, and maintain the lifecycle of their software services.
 Applications used to be primarily constructed as one large software
-unit that bundled all features, business logic, user interfaces and data access components.
-Increasing necessity for scalability, flexibility and maintainability made organizations tran-
-sition from such monolithic architectures to microservices, which are smaller, separated but
+unit that integrated all features, business logic, user interfaces, and data access components.
+The increasing necessity for scalability, flexibility, and maintainability made organizations tran-
+sition from monolithic architectures to so called microservices, which are smaller, separated but
 loosely coupled software units implementing one component of the larger system at hand.
 The release of the Docker container platform in 2013 had a significant impact on making
 transitions from monoliths to microservices feasible. Kubernetes has since emerged as the
@@ -261,14 +261,14 @@ of use cases makes it a powerful tool for both large enterprises and small teams
 \newline
 \newline
 The second shift pertains to how companies secure their computing infrastructure and the 
-resource hosted on it. While there used to be single, easily identifiable network perimeters in the past, for example
+resources hosted on it. While there used to be single, easily identifiable network perimeters in the past, for example,
 a single local area network at a company site, modern infrastructures may consist of multiple internal networks, 
 remote offices, mobile workers, different types of virtualization and cloud services. This circumstance has rendered traditional, static, perimeter-based security 
 no longer appropriate, because transgressing this perimeter once means further, unhindered access into a given system. 
-Under a newer security model labeled "Zero Trust", the aim is to restrict such unhindered movement as much as possible 
+Under a newer security model labeled "Zero Trust" (ZT), the aim is to restrict such unhindered movement as much as possible 
 by adhering to certain principles and guidelines, the central one being to never grant implicit trust to any actor on a network 
-- hence the term "Zero" Trust. The principles of ZT have existed way before the term "Zero Trust" was coined.
-A fundamental piece of liteature, which tries to capture what "Zero Trust" concreteley means, is the NIST Special Publication 800-207, titled 
+- hence the term "Zero Trust". The principles of ZT have existed way before the term "Zero Trust" was coined.
+A fundamental piece of liteature, that tries to capture what "Zero Trust" concretely means, is the NIST Special Publication 800-207, titled 
 "Zero Trust Architecture". It is the point of reference for understanding Zero Trust.
 \newline
 \newline
@@ -279,54 +279,54 @@ it is of paramount importance to explore how exactly this current new paradigm o
 \section{Related Work}
 
 Since the emergence and popularization of the concept of "Zero-Trust", a lot of work has been done on the topic, tying it into various 
-domains of IT: Cloud, on-premise infrastructure, IoT, Hardware, Blockchain and much more. 
+domains of IT: Cloud, on-premise infrastructure, IoT, Hardware, Blockchain, and much more. 
 \newline
 \newline
 Andrea Manzato, at the University of Padua, implements the 
-Zero Trust model in an enterprise environement using solutions provided by 
+Zero Trust model in an enterprise environment using solutions provided by 
 Microsoft Azure. It is investigated how the capabilities and configuration options of Microsoft Defender and Active Directory can be leveraged
 to protect enterprise resources. Attack scenarios on these technologies are simulated and automated remediation actions are presented. 
 \newline
-Dr. Wesam Almobaideen's master thesis, at Rochester Institute of Technology Dubai Campus, explores the topic of Zero-Trust specifically in 
-the context of MFA. A framework combining principles of ZT and MFA is designed and evaluated in terms of performance, security and user satisfaction.
+Dr. Wesam Almobaideen's master's thesis, at Rochester Institute of Technology Dubai Campus, explores the topic of Zero-Trust specifically in 
+the context of Multi Factor Autehntication. A framework combining principles of ZT and MFA is designed and evaluated in terms of performance, security, and user satisfaction.
 \newline
-In the context of IoT, Cem Bicer at the technical university of Vienna, explores and evaluates ZT for edge networks.
+In the context of IoT, Cem Bicer at the Technical University of Vienna, explores and evaluates ZT for edge networks.
 The implementation of the thesis follows ZT guidelines as proposed by the National Institute of Standards and Technology (NIST) and additionally places 
 a blockchain network on top of the ZT architecture.
 \newline
-Furthermore, zero trust in and of itself has been put under scrutiny. In "Theory and Application of Zero Trust Security: A Brief Survey", Kang et. al 
-investigates the current challenges faced when making use of Zero Trust, as well as progress that has been achieved so far when doing so.   
-Here, it is noted that research and knowledge on the theory and application of Zero Trust has not yet matured, and more extensive work is still required to 
+Furthermore, Zero Trust in and of itself has been put under scrutiny. In "Theory and Application of Zero Trust Security: A Brief Survey", Kang et. al investigates 
+the current challenges faced when making use of Zero Trust, as well as the progress that has been made in this area up to that date.  
+Here, it is noted that research and knowledge on the theory and application of Zero Trust have not yet matured, and more extensive work is still required to 
 obtain a deeper understanding and more accurate implementation of the paradigm in academia and industry.
 \newline
-In his master's thesis at Utrecht university, Michel Modderkolk proposes a more mature model of Zero Trust, branded "Zero Trust Maturity Model (ZeTuMM)".
-The work makes use of two scietific methods, "comparison analysis" and "focus area maturity modeling", in order to outline a more fully fledged ZT model.    
+In his master's thesis at Utrecht University, Michel Modderkolk proposes a more mature model of Zero Trust, branded "Zero Trust Maturity Model (ZeTuMM)".
+The work makes use of two scientific methods, "comparison analysis" and "focus area maturity modeling", to outline a more fully fledged ZT model.    
 \newline
 \newline
 Independent of ZT, Kubernetes security has been explored in the following works. 
-The paper titled "Designing an intrusion detection system for a Kubernetes cluster" by Hristov, P. (2022) focuses on addressing the security challenges associated with 
+The essay "Designing an intrusion detection system for a Kubernetes cluster" by Hristov, P. (2022) focuses on addressing the security challenges associated with 
 cloud-based architectures, particularly those utilizing Kubernetes. The essay highlights the growing reliance 
 on digital platforms, which has led to an increased demand for automation and high-reliability systems. This reliance has, in turn, increased the use of tools and consequently, 
 the number of security concerns.
 \newline
-"A Systematic evaluation of CVEs and mitigation strategies for a Kubernetes stack" by Fred Nordell (2022) offers a detailed examination of CVE's and possible mitigation strategies
+"A Systematic evaluation of CVEs and mitigation strategies for a Kubernetes stack" by Fred Nordell (2022) offers a detailed examination of CVE's and possible mitigation strategies.
 \newline
 The thesis "Kubernetes Near Real-Time Monitoring and Secure Network Architectures" explores the security challenges and mitigation strategies in Kubernetes. It emphasizes the importance 
 of securing the Kubernetes control plane, implementing secure configurations, and protecting critical components 
-like the etcd data store. Additionally, it highlights the integration of security practices throughout the development, deployment, and operations lifecycle, advocating for a DevSecOps 
+like the so called "etcd" data store. Additionally, it highlights the integration of security practices throughout the development, deployment, and operations lifecycle, advocating for a DevSecOps 
 approach that includes security automation, continuous security testing, and security monitoring.
 \newline
 "Testing the Security of a Kubernetes Cluster in a Production Environment" by Giangiulio and Malmberg at KTH Stockholm emphasizes the critical importance of comprehensive security measures for Kubernetes 
 clusters operating in production environments. It highlights the need for robust security practices, including data encryption, proper user and permissions management, 
 and the use of Role-Based Access Control (RBAC) to manage access to the cluster. Additionally, it underscores the significance of maintaining up-to-date Docker images, 
-using minimal Docker images to reduce potential vulnerabilities, and implementing network policies and secrets management to enhance security.
+using minimal Docker images to reduce potential vulnerabilities, and implementing network policies as well as secrets management to enhance security.
 \newline
 The thesis "A Security Framework for Multi-Cluster Kubernetes Architectures" also aims to address the security challenges in Kubernetes environments, particularly focusing on multi-cluster setups. 
 The study emphasizes the importance of continuous monitoring and management to mitigate security risks, highlighting the need for a robust security framework that balances security enhancements 
 with minimal performance impact.
 \newline
 \newline
-According to my knowledge as of April 2024, no major work has been done at the intersection of Zero Trust and Kubernetes. 
+As of April 2024, no major work has been done at the intersection of Zero Trust and Kubernetes. 
 
 \section{Objectives and Methodology}
 
@@ -335,24 +335,23 @@ How are ZT principles applied in Kubernetes? How can ZT be achieved in a Kuberne
 according to ZT principles as outlined in NIST Special Publication 800-207. To narrow down the scope of the research, the following limitations are placed.
 \newline
 \newline
-1) A self-managed cluster (a self-managed control plane) will be instantiated using kubeadm. It will not be a managed cluster like EKS, AKS, or GKE.
+1) A self-managed cluster (a self-managed control plane) will be instantiated using kubeadm. It will not be a managed cluster such EKS, AKS, or GKE.
 The cluster will have one master node and two worker nodes.
 \newline
-2) In order to implement ZT guidelines, open source, free, or free versions of otherwise paid-services are used. Least possible vendor lock-in is preferred.
+2) To implement ZT guidelines, open source, free, or free versions of otherwise paid-services are used. The least possible vendor lock-in is preferred.
 \newline
 \newline
 Formulating above mentioned goals in a single, coherent sentence results in the following research question:
 How can free software projects and native Kubernetes solutions be leveraged to achieve a cloud-agnostic and zero-trust architecture in Kubernetes?
 \newline
 \newline
-\newline
-To do so, NIST Special Publication 800-207 is used as a primary point of reference. The paper will be thoroughly read and summarized in chapter two.
-Here, an in depth explanation for the importance of ZT shall be given. Core Kubernetes concepts which help understand the subsequent practical setup 
-are also explained in chapter 2. After explaining the pillars of ZT and Kubernetes, technologies and solutions are researched and picked, which will 
-then be practically implemented to achieve the corresponding ZT principle inside the Kubernetes environment. Code snippets shall be presented. Throughout 
+As a primary point of reference, the NIST Special Publication 800-207 is used. The paper will be summarized in chapter two.
+An in depth explanation for the importance of ZT shall be given. Core Kubernetes concepts which help understand the subsequent practical setup 
+are also explained in chapter two. After explaining the pillars of ZT and Kubernetes, technologies and solutions are researched and picked, which will 
+then be practically implemented to achieve the corresponding ZT principle inside the Kubernetes environment. In addition, code snippets shall be presented. Throughout 
 the practical setup, cross references to the NIST publication shall be made.
 To evaluate the setup, test namespaces will be created and simple test applications will be deployed inside them. User accounts will be created. 
-At the end of the paper we shall critique the environment and answer the question if a setup, which does a 100\% justice to ZT, is even possible. 
+At the end of the paper, the environment will be critiqued, addressing the question of whether a setup which does a 100\% justce to ZT is even possible.
 
 \newpage
 \chapter{Concepts}
@@ -364,10 +363,10 @@ At the end of the paper we shall critique the environment and answer the questio
 ZT is not one single architecture, but rather a set of guidelines for more secure system architecture and operations.
 NIST publication presents the following definition for ZT and ZT architecture: 
 \newline
-"Zero trust (ZT) provides a collection of concepts and ideas designed to minimize
+"Zero trust provides a collection of concepts and ideas designed to minimize
 uncertainty in enforcing accurate, least privilege per-request access decisions in
 information systems and services in the face of a network viewed as compromised. Zero
-trust architecture (ZTA) is an enterprise’s cybersecurity plan that utilizes zero trust
+trust architecture is an enterprise’s cybersecurity plan that utilizes zero trust
 concepts and encompasses component relationships, workflow planning, and access
 policies. Therefore, a zero trust enterprise is the network infrastructure (physical and
 virtual) and operational policies that are in place for an enterprise as a product of a zero
@@ -554,6 +553,10 @@ can be assigned using IP Address Management (IPAM) plugins. Calico and Cilium, f
 providing both network and IPAM plugins and integrating with other CNI plugins.
 
 [cite tigera, cilium, k8s docs]
+
+\section{Zero Trust versus Traditional Security Model}
+
+in depth here 
 
 
 

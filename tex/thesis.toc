@@ -27,6 +27,7 @@
 \contentsline {subsubsection}{\nonumberline Pod Networking}{8}{subsubsection*.31}%
 \contentsline {subsubsection}{\nonumberline Service and Ingress}{8}{subsubsection*.33}%
 \contentsline {subsubsection}{\nonumberline Container Network Interface (Plugins)}{9}{subsubsection*.35}%
+\contentsline {section}{\numberline {2.3}Zero Trust versus Traditional Security Model}{9}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Creating the Zero Trust Cluster}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Virtual Machines and Network}{10}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Bootstrapping the cluster}{11}{section.3.2}%
