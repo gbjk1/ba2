@@ -1029,6 +1029,8 @@ Istio validates the JWT according to specifications of RequestAuthentication sho
 
 examples with Neptune and Jupiter settings, python script, kubectl get pods --all-namespaces, etc
 
+Neptune calling Jupiter by first obtaining JWT token from Keycloak
+
 \newpage
 \chapter{Discussion and Future Work}
 
@@ -1058,13 +1060,14 @@ continuous scanning and kyverno
 
 As one can see, there is always room for improvement there will always be ways to elevate the security standard of a Kubernetes cluster and an infrastructure in general. 
 
-impossible to have 100\% ZT. also due to fast changing landsacape and technologies and new findings 
+cant expect to have 100\% ZT. also due to fast changing landsacape and technologies and new findings 
 
 Thus, future work might build on top of this setup and concern itself with exactly critiques laid out above, thoroughly implementing secret management, continuous scanning and log aggregation
 for security assessments. 
 
-AI driven threat detection in the future 
-
+Furthermore, AI-driven threat detection has made significant progress in recent years. In AI-driven threat detection machine learning algorithms identify baseline of normal network behavior.
+If the behavior on the network deviates from this usual state, a potential security threat might be alerted. These AI-driven systems automatically notifying system administrators. 
+The underlying data fed into such ML models can be network traffic logs from Istio sidecars. 
 
 
 
