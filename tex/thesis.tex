@@ -208,6 +208,7 @@ Date: \hspace{6cm} Signature:\\
 			MFA & Multifactor Authentication \\
       mTLS & Mutual Transport Layer Security \\
 			NIST & National Institute of Standards and Technology \\
+      PKI & Public Key Infrastructure \\
       VPN & Virtual Private Network \\
 			ZT & Zero Trust \\
 		\end{tabular}
@@ -982,15 +983,24 @@ Keycloak was chosen because of its substantial community support on GitHub issue
 
 \subsection{Installation and setup}
 
-Keycloak was installed using Kubernetes manifests directly. The Keycloak Docker image provided by Bitnami is used in the deployment object. 
+Keycloak was installed using Kubernetes manifests directly, by issuing "kubectl apply" commands. The Keycloak Docker image provided by Bitnami is used in the deployment object. 
 Within the cluster, the Keycloak pod is exposed via a service object named "keycloak-service". Hence, applications can reach Keycloak under the cluster domain "keycloak-service.keycloak.svc.cluster.local".
 
 \begin{figure}[htbp]
   \centering
-      \includegraphics[width=6cm]{./images/keycloakservice}
+      \includegraphics[width=5cm]{./images/keycloakservice}
   \caption{Service object exposing Keycloak [source: author]}
   \label{fig:keycloakservice}
 \end{figure}
+
+An application realm called 'nebhis' was created inside the Keycloak UI, which is used for creating Keycloak clients. For this realm, Keycloak provides two central realms for the ZT setup:
+
+\begin{itemize}
+	\item keycloak-service.keycloak.svc.cluster.local/realms/nebhis/protocol/openid-connect/token. This endpoint is consumed by applications requesting an OIDC token, to be further used to authenticate to other applications in the cluster.
+	\item keycloak-service.keycloak.svc.cluster.local/realms/nebhis/protocol/openid-connect/certs. This endpoint is consumed by the Istio service mesh. The sidecar intercepts incoming traffic to an application pod, extracts the token from the 'Authorization' HTTP header, 
+        and validates it using the PKI information obtained under this endpoint. 
+\end{itemize}
+
 
 \section{Cluster end result}
 
