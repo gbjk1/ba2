@@ -1032,7 +1032,57 @@ examples with Neptune and Jupiter settings, python script, kubectl get pods --al
 \newpage
 \chapter{Discussion and Future Work}
 
+There is still much more that can be done to ensure a fully production grade environment constructed after the idea of Zero Trust. 
+
+
+
+However, this thesis comprehensively covers how the core ideas of ZT, for example the elimination of implicit trust between participating parties, 
+can be achieved. If an attacker was to gain access to a pod, they would be significantly restricted in their actions by network segmentation as well as Istio's 
+traffic controlling policies tightly integrated with Keycloak's Identity and Access Management. 
+
+the only caveat of istio - istio might impact performance/resource strain on the cluster because of sidecars in every pod 
+
+To enhance the security posture of the environment even more, secret management is another critical aspect to consider. Secrets such as database credentials and 
+API keys, SSL certificates and SSL keys used by applications deployed in Kubernetes, must be externalized from the source code and repository platforms like GitHub. 
+The self-hosted open-source tool Hashicorp Vault can be utilized to store for example the client credentials of applications used to retrieve OIDC tokens from Keycloak.
+Only at startup this client credential is loaded into the application container, which ensures that sensitive information is secured at rest. 
+
+There can be even more focus placed on the ZT tenet of auditing. Log collector and aggregator might be to standardize the output stream of audit logs provided by Teleport, Istio and Keycloak,
+summarize and report them. 
+
+
+
+Make infrastructure replicable by using gitops like argocd, flux or ansible for IaC 
+
+continuous scanning and kyverno
+
+As one can see, there is always room for improvement there will always be ways to elevate the security standard of a Kubernetes cluster and an infrastructure in general. 
+
+impossible to have 100\% ZT. also due to fast changing landsacape and technologies and new findings 
+
+Thus, future work might build on top of this setup and concern itself with exactly critiques laid out above, thoroughly implementing secret management, continuous scanning and log aggregation
+for security assessments. 
+
+AI driven threat detection in the future 
+
+
+
+
+\newpage
 \chapter{Conclusion}
+
+- It was shown how a cluster was created from scratch and modified according the ideas of Zero Trust 
+
+this thesis - Thesis gives insight into what is possible and presents simple examples, in a production one must evaluate themself how fine grained the policies must be, meaning to find the balance between developer restriction and security
+- plain network communication is blocked bt network policies, and where network-wise a service is reachable, one must present a token 
+
+- there is no checklist which unequivocally decides if something is ZT, something can have ZT characteristics, and in this thesis it was attempted to achieve many of these characteristics. most of them were tried to be imolemented here 
+
+* significance of this work lies in its practical demonstration of applying Zero Trust principles to a Kubernetes environment, providing a blueprint for enhancing security in modern containerized applications
+
+ZERO TRUST is not a one size fits all solution blindly applied and never looked at again, its a continuous process assessing the security posture of the environment and making changes accordingly, attitude of everyone involved
+
+
 
 \newpage
 
