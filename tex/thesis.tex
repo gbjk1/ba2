@@ -1048,26 +1048,27 @@ To enhance the security posture of the environment even more, secret management 
 API keys, SSL certificates and SSL keys used by applications deployed in Kubernetes, must be externalized from the source code and repository platforms like GitHub. 
 The self-hosted open-source tool Hashicorp Vault can be utilized to store for example the client credentials of applications used to retrieve OIDC tokens from Keycloak.
 Only at startup this client credential is loaded into the application container, which ensures that sensitive information is secured at rest. 
-
+\newline
 There can be even more focus placed on the ZT tenet of auditing. Log collector and aggregator might be to standardize the output stream of audit logs provided by Teleport, Istio and Keycloak,
 summarize and report them. 
-
-
-
-Make infrastructure replicable by using gitops like argocd, flux or ansible for IaC 
-
+\newline
+An improvement that could be made to the setup is the usage of Infrastructure as Code and GitOps. With Iac, the Kubernetes VMs could be managed and provisioned using machine-readable
+configuration files, rather than manually issuing interactive commands or using bash scripting. GitOps is a set of practices that uses Git repositories as the single source of truth for 
+declarative infrastructure and applications, enabling automated deployments and operational tasks through pull requests and continuous delivery pipelines. Tools like Flux and ArgoCD can 
+continuously synchronize the environement's state from a Git repository. This way, the environment is standardized, centralized and always replicable in case it needs to be brought down or migrated
+due to system failure or compromise by malicious actors.
+\newline
 continuous scanning and kyverno
-
+\newline
 As one can see, there is always room for improvement there will always be ways to elevate the security standard of a Kubernetes cluster and an infrastructure in general. 
-
 cant expect to have 100\% ZT. also due to fast changing landsacape and technologies and new findings 
-
+\newline
+Furthermore, AI-driven threat detection has made significant progress in recent years. In AI-driven threat detection, machine learning algorithms identify a baseline of normal network behavior.
+If the behavior on the network deviates from this usual state, a potential security threat might be alerted. At such a point, these kind of AI-driven systems can automate the incident response 
+and block IP addresses, apply policies, deploy patches and notify system administrators on their own accord. As a dataset, network traffic logs from Istio's sidecars could be fed into such machine learning models.
+\newline
 Thus, future work might build on top of this setup and concern itself with exactly critiques laid out above, thoroughly implementing secret management, continuous scanning and log aggregation
 for security assessments. 
-
-Furthermore, AI-driven threat detection has made significant progress in recent years. In AI-driven threat detection machine learning algorithms identify baseline of normal network behavior.
-If the behavior on the network deviates from this usual state, a potential security threat might be alerted. These AI-driven systems automatically notifying system administrators. 
-The underlying data fed into such ML models can be network traffic logs from Istio sidecars. 
 
 
 
