@@ -21,6 +21,8 @@
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Istio architecture [source: author]}}{22}{figure.3.15}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Comparison-summary of IAM solutions [source: author]}}{24}{figure.3.16}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Service object exposing Keycloak [source: author]}}{25}{figure.3.17}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Istio AuthorizationPolicy [source: author]}}{26}{figure.3.18}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Istio RequestAuthentication [source: author]}}{26}{figure.3.19}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

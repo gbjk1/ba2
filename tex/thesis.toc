@@ -57,15 +57,12 @@
 \contentsline {subsubsection}{\nonumberline Pod to pod OIDC flow}{23}{subsubsection*.61}%
 \contentsline {subsection}{\numberline {3.5.4}Why use Keycloak?}{24}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}Installation and setup}{24}{subsection.3.5.5}%
-\contentsline {section}{\numberline {3.6}Cluster end result}{25}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Vault Secret Management}{25}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Why use Vault?}{25}{subsection.3.7.1}%
-\contentsline {section}{\numberline {3.8}Trivy}{25}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Why Trivy?}{25}{subsection.3.8.1}%
-\contentsline {chapter}{\numberline {4}Discussion and Future Work}{26}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}%
-\contentsline {chapter}{Bibliography}{28}{chapter.5}%
-\contentsline {chapter}{List of Figures}{29}{chapter*.62}%
-\contentsline {chapter}{List of Tables}{30}{chapter*.63}%
-\contentsline {chapter}{\nonumberline Appendix}{31}{chapter*.65}%
+\contentsline {subsubsection}{\nonumberline Keycloak combined with Istio}{25}{subsubsection*.63}%
+\contentsline {section}{\numberline {3.6}Cluster end result}{26}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Discussion and Future Work}{27}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{28}{chapter.5}%
+\contentsline {chapter}{Bibliography}{29}{chapter.5}%
+\contentsline {chapter}{List of Figures}{30}{chapter*.64}%
+\contentsline {chapter}{List of Tables}{31}{chapter*.65}%
+\contentsline {chapter}{\nonumberline Appendix}{32}{chapter*.67}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
