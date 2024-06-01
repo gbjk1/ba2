@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Components}{6}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Core Cluster Objects}{7}{subsection.2.2.2}%
 \contentsline {subsubsection}{\nonumberline Namespaces}{7}{subsubsection*.25}%
-\contentsline {subsubsection}{\nonumberline Pods, Replicasets, Deployments, Statefulsets}{7}{subsubsection*.27}%
+\contentsline {subsubsection}{\nonumberline Pods, Replicasets, Deployments, Statefulsets}{8}{subsubsection*.27}%
 \contentsline {subsubsection}{\nonumberline ServiceAccount and RBAC}{8}{subsubsection*.29}%
 \contentsline {subsection}{\numberline {2.2.3}Kubernetes Networking}{8}{subsection.2.2.3}%
 \contentsline {subsubsection}{\nonumberline Pod Networking}{8}{subsubsection*.31}%
