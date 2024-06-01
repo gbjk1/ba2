@@ -1038,29 +1038,27 @@ There is still much more that can be done to ensure a fully production grade env
 
 
 
-However, this thesis comprehensively covers how the core ideas of ZT, for example the elimination of implicit trust between participating parties, 
-can be achieved. If an attacker was to gain access to a pod, they would be significantly restricted in their actions by network segmentation as well as Istio's 
-traffic controlling policies tightly integrated with Keycloak's Identity and Access Management. 
-
-the only caveat of istio - istio might impact performance/resource strain on the cluster because of sidecars in every pod 
-
+However, this thesis comprehensively covers the core ideas of ZT, for example how the elimination of implicit trust between participating parties 
+can be achieved. If an attacker was to gain access to a kubeconfig, it would only be valid for the duration of the Teleport session.
+If an attacker was to gain access to a pod, they would be significantly restricted in their actions by network segmentation as well as Istio's 
+traffic controlling policies tightly integrated with Keycloak's Identity and Access Management. The only disadavntage of Istio the strain on cluster resources, 
+since every deployment is accompanied a sidecar process. 
+\newline
 To enhance the security posture of the environment even more, secret management is another critical aspect to consider. Secrets such as database credentials and 
 API keys, SSL certificates and SSL keys used by applications deployed in Kubernetes, must be externalized from the source code and repository platforms like GitHub. 
 The self-hosted open-source tool Hashicorp Vault can be utilized to store for example the client credentials of applications used to retrieve OIDC tokens from Keycloak.
 Only at startup this client credential is loaded into the application container, which ensures that sensitive information is secured at rest. 
 \newline
-There can be even more focus placed on the ZT tenet of auditing. Log collector and aggregator might be to standardize the output stream of audit logs provided by Teleport, Istio and Keycloak,
+There can be even more focus placed on the ZT importance of auditing. Log collectors and aggregators can standardize the output stream of audit logs provided by Teleport, Istio and Keycloak,
 summarize and report them. 
 \newline
-An improvement that could be made to the setup is the usage of Infrastructure as Code and GitOps. With Iac, the Kubernetes VMs could be managed and provisioned using machine-readable
-configuration files, rather than manually issuing interactive commands or using bash scripting. GitOps is a set of practices that uses Git repositories as the single source of truth for 
-declarative infrastructure and applications, enabling automated deployments and operational tasks through pull requests and continuous delivery pipelines. Tools like Flux and ArgoCD can 
+Another improvement that could be made to the setup is the usage of Infrastructure as Code and GitOps. With Iac, the Kubernetes VMs could be managed and provisioned using machine-readable
+configuration files as done in Ansible, rather than manually issuing interactive commands or doing bash scripting. GitOps is a set of practices that uses Git repositories as the single source of truth for 
+infrastructure and applications, enabling automated deployments and operational tasks through pull requests and continuous delivery pipelines. Tools like Flux and ArgoCD can 
 continuously synchronize the environement's state from a Git repository. This way, the environment is standardized, centralized and always replicable in case it needs to be brought down or migrated
 due to system failure or compromise by malicious actors.
 \newline
-continuous scanning and kyverno
-\newline
-As one can see, there is always room for improvement there will always be ways to elevate the security standard of a Kubernetes cluster and an infrastructure in general. 
+Evidently, there is always room for improvement and there will always be ways to elevate the security standard of a Kubernetes cluster and an infrastructure in general. 
 cant expect to have 100\% ZT. also due to fast changing landsacape and technologies and new findings 
 \newline
 Furthermore, AI-driven threat detection has made significant progress in recent years. In AI-driven threat detection, machine learning algorithms identify a baseline of normal network behavior.
