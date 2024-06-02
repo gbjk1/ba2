@@ -80,6 +80,11 @@ S.~Rose, O.~Borchert, S.~Mitchell, and S.~Connelly, ``Zero trust architecture,''
 P.~Dhiman, N.~Saini, Y.~Gulzar, S.~Turaev, A.~Kaur, K.~U. Nisa, and Y.~Hamid, ``A review and comparative analysis of relevant approaches of zero trust network model,'' \emph{Sensors}, vol.~24, no.~4, p. 1328, February 2024. [Online]. Available: \url{https://www.mdpi.com/1424-8220/24/4/1328}
 \BIBentrySTDinterwordspacing
 
+\bibitem{k8scomponents}
+\BIBentryALTinterwordspacing
+``Kubernetes components,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/overview/components/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{k8sapi}
 \BIBentryALTinterwordspacing
 ``The kubernetes api,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/overview/kubernetes-api/}
