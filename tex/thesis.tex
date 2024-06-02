@@ -90,6 +90,8 @@
 \pagestyle{scrheadings}
 \automark{chapter}
 
+\usepackage{csquotes}
+
 %Left header shows chapter and chapter name, will not display on first chapter page use \ihead*{\leftmark} to show on every page
 \ihead{\leftmark} 	
 %\ohead*{\rightmark}	%optional right header
@@ -291,45 +293,45 @@ domains of IT: Cloud, on-premise infrastructure, IoT, Hardware, Blockchain, and 
 Andrea Manzato, at the University of Padua, implements the 
 Zero Trust model in an enterprise environment using solutions provided by 
 Microsoft Azure. It is investigated how the capabilities and configuration options of Microsoft Defender and Active Directory can be leveraged
-to protect enterprise resources. Attack scenarios on these technologies are simulated and automated remediation actions are presented. 
+to protect enterprise resources. Attack scenarios on these technologies are simulated and automated remediation actions are presented. \cite{manzato}
 \newline
-Dr. Wesam Almobaideen's master's thesis, at Rochester Institute of Technology Dubai Campus, explores the topic of Zero-Trust specifically in 
-the context of Multi Factor Autehntication. A framework combining principles of ZT and MFA is designed and evaluated in terms of performance, security, and user satisfaction.
+Mathews Rajan Alappat's master's thesis, at Rochester Institute of Technology Dubai Campus, explores the topic of Zero-Trust specifically in 
+the context of Multi Factor Autehntication. A framework combining principles of ZT and MFA is designed and evaluated in terms of performance, security, and user satisfaction. \cite{alappat}
 \newline
 In the context of IoT, Cem Bicer at the Technical University of Vienna, explores and evaluates ZT for edge networks.
 The implementation of the thesis follows ZT guidelines as proposed by the National Institute of Standards and Technology (NIST) and additionally places 
-a blockchain network on top of the ZT architecture.
+a blockchain network on top of the ZT architecture. \cite{bicer}
 \newline
 Furthermore, Zero Trust in and of itself has been put under scrutiny. In "Theory and Application of Zero Trust Security: A Brief Survey", Kang et. al investigates 
 the current challenges faced when making use of Zero Trust, as well as the progress that has been made in this area up to that date.  
 Here, it is noted that research and knowledge on the theory and application of Zero Trust have not yet matured, and more extensive work is still required to 
-obtain a deeper understanding and more accurate implementation of the paradigm in academia and industry.
+obtain a deeper understanding and more accurate implementation of the paradigm in academia and industry. \cite{kang}
 \newline
 In his master's thesis at Utrecht University, Michel Modderkolk proposes a more mature model of Zero Trust, branded "Zero Trust Maturity Model (ZeTuMM)".
-The work makes use of two scientific methods, "comparison analysis" and "focus area maturity modeling", to outline a more fully fledged ZT model.    
+The work makes use of two scientific methods, "comparison analysis" and "focus area maturity modeling", to outline a more fully fledged ZT model. \cite{modderkolk}
 \newline
 \newline
 Independent of ZT, Kubernetes security has been explored in the following works. 
 The essay "Designing an intrusion detection system for a Kubernetes cluster" by Hristov, P. (2022) focuses on addressing the security challenges associated with 
 cloud-based architectures, particularly those utilizing Kubernetes. The essay highlights the growing reliance 
 on digital platforms, which has led to an increased demand for automation and high-reliability systems. This reliance has, in turn, increased the use of tools and consequently, 
-the number of security concerns.
+the number of security concerns. \cite{hristov}
 \newline
-"A Systematic evaluation of CVEs and mitigation strategies for a Kubernetes stack" by Fred Nordell (2022) offers a detailed examination of CVE's and possible mitigation strategies.
+"A Systematic evaluation of CVEs and mitigation strategies for a Kubernetes stack" by Fred Nordell (2022) offers a detailed examination of CVE's and possible mitigation strategies. \cite{nordell}
 \newline
 The thesis "Kubernetes Near Real-Time Monitoring and Secure Network Architectures" explores the security challenges and mitigation strategies in Kubernetes. It emphasizes the importance 
 of securing the Kubernetes control plane, implementing secure configurations, and protecting critical components 
 like the so called "etcd" data store. Additionally, it highlights the integration of security practices throughout the development, deployment, and operations lifecycle, advocating for a DevSecOps 
-approach that includes security automation, continuous security testing, and security monitoring.
+approach that includes security automation, continuous security testing, and security monitoring. \cite{munoz}
 \newline
 "Testing the Security of a Kubernetes Cluster in a Production Environment" by Giangiulio and Malmberg at KTH Stockholm emphasizes the critical importance of comprehensive security measures for Kubernetes 
 clusters operating in production environments. It highlights the need for robust security practices, including data encryption, proper user and permissions management, 
 and the use of Role-Based Access Control (RBAC) to manage access to the cluster. Additionally, it underscores the significance of maintaining up-to-date Docker images, 
-using minimal Docker images to reduce potential vulnerabilities, and implementing network policies as well as secrets management to enhance security.
+using minimal Docker images to reduce potential vulnerabilities, and implementing network policies as well as secrets management to enhance security. \cite{giangiulio}
 \newline
 The thesis "A Security Framework for Multi-Cluster Kubernetes Architectures" also aims to address the security challenges in Kubernetes environments, particularly focusing on multi-cluster setups. 
 The study emphasizes the importance of continuous monitoring and management to mitigate security risks, highlighting the need for a robust security framework that balances security enhancements 
-with minimal performance impact.
+with minimal performance impact. \cite{crociani}
 \newline
 \newline
 As of April 2024, no major work has been done at the intersection of Zero Trust and Kubernetes. 

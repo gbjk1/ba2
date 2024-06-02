@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex thesis"] 1717335588 "thesis.aux" "thesis.bbl" "thesis" 1717335591 0
-  "./testBib.bib" 1713288446 1047 e22b698dabb7713b89709b911fedbbd1 ""
+["bibtex thesis"] 1717342906 "thesis.aux" "thesis.bbl" "thesis" 1717342910 0
+  "./testBib.bib" 1717342402 3967 ec98f16122c285854a37da693e74c1f4 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "thesis.aux" 1717335591 27559 696c84d773ca36d7920863a5ea581a19 "pdflatex"
+  "thesis.aux" 1717342910 28311 de7dfcd8cbccb9e2c67a1e156945c15c "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1717335588 "/Users/csdc/bachelor2/ba2/tex/thesis.tex" "thesis.pdf" "thesis" 1717335591 0
-  "/Users/csdc/bachelor2/ba2/tex/thesis.tex" 1717335583 75513 9102696459455126ce985456b6d43aa3 ""
+["pdflatex"] 1717342906 "/Users/csdc/bachelor2/ba2/tex/thesis.tex" "thesis.pdf" "thesis" 1717342910 2
+  "/Users/csdc/bachelor2/ba2/tex/thesis.tex" 1717342903 75681 ecbbfded0d29e26ad58f76310e46cf14 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1254269338 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -67,7 +67,11 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def" 1604871679 8609 8ac7db65d9617618cf703bd16c1bd0b8 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty" 1604871679 18237 5cbdfe9ef383a557f780a0a1f45cdb1c ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty" 1659300143 12441 3b2a708337608012a865c7d9b7f05d28 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.cfg" 1429144587 7068 06f8d141725d114847527a66439066b6 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.def" 1663185836 21994 2bc2a882df92d97dbce35c06bb1d3541 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.sty" 1663185836 62761 3c92d495a9e03d7254b9a3266aa17164 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/footmisc/footmisc.sty" 1646774737 21361 67512b0642debcd4503e59fcbbb767f1 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -149,12 +153,12 @@
   "images/teleporthelm.png" 1717199059 68526 1c31d7e7c9636cc33b4c9080d50eec39 ""
   "images/teleportvalues.png" 1717199047 64685 777a5a3e523ce993023adfcbbc831746 ""
   "images/worker.png" 1716331589 29798 08cefc352601f52751ed260544a0a27c ""
-  "thesis.aux" 1717335591 27559 696c84d773ca36d7920863a5ea581a19 "pdflatex"
-  "thesis.bbl" 1717335588 875 029899f8cae5a02a002a6c630007a1ad "bibtex thesis"
-  "thesis.brf" 1717335591 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis.lof" 1717335591 2965 b75be66cdb540ad131df41e60812c211 "pdflatex"
-  "thesis.tex" 1717335583 75513 9102696459455126ce985456b6d43aa3 ""
-  "thesis.toc" 1717335591 5691 87c4cf310aa2e2b8248b904e80073bf5 "pdflatex"
+  "thesis.aux" 1717342910 28311 de7dfcd8cbccb9e2c67a1e156945c15c "pdflatex"
+  "thesis.bbl" 1717342845 3780 d1255c9e8d873d9bbe71bdd4362adcff "bibtex thesis"
+  "thesis.brf" 1717342910 430 550602d07f0c05baaabe953fc5238a7e "pdflatex"
+  "thesis.lof" 1717342910 2965 b75be66cdb540ad131df41e60812c211 "pdflatex"
+  "thesis.tex" 1717342903 75681 ecbbfded0d29e26ad58f76310e46cf14 ""
+  "thesis.toc" 1717342910 5691 87c4cf310aa2e2b8248b904e80073bf5 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.brf"
