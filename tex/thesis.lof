@@ -5,11 +5,11 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Kubernetes Architecture [source: author]}}{7}{figure.2.2}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces General Setup [source: author]}}{11}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Base k8s-node configuration [source: author]}}{11}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Container runtime installation [source: author]}}{13}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Kubernetes components installation [source: author]}}{13}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Control plane initialization [source: author]}}{13}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Join nodes to cluster [source: author]}}{13}{figure.3.6}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Base k8s-node configuration [source: \cite {devops}]}}{11}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Container runtime installation [source: \cite {devops}]}}{13}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Kubernetes components installation [source: \cite {devops}]}}{13}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Control plane initialization [source: \cite {kubeadm}]}}{13}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Join nodes to cluster [source: \cite {kubeadm}]}}{13}{figure.3.6}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Comparison-summary of access solutions to cluster [source: author]}}{15}{figure.3.7}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Teleport installation [source: author]}}{16}{figure.3.8}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Teleport agent installation [source: author]}}{17}{figure.3.9}%

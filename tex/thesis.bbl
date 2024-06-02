@@ -27,7 +27,7 @@ A.~Manzato, ``Implementing the zero trust model through microsoft azure technolo
 
 \bibitem{alappat}
 \BIBentryALTinterwordspacing
-M.~R. Alappat, ``Multifactor authentication using zero trust,'' [Accessed 13.04.2024]. [Online]. Available: \url{https://repository.rit.edu/cgi/viewcontent.cgi?article=12639&context=theses}
+M.~R. Alappat, ``Multifactor authentication using zero trust,'' 2023, [Accessed 13.04.2024]. [Online]. Available: \url{https://repository.rit.edu/cgi/viewcontent.cgi?article=12639&context=theses}
 \BIBentrySTDinterwordspacing
 
 \bibitem{bicer}
@@ -37,7 +37,7 @@ C.~Bicer, ``Design and implementation of a blockchain-based zero trust architect
 
 \bibitem{kang}
 \BIBentryALTinterwordspacing
-H.~Kang, ``Theory and application of zero trust security: A brief survey,'' [Accessed 13.04.2024]. [Online]. Available: \url{https://www.researchgate.net/publication/376022602_Theory_and_Application_of_Zero_Trust_Security_A_Brief_Survey}
+H.~Kang, ``Theory and application of zero trust security: A brief survey,'' 2023, [Accessed 13.04.2024]. [Online]. Available: \url{https://www.researchgate.net/publication/376022602_Theory_and_Application_of_Zero_Trust_Security_A_Brief_Survey}
 \BIBentrySTDinterwordspacing
 
 \bibitem{modderkolk}
@@ -68,6 +68,56 @@ F.~Giangiulio and S.~Malmberg, ``Testing the security of a kubernetes cluster in
 \bibitem{crociani}
 \BIBentryALTinterwordspacing
 R.~Crociani, ``A security framework for multi-cluster kubernetes architectures,'' [Accessed 13.04.2024]. [Online]. Available: \url{https://thesis.unipd.it/handle/20.500.12608/35521}
+\BIBentrySTDinterwordspacing
+
+\bibitem{nist800207}
+\BIBentryALTinterwordspacing
+S.~Rose, O.~Borchert, S.~Mitchell, and S.~Connelly, ``Zero trust architecture,'' National Institute of Standards and Technology, Tech. Rep. SP 800-207, August 2020. [Online]. Available: \url{https://csrc.nist.gov/pubs/sp/800/207/final}
+\BIBentrySTDinterwordspacing
+
+\bibitem{dhiman2024zero}
+\BIBentryALTinterwordspacing
+P.~Dhiman, N.~Saini, Y.~Gulzar, S.~Turaev, A.~Kaur, K.~U. Nisa, and Y.~Hamid, ``A review and comparative analysis of relevant approaches of zero trust network model,'' \emph{Sensors}, vol.~24, no.~4, p. 1328, February 2024. [Online]. Available: \url{https://www.mdpi.com/1424-8220/24/4/1328}
+\BIBentrySTDinterwordspacing
+
+\bibitem{devops}
+\BIBentryALTinterwordspacing
+B.~Wilson. (2024) How to setup kubernetes cluster using kubeadm. Accessed: 21.05.2024. [Online]. Available: \url{https://devopscube.com/setup-kubernetes-cluster-kubeadm/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{overlay}
+\BIBentryALTinterwordspacing
+N.~Brown, ``Overlay filesystem,'' [Accessed 21.05.2024]. [Online]. Available: \url{https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{eth}
+\BIBentryALTinterwordspacing
+``Ethernet bridging,'' [Accessed 21.05.2024]. [Online]. Available: \url{https://www.kernel.org/doc/html/latest/networking/bridge.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{swap}
+\BIBentryALTinterwordspacing
+{Red Hat, Inc.}, \emph{Red Hat Enterprise Linux 7 Storage Administration Guide: Chapter 15. Swap Space}, 2024, accessed: 19.05.2024. [Online]. Available: \url{https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace}
+\BIBentrySTDinterwordspacing
+
+\bibitem{kubeadm}
+\BIBentryALTinterwordspacing
+``Creating a cluster with kubeadm,'' [Accessed 21.05.2024]. [Online]. Available: \url{https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mtls}
+\BIBentryALTinterwordspacing
+``Understanding mtls and its role in zero trust security,'' [Accessed 23.05.2024]. [Online]. Available: \url{https://www.ejbca.org/resources/understanding-mtls-and-its-role-in-zero-trust-security/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mohamed2022authorization}
+\BIBentryALTinterwordspacing
+A.~K. Y.~S. Mohamed, D.~Auer, D.~Hofer, and J.~Küng, ``A systematic literature review for authorization and access control: definitions, strategies and models,'' \emph{International Journal of Web Information Systems}, vol.~18, no. 2/3, pp. 156--180, August 2022. [Online]. Available: \url{https://www.emerald.com/insight/content/doi/10.1108/IJWIS-04-2022-0077/full/html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{primbs2023oidc2}
+\BIBentryALTinterwordspacing
+J.~Primbs and M.~Menth, ``Oidc²: Open identity certification with openid connect,'' July 2023. [Online]. Available: \url{https://arxiv.org/pdf/2307.16607v2}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

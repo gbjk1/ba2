@@ -393,6 +393,7 @@ to a perfect degree, depending on a given use case or strategy.
 	\item Identity, Credential, and Access Management systems provide ongoing monitoring and potential reevaluation throughout user transactions.
 	\item Extensive data collection about asset state, network traffic, and access requests is done to have a clear picture of the current security posture of the infrastructure.
 \end{itemize}
+\cite{nist800207}
 
 [cite NIST here] [cite british gv]
 
@@ -428,7 +429,7 @@ requiring authentication and authorization measures for secure communication.
 Consistent security policies and postures for assets and workflows transitioning between enterprise and external infrastructure are enforced. 
 This applies to devices moving across networks and workloads migrating between on-premises and cloud environments. 
 
-[cite NIST here] [cite british gv]
+\cite{nist800207}
 
 
 \subsection{Logical components}
@@ -436,7 +437,7 @@ This applies to devices moving across networks and workloads migrating between o
 A ZTA deployment in an organisation consists of many logical parts. 
 These parts can be used with a cloud-based service or as an on-premises solution. 
 The policy engine and policy administrator (described below) are the two logical parts of the policy decision point (PDP).
-Application data is transferred on a data plane, whereas the ZTA logical components communicate via a separate control plane.
+Application data is transferred on a data plane, whereas the ZTA logical components communicate via a separate control plane. \cite{nist800207}
 \newline
 
 \begin{figure}[htbp]
@@ -469,8 +470,7 @@ obtain updates on PA policies. Although there is just one logical component in Z
 resource side (such as the gateway component in front of the resource that regulates access) and the client 
 (such as an agent on a laptop) or a single portal component that serves as a gatekeeper for communication channels. 
 The trust zone containing the enterprise resource is located beyond the PEP, as seen in figure 2.1.
-
-[cite NIST here]
+\cite{nist800207}
 
 \section{Zero Trust versus Traditional Security Model}
 
@@ -478,7 +478,7 @@ By "Traditional Security Model", the perimeter-based model is meant, which enfor
 primary focus lies on the network perimeter through the use of firewalls and intrusion detection and prevention systems (IDS, IPS). Activities beyond that one, strong barrier, inside the network, is not or insufficiently
 policed. Herein lies the main issue with Traditional Security: If this perimeter is passed once, maybe through elaborate "hacking" or compromised credentials, a malicious actor has only few restrictions preventing him
 from freely inspecting the network. The assumption is, that threats from internal sources are minimal. Segmentation of resources on the network is usually coarse-grained. This where the concept of Zero Trust offers significant 
-improvements. It emphasizes the removal of exactly this implicit trust. 
+improvements. It emphasizes the removal of exactly this implicit trust. \cite{dhiman2024zero}
 
 
 \section{Kubernetes}
@@ -611,12 +611,12 @@ and for the sake of demonstration, namespace "neptune" and namespace "jupiter" a
 \section{Bootstrapping the cluster}
 
 Before installing Kubernetes binaries on the nodes, certain settings and kernel parameters need to be configured on the Linux machines that make up the Kubernetes nodes. 
-The bash script as seen in figure 3.2 is executed on all three nodes.
+The bash script as seen in figure 3.2 is executed on all three nodes. \cite{devops}
 \newline
 \begin{figure}[htbp]
   \centering
       \includegraphics[height=7.8cm]{./images/baseconfig}
-  \caption{Base k8s-node configuration [source: author]}
+  \caption{Base k8s-node configuration [source: \cite{devops}]}
   \label{fig:baseconfig}
 \end{figure}
 \newline
@@ -626,12 +626,13 @@ which are required for Kubernetes networking and storage requirement.
 \subsubsection{Overlay}
 The overlay module is essential for Kubernetes since it activates the overlay storage driver used by container runtimes such as Docker to manage container filesystems efficiently. 
 This driver allows containers to share and layer filesystems, optimizing storage use and enhancing performance. By enabling the overlay module, Kubernetes ensures that container runtimes 
-can efficiently create, manage, and run containers, which is crucial for the effective functioning of the cluster.
+can efficiently create, manage, and run containers, which is crucial for the effective functioning of the cluster. \cite{overlay}
 
 \subsubsection{Bridge Netfilter}
 The bridge netfilter module is significant as it allows the Linux bridge to interface with the iptables firewall, enabling packet filtering and NAT. 
 This capability is needed for Kubernetes to manage and route network traffic between pods, services, and external networks efficiently. net.bridge.bridge-nf-call-iptables and net.bridge.bridge-nf-call-ip6tables
 settings ensure that bridged traffic goes through the iptables chains. net.ipv4.ip-forward enables IP forwarding, allowing the Linux kernel to forward packets between (virtual) network interfaces.
+\cite{eth}
 \newline
 \newline
 With the modprobe command, these modules are loaded into the kernel, making their functions available for use.
@@ -641,7 +642,7 @@ Without these settings, Kubernetes components may experience problems with conta
 Disabling swap on Linux during Kubernetes setup, as done in lines 22-23 of Figure 3.2, is necessary because Kubernetes depends on efficient memory management for container orchestration. 
 When swap is active, the kernel might swap container memory to disk. 
 This results in unpredictable performance and potential container instability. By turning off swap, Kubernetes ensures that container memory stays in physical RAM. 
-This allows Kubernetes to manage containers effectively without interference from swapping mechanisms.
+This allows Kubernetes to manage containers effectively without interference from swapping mechanisms. \cite{swap}
 
 \subsubsection{Installation}
 After the aforementioned settings, one can proceed with installing the container runtime, kubeadm, kubelet, and kubectl on all nodes. kubeadm is then used to initialize the cluster. kubectl is used to interact with the 
@@ -650,28 +651,28 @@ control plane of the cluster. The script as in figure 3.3 downloads GPG keys, in
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=13cm]{./images/crio}
-  \caption{Container runtime installation [source: author]}
+  \caption{Container runtime installation [source: \cite{devops}]}
   \label{fig:crio}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=13cm]{./images/k8sbinaries}
-  \caption{Kubernetes components installation [source: author]}
+  \caption{Kubernetes components installation [source: \cite{devops}]}
   \label{fig:binaries}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=13cm]{./images/master}
-  \caption{Control plane initialization [source: author]}
+  \caption{Control plane initialization [source: \cite{kubeadm}]}
   \label{fig:master}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=13cm]{./images/worker}
-  \caption{Join nodes to cluster [source: author]}
+  \caption{Join nodes to cluster [source: \cite{kubeadm}]}
   \label{fig:worker}
 \end{figure}
 
@@ -845,7 +846,7 @@ cite[dynatrace]
 Transport Layer Security (TLS) is a widely used encryption protocol that authenticates servers and encrypts communication between clients and servers, ensuring data privacy and integrity. It operates using public key cryptography, 
 which involves a pair of keys: a public key for encryption and a private key for decryption. Mutual TLS (mTLS) extends this concept by requiring both the client and server to authenticate each other using their respective TLS certificates. 
 This mutual authentication adds a layer of security, verifying the identities of both parties and enhancing the protection against various cyber attacks. This makes it especially useful in Zero Trust architectures. Since service meshes handle network
-communication between pods, they must have the possibility for mTLS to be considered an employable component for a ZT Kubernetes cluster.
+communication between pods, they must have the possibility for mTLS to be considered an employable component for a ZT Kubernetes cluster. \cite{mtls}
 
 \subsection{Why use Istio?}
 
@@ -950,6 +951,7 @@ certain servers only during business hours and exclusively from within the corpo
 ABAC is more suitable for ZT because it provides the flexibility and granularity needed to implement dynamic and context-aware access controls essential for ZT. Unlike RBAC, which is relatively static and role-centric, ABAC can evaluate multiple attributes in real-time to 
 determine access permissions, ensuring that only authenticated and authorized users can access resources under specific conditions. This aligns with ZT's core tenet of minimizing trust and continuously verifying every access request based on a comprehensive set of criteria, 
 thereby enhancing security and reducing the risk of unauthorized access.
+\cite{mohamed2022authorization}
 
 \subsection{OIDC and OAuth2}
 
@@ -957,7 +959,8 @@ OpenID Connect (OIDC) and OAuth 2.0 are complementary protocols that together pr
 obtain limited access to a web service, either on behalf of a resource owner or by allowing the third-party application to access its own resources. It works by issuing tokens that represent the user's delegated permissions, enabling secure access
 without sharing passwords. OpenID Connect, built on top of OAuth 2.0, extends this protocol by adding an identity layer, allowing applications to verify the identity of the end-user based on the authentication performed by an authorization server. 
 OIDC standardizes the way identity information is exchanged using RESTful APIs, providing user profile information through an ID token. This integration of OIDC and OAuth 2.0 ensures that while OAuth 2.0 handles authorization and secure resource access, 
-OIDC handles user authentication and identity management.
+OIDC handles user authentication and identity management. 
+\cite{primbs2023oidc2}
 
 \subsubsection{Pod to pod OIDC flow}
 In the context of this thesis, a service running inside the Kubernetes cluster may only access another service if the request contains a valid OIDC token, as done through the following steps. 

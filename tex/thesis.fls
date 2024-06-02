@@ -957,6 +957,7 @@ INPUT thesis.brf
 INPUT ./thesis.brf
 INPUT ./thesis.brf
 OUTPUT thesis.brf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT ./thesis.lof
 INPUT thesis.lof
 INPUT thesis.lof
@@ -967,5 +968,6 @@ INPUT ./thesis.brf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
