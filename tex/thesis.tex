@@ -346,10 +346,10 @@ How can free software projects and native Kubernetes solutions be leveraged to a
 \newline
 \newline
 As a primary point of reference, the NIST Special Publication 800-207 is used. The paper will be summarized in chapter two.
-An in depth explanation for the importance of ZT shall be given. Core Kubernetes concepts which help understand the subsequent practical setup 
+Justification for the importance of ZT shall be given. Core Kubernetes concepts which help understand the subsequent practical setup 
 are also explained in chapter two. After explaining the pillars of ZT and Kubernetes, technologies and solutions are researched and picked, which will 
 then be practically implemented to achieve the corresponding ZT principle inside the Kubernetes environment. In addition, code snippets shall be presented. Throughout 
-the practical setup, cross references to the NIST publication shall be made.
+the practical setup, references to the NIST publication shall be made.
 To evaluate the setup, test namespaces will be created and simple test applications will be deployed inside them. User accounts will be created. 
 At the end of the paper, the environment will be critiqued, addressing the question of whether a setup which does a 100\% justce to ZT is even possible.
 
@@ -464,6 +464,15 @@ The trust zone containing the enterprise resource is located beyond the PEP, as 
 
 [cite NIST here]
 
+\section{Zero Trust versus Traditional Security Model}
+
+By "Traditional Security Model", the perimeter-based model is meant, which enforces most of the defense against unauthorized access at an infrastructure's boundary. The
+primary focus lies on the network perimeter through the use of firewalls and intrusion detection and prevention systems (IDS, IPS). Activities beyond that one, strong barrier, inside the network, is not or insufficiently
+policed. Herein lies the main issue with Traditional Security: If this perimeter is passed once, maybe through elaborate "hacking" or compromised credentials, a malicious actor has only few restrictions preventing him
+from freely inspecting the network. The assumption is, that threats from internal sources are minimal. Segmentation of resources on the network is usually coarse-grained. This where the concept of Zero Trust offers significant 
+improvements. It emphasizes the removal of exactly this implicit trust. 
+
+
 \section{Kubernetes}
 
 \subsection{Components}
@@ -553,10 +562,6 @@ can be assigned using IP Address Management (IPAM) plugins. Calico and Cilium, f
 providing both network and IPAM plugins and integrating with other CNI plugins.
 
 [cite tigera, cilium, k8s docs]
-
-\section{Zero Trust versus Traditional Security Model}
-
-in depth here 
 
 
 
@@ -810,8 +815,6 @@ Teleport Agent:
   \label{fig:teleportarch}
 \end{figure}
 
-Thus, access to the cluster covers most of ZT principles as described in NIST800-207. 
-
 \newpage
 \section{Istio}
 
@@ -1033,11 +1036,21 @@ Istio validates the JWT according to specifications of RequestAuthentication sho
 \newpage
 \section{Cluster End Result}
 
-To mimick actual business software hosted... 
+The cluster is now operated under tight control of Teleport, Istio and Keycloak.
+Figure 3.20 depicts all pods running inside the cluster. Each namespace ensures its respective responsibilites. 
 
-examples with Neptune and Jupiter settings, python script, kubectl get pods --all-namespaces, etc
+\begin{itemize}
+	\item kube-system: Runs the general Kubernetes control plane and components of the Calico Network Plugin
+	\item istio-system: Runs the Istio control-plane
+	\item istio-ingress: Controls ingress from the outside into the cluster
+	\item teleport-agent: Runs the Teleport agent integrated with Teleport proxy
+	\item keycloak: Runs the Keycloak IAM service
+	\item jupiter and neptune: Namespaces for demonstration
+\end{itemize}
 
-Notice how Neptune and Jupiter as actual application-pods show 2/2. App container and sidecar
+To mimick actual business software hosted and to demonstrate the setup, the "dummy" namespaces and deployments "neptune" and "jupiter" were created. 
+With the AuthorizationPolicy and RequestAuthentication resource in place, the requesting party (neptune) must always present a valid token when calling jupiter. An example of such 
+a request is given in Figure 3.21, using Python.
 
 \begin{figure}[htbp]
   \centering
