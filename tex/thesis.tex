@@ -185,10 +185,16 @@ Date: \hspace{6cm} Signature:\\
 % --- English Abstract ----------------------------------------------------
 \cleardoublepage
 \chapter*{Abstract}
-(E.g. ``This thesis investigates...'')
+Kubernetes is a highly customizable container orchestration platform which is 
 
-Teleport, Istio and Keycloak are established as
-solid solutions for the ZT Kubernetes cluster
+NIST Special publication is used as reference
+Zero Trust is an IT security paradigm which aspires to replace traditional security approaches. 
+
+This thesis investigates.... 
+
+Technologies suitable for the Zero Trust approach are evaluated and compared
+Teleport, Istio and Keycloak are established as solid solutions for Zero Trust Kubernetes environment.
+
 
 % --- German Abstract ----------------------------------------------------
 \cleardoublepage
@@ -709,8 +715,7 @@ With Teleport, critical features are implemented, which help shaping the cluster
 
 \subsubsection{Identity-Driven Authentication and Authorization}
 Teleport acts as a gateway for accessing corporate resources, both on-premises and in the cloud, by leveraging identity-based authentication and authorization. This method eliminates the need for traditional VPNs and password management tools, 
-focusing instead on verifying the identity of users rather than their network location or credentials. This approach is central to the Zero Trust philosophy, which grants access based on the identity and purpose of the user, not their physical 
-location or network status, as aforementioned in section 2.1. cite[teleport]
+focusing instead on verifying the identity of users rather than their network location, which is central to the Zero Trust philosophy, as aforementioned in section 2.1. cite[teleport]
 
 \subsubsection{Elimination of Static Credentials}
 Teleport issues short-lived identity certificates instead of static credentials. This practice minimizes the risk associated with credential theft, as these certificates automatically expire after a 
@@ -1054,13 +1059,28 @@ a request is given in Figure 3.21, using Python.
 
 \begin{figure}[htbp]
   \centering
-      \includegraphics[width=10cm]{./images/finalcluster}
+      \includegraphics[width=11cm]{./images/finalcluster}
   \caption{All pods of the final cluster [source: author]}
   \label{fig:finalcluster}
 \end{figure}
 
 \newpage
-Neptune calling Jupiter by first obtaining JWT token from Keycloak
+An application running inside the ZT cluster would have to:
+
+\begin{enumerate}
+	\item Use a Kecloak client dependency or a dependency for issuing HTTP calls
+	\item Authenticate to Keycloak using its client credentials
+	\item Obtain the token
+	\item Integrate the token into the Authorization header of any subsequent requests
+	\item Handle refresh tokens and request a new token if time of expiration is reached.
+\end{enumerate}
+
+\begin{figure}[htbp]
+  \centering
+      \includegraphics[width=11cm]{./images/demo}
+  \caption{Neptune Python App calling Jupiter [source: author]}
+  \label{fig:demo}
+\end{figure}
 
 \newpage
 \chapter{Discussion and Future Work}
