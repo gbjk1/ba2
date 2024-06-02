@@ -215,6 +215,36 @@ W.~Loy, ``Talking the end of passwords with friends and family,'' [Accessed 25.0
 A.~M. Mostafa, M.~Ezz, M.~K. Elbashir, M.~Alruily, E.~Hamouda, M.~Alsarhani, and W.~Said, ``Strengthening cloud security: An innovative multi-factor multi-layer authentication framework for cloud user authentication,'' \emph{MPDI}, vol.~13, no.~19, p. 10871, October 2023. [Online]. Available: \url{https://www.mdpi.com/2076-3417/13/19/10871}
 \BIBentrySTDinterwordspacing
 
+\bibitem{teleportinstall}
+\BIBentryALTinterwordspacing
+``Installation,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://goteleport.com/docs/installation/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{agentinstall}
+\BIBentryALTinterwordspacing
+``Enroll a kubernetes cluster,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://goteleport.com/docs/kubernetes-access/getting-started/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{authy}
+\BIBentryALTinterwordspacing
+``Welcome to authy!'' [Accessed 25.05.2024]. [Online]. Available: \url{https://help.twilio.com/articles/19753662697627-Welcome-to-Authy-}
+\BIBentrySTDinterwordspacing
+
+\bibitem{teleportagent}
+\BIBentryALTinterwordspacing
+``teleport-kube-agent chart reference,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://goteleport.com/docs/reference/helm-reference/teleport-kube-agent/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{awsmesh}
+\BIBentryALTinterwordspacing
+``What is a service mesh?'' [Accessed 25.05.2024]. [Online]. Available: \url{https://aws.amazon.com/what-is/service-mesh/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{redhatmesh}
+\BIBentryALTinterwordspacing
+``What's a service mesh?'' [Accessed 25.05.2024]. [Online]. Available: \url{https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh}
+\BIBentrySTDinterwordspacing
+
 \bibitem{mtls}
 \BIBentryALTinterwordspacing
 ``Understanding mtls and its role in zero trust security,'' [Accessed 23.05.2024]. [Online]. Available: \url{https://www.ejbca.org/resources/understanding-mtls-and-its-role-in-zero-trust-security/}

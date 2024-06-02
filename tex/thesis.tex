@@ -750,7 +750,7 @@ Teleport runs on a seperate VM on 192.168.20.2, next to the Kubernetes nodes. Th
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=11.5cm]{./images/teleport}
-  \caption{Teleport installation [source: author]}
+  \caption{Teleport installation [source: Teleport \cite{teleportinstall}]}
   \label{fig:teleport}
 \end{figure}
 
@@ -766,7 +766,7 @@ Kubernetes configuration are replaced with concrete values from a dedicated valu
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=11.5cm]{./images/teleporthelm}
-  \caption{Teleport agent installation [source: author]}
+  \caption{Teleport agent installation [source: Teleport \cite{agentinstall}]}
   \label{fig:teleportvalues}
 \end{figure}
 
@@ -781,7 +781,7 @@ Kubernetes configuration are replaced with concrete values from a dedicated valu
 
 Authy is a mobile application and service that offers two-factor authentication (2FA) for online accounts.
 Authy is designed to be compatible with multiple devices, enabling users to synchronize their 2FA tokens across different devices for added convenience and security. 
-Teleport requires integration to MFA from the very beginning. When accessing the Teleport UI as well as when using the tsh commandline client, users are prompted for One-Time password tokens (OTP) issued by Authy. 
+Teleport requires integration to MFA from the very beginning. When accessing the Teleport UI as well as when using the tsh commandline client, users are prompted for One-Time password tokens (OTP) issued by Authy. \cite{authy}
 \newline
 \subsubsection{Architecture}
 Figure 3.9 provides an overview of the Teleport setup. The key components are the user, the Teleport proxy, 
@@ -802,20 +802,22 @@ Teleport Proxy:
 	\item Reverse proxying for Kubernetes API requests
 	\item Audit logging and traffic encryption
 \end{itemize}
-
+\cite{teleportproxy}
+\newline
 Teleport Agent:
 \begin{itemize}
 	\item Registering the Kubernetes cluster with the proxy
 	\item Manage service accounts and their credentials for Teleport to interact with the Kubernetes API
 	\item Synchronize configurations between the Kubernetes cluster and the Teleport Proxy
 \end{itemize}
+\cite{teleportagent}
 
 
 
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=10cm]{./images/teleportarch}
-  \caption{Teleport Kubernetes Setup [source: author]}
+  \caption{Teleport Kubernetes Setup [source: Teleport \cite{agentinstall}]}
   \label{fig:teleportarch}
 \end{figure}
 
@@ -827,13 +829,13 @@ Teleport Agent:
 In a microservices architecture, a service mesh is a special infrastructure layer integrated into an application that manages service-to-service communication. It finds other services, encrypts data, manages the flow of service requests to other services, 
 and does load balancing. This is accomplished by injecting a so called proxy sidecar-container into Kubernetes pods. These sidecars intercept any incoming and outgoing traffic of the actual app container. That way, any logic driving matters of network communication
 is taken out of the app container and handled on its own plane of infrastructure. These sidecars deployed alongside app containers comprise the data-plane, while the control plane instance usually resides in its own dedicated namespace. The main benefits of 
-a sidecar approach are sophisticated routing capabilities, separation of concerns and enhanced security. cite[redhat] cite[istiodocs]
+a sidecar approach are sophisticated routing capabilities, separation of concerns and enhanced security. \cite{awsmesh}
 cite[dynatrace]
 
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=11cm]{./images/mesh}
-  \caption{Service Mesh visualization [source: RedHat]}
+  \caption{Service Mesh visualization [source: RedHat \cite{redhatmesh}]}
   \label{fig:servicemesh}
 \end{figure}
 
