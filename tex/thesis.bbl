@@ -80,6 +80,71 @@ S.~Rose, O.~Borchert, S.~Mitchell, and S.~Connelly, ``Zero trust architecture,''
 P.~Dhiman, N.~Saini, Y.~Gulzar, S.~Turaev, A.~Kaur, K.~U. Nisa, and Y.~Hamid, ``A review and comparative analysis of relevant approaches of zero trust network model,'' \emph{Sensors}, vol.~24, no.~4, p. 1328, February 2024. [Online]. Available: \url{https://www.mdpi.com/1424-8220/24/4/1328}
 \BIBentrySTDinterwordspacing
 
+\bibitem{k8sapi}
+\BIBentryALTinterwordspacing
+``The kubernetes api,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/overview/kubernetes-api/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{kubelet}
+\BIBentryALTinterwordspacing
+``kubelet,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{k8setcd}
+\BIBentryALTinterwordspacing
+``Operating etcd clusters for kubernetes,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{k8sscheduler}
+\BIBentryALTinterwordspacing
+``Kubernetes scheduler,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{namespace}
+\BIBentryALTinterwordspacing
+``Namespaces,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{pod}
+\BIBentryALTinterwordspacing
+``Pods,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/workloads/pods/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{deployment}
+\BIBentryALTinterwordspacing
+``Deployments,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/workloads/controllers/deployment/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sts}
+\BIBentryALTinterwordspacing
+``Statefulsets,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{serviceaccount}
+\BIBentryALTinterwordspacing
+``Service accounts,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/security/service-accounts/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{k8srbac}
+\BIBentryALTinterwordspacing
+``Using rbac authorization,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/reference/access-authn-authz/rbac/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{podnet}
+\BIBentryALTinterwordspacing
+``Cluster networking,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/cluster-administration/networking/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{service}
+\BIBentryALTinterwordspacing
+``Service,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/services-networking/service/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{networkplugins}
+\BIBentryALTinterwordspacing
+``Network plugins,'' [Accessed 22.04.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{devops}
 \BIBentryALTinterwordspacing
 B.~Wilson. (2024) How to setup kubernetes cluster using kubeadm. Accessed: 21.05.2024. [Online]. Available: \url{https://devopscube.com/setup-kubernetes-cluster-kubeadm/}
@@ -103,6 +168,11 @@ N.~Brown, ``Overlay filesystem,'' [Accessed 21.05.2024]. [Online]. Available: \u
 \bibitem{kubeadm}
 \BIBentryALTinterwordspacing
 ``Creating a cluster with kubeadm,'' [Accessed 21.05.2024]. [Online]. Available: \url{https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mostafa2023mfa1}
+\BIBentryALTinterwordspacing
+A.~M. Mostafa, M.~Ezz, M.~K. Elbashir, M.~Alruily, E.~Hamouda, M.~Alsarhani, and W.~Said, ``Strengthening cloud security: An innovative multi-factor multi-layer authentication framework for cloud user authentication,'' \emph{MPDI}, vol.~13, no.~19, p. 10871, October 2023. [Online]. Available: \url{https://www.mdpi.com/2076-3417/13/19/10871}
 \BIBentrySTDinterwordspacing
 
 \bibitem{mtls}
