@@ -1015,9 +1015,9 @@ Within the cluster, the Keycloak pod is exposed via a service object named "keyc
 An application realm called 'nebhis' was created inside the Keycloak UI, which is used for creating Keycloak clients. For this realm, Keycloak provides two central realms for the ZT setup:
 
 \begin{itemize}
-	\item keycloak-service.keycloak.svc.cluster.local/realms/nebhis/protocol/openid-connect/token. This endpoint is consumed by applications requesting an OIDC token, to be further used to authenticate to other applications in the cluster.
+	\item keycloak-service.keycloak.svc.cluster.local/realms/nebhis/protocol/openid-connect/token. This endpoint is consumed by applications requesting an OIDC token, to be further used to authenticate to other applications in the cluster. \cite{keycloak}
 	\item keycloak-service.keycloak.svc.cluster.local/realms/nebhis/protocol/openid-connect/certs. This endpoint is consumed by the Istio service mesh. The sidecar intercepts incoming traffic to an application pod, extracts the token from the 'Authorization' HTTP header, 
-        and validates it using the PKI information obtained under this endpoint. 
+        and validates it using the PKI information obtained under this endpoint. \cite{keycloak}
 \end{itemize}
 
 \subsubsection{Keycloak combined with Istio}
@@ -1116,7 +1116,7 @@ Furthermore, AI-driven threat detection has made significant progress in recent 
 If the behavior on the network deviates from this usual state, a potential security threat might be alerted. At such a point, these kind of AI-driven systems can automate the incident response 
 and block IP addresses, apply policies, deploy patches and notify system administrators on their own accord. As a dataset, network traffic logs from Istio's sidecars could be fed into such machine learning models.
 Evidently, there is always room for improvement and there will always be ways to elevate the security standard of a Kubernetes cluster and an infrastructure in general, especially
-due to fast changing landsacape IT security and Kubernetes. Thus, future work might build on top of this setup and concern itself with the exact critiques laid out above. 
+due to fast changing landsacape IT security and Kubernetes. Thus, future work might build on top of this setup and concern itself with the exact critiques laid out above. \cite{ai_threat_detection_2024}
 
 
 \newpage

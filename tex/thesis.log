@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  2 JUN 2024 20:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.15)  2 JUN 2024 20:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -888,24 +888,24 @@ Overfull \hbox (10.2765pt too wide) in paragraph at lines 1019--1021
 []\T1/lmr/m/n/10.95 keycloak-service.keycloak.svc.cluster.local/realms/nebhis/protocol/openid-connect/certs.
  []
 
-<./images/authorizationpolicy.png, id=483, 597.23125pt x 325.215pt>
+<./images/authorizationpolicy.png, id=485, 597.23125pt x 325.215pt>
 File: ./images/authorizationpolicy.png Graphic file (type png)
 <use ./images/authorizationpolicy.png>
 Package pdftex.def Info: ./images/authorizationpolicy.png  used on input line 1034.
 (pdftex.def)             Requested size: 284.52756pt x 154.93526pt.
-<./images/requestauthentication.png, id=484, 792.9625pt x 247.92625pt>
+<./images/requestauthentication.png, id=486, 792.9625pt x 247.92625pt>
 File: ./images/requestauthentication.png Graphic file (type png)
 <use ./images/requestauthentication.png>
 Package pdftex.def Info: ./images/requestauthentication.png  used on input line 1041.
 (pdftex.def)             Requested size: 312.9803pt x 97.85602pt.
 [25 <./images/keycloakservice.png>]
-<./images/finalcluster.png, id=493, 543.02875pt x 314.17375pt>
+<./images/finalcluster.png, id=496, 543.02875pt x 314.17375pt>
 File: ./images/finalcluster.png Graphic file (type png)
 <use ./images/finalcluster.png>
 Package pdftex.def Info: ./images/finalcluster.png  used on input line 1067.
 (pdftex.def)             Requested size: 312.9803pt x 181.08473pt.
  [26 <./images/authorizationpolicy.png> <./images/requestauthentication.png>]
-<./images/demo.png, id=502, 785.93625pt x 544.0325pt>
+<./images/demo.png, id=505, 785.93625pt x 544.0325pt>
 File: ./images/demo.png Graphic file (type png)
 <use ./images/demo.png>
 Package pdftex.def Info: ./images/demo.png  used on input line 1085.
@@ -954,21 +954,21 @@ Underfull \hbox (badness 2359) in paragraph at lines 182--182
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 3EAC7E2A4BDBC46493A61ABD16E01E59;4006.
+(rerunfilecheck)             Checksum: 638CF305F03EEE988138A569F0984A17;4157.
  ) 
 Here is how much of TeX's memory you used:
- 18548 strings out of 476025
- 351739 string characters out of 5790016
+ 18558 strings out of 476025
+ 351937 string characters out of 5790016
  1875388 words of memory out of 5000000
- 38497 multiletter control sequences out of 15000+600000
+ 38505 multiletter control sequences out of 15000+600000
  557870 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,106p,10631b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis.pdf (41 pages, 1914788 bytes).
+Output written on thesis.pdf (41 pages, 1915510 bytes).
 PDF statistics:
- 938 PDF objects out of 1000 (max. 8388607)
- 814 compressed objects within 9 object streams
- 238 named destinations out of 1000 (max. 500000)
+ 948 PDF objects out of 1000 (max. 8388607)
+ 824 compressed objects within 9 object streams
+ 240 named destinations out of 1000 (max. 500000)
  409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

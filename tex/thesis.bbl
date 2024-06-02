@@ -285,4 +285,14 @@ J.~Primbs and M.~Menth, ``Oidc²: Open identity certification with openid connec
 ``Oauth 2.0 and openid connect overview,'' [Accessed 26.05.2024]. [Online]. Available: \url{https://developer.okta.com/docs/concepts/oauth-openid/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{keycloak}
+\BIBentryALTinterwordspacing
+``Authorization services guide,'' [Accessed 26.05.2024]. [Online]. Available: \url{https://www.keycloak.org/docs/latest/authorization_services/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ai_threat_detection_2024}
+\BIBentryALTinterwordspacing
+A.~Yaseen, ``Ai-driven threat detection and response: A paradigm shift in cybersecurity,'' \emph{International Journal of Information and Communication}, vol.~1, no.~1, 2023. [Online]. Available: \url{https://publications.dlpress.org/index.php/ijic/article/view/73/65}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
