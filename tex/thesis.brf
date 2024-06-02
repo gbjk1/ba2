@@ -58,8 +58,16 @@
 \backcite {awsmesh}{{19}{3.4.1}{subsection.3.4.1}}
 \backcite {redhatmesh}{{19}{3.12}{figure.3.12}}
 \backcite {mtls}{{19}{3.4.2}{subsection.3.4.2}}
+\backcite {helmistio}{{21}{3.14}{figure.3.14}}
+\backcite {istioarch}{{21}{3.4.4}{subsubsection*.59}}
+\backcite {istioingress}{{21}{3.4.4}{subsubsection*.59}}
+\backcite {istioarch}{{22}{3.15}{figure.3.15}}
+\backcite {iam}{{22}{3.5.1}{subsection.3.5.1}}
+\backcite {mohamed2022authorization}{{23}{3.5.2}{subsection.3.5.2}}
+\backcite {mohamed2022authorization}{{23}{3.5.2}{subsection.3.5.2}}
 \backcite {mohamed2022authorization}{{23}{3.5.2}{subsection.3.5.2}}
 \backcite {primbs2023oidc2}{{23}{3.5.3}{subsection.3.5.3}}
+\backcite {oidcflow}{{24}{3.5.3}{Item.17}}
 \backcite {devops}{{34}{5}{chapter*.65}}
 \backcite {devops}{{34}{5}{chapter*.65}}
 \backcite {devops}{{34}{5}{chapter*.65}}
@@ -69,3 +77,5 @@
 \backcite {agentinstall}{{34}{5}{chapter*.65}}
 \backcite {agentinstall}{{34}{5}{chapter*.65}}
 \backcite {redhatmesh}{{34}{5}{chapter*.65}}
+\backcite {helmistio}{{34}{5}{chapter*.65}}
+\backcite {istioarch}{{34}{5}{chapter*.65}}

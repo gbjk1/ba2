@@ -881,7 +881,7 @@ The findings are summarized in Figure 3.10.
 \subsection{Installation and setup}
 
 Like the Teleport agent, Istio was installed using its officially provided Helm chart. First, custom resource definitions (CRD) need to be added to Kubernetes. CRDs allow to extend the Kubernetes API with additional objects beyond the default ones, as
-outlined in section 2.2.2 "Core Cluster Objects". Using the script shown in Figure 3.14... 
+outlined in section 2.2.2 "Core Cluster Objects". Using the script shown in Figure 3.14, the following installation steps are executed.
 
 \begin{enumerate}
 	\item Namespace istio-system is created
@@ -894,7 +894,7 @@ outlined in section 2.2.2 "Core Cluster Objects". Using the script shown in Figu
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=13cm]{./images/istioinstall}
-  \caption{Installing Istio components [source: author]}
+  \caption{Installing Istio components [source: Istio \cite{helmistio}]}
   \label{fig:istioinstall}
 \end{figure}
 
@@ -903,16 +903,17 @@ Istiod is the central component of the Istio service mesh architecture, responsi
 It handles configuration management by distributing configuration information to the Envoy proxies, ensures service discovery by keeping track of all 
 services in the cluster, and manages security through the creation, distribution, and rotation of certificates for securing communications within the mesh. 
 Additionally, Istiod collects telemetry data from the proxies for monitoring and analysis, and automates the injection of Envoy sidecar proxies into Kubernetes pods, ensuring that all traffic flows through the mesh.
+\cite{istioarch}
 \newline
 \newline
 The Istio IngressGateway is a critical component of the Istio service mesh that manages incoming traffic from outside the cluster, providing a gateway for external traffic into the mesh. 
 It handles traffic management by routing incoming requests to the appropriate services based on configured rules, supports load balancing and enforces authentication and authorization policies.
-Istio's architecture including its Ingressgateway, sidecars, and control plane is depicted in Figure 3.15.
+Istio's architecture including its Ingressgateway, sidecars, and control plane is depicted in Figure 3.15. \cite{istioingress}
 
 \begin{figure}[htbp]
   \centering
       \includegraphics[width=13cm]{./images/istioarchitecture}
-  \caption{Istio architecture [source: author]}
+  \caption{Istio architecture [source: Istio \cite{istioarch}]}
   \label{fig:istioarchitecture}
 \end{figure}
 
@@ -926,7 +927,7 @@ Istio's architecture including its Ingressgateway, sidecars, and control plane i
 
 IAM refers to all policies, processes and technologies used control access to digital resources. Through IAM systems, it is ensured that only appropriate clients have access to resources under right circumstances. 
 For this thesis, IAM is implemented for authorized and granular pod to pod communication. In this context, the term "client" refers to a service issuing a HTTP request to another service hosted in the cluster.
-Using a IAM solution, the following things are taken care of. 
+Using a IAM solution, the following things are taken care of.
 \begin{itemize}
 	\item Identity Management: Creating client identities and their attributes.
 	\item Authentication: Verifying the identity of clients before granting access.
@@ -934,17 +935,17 @@ Using a IAM solution, the following things are taken care of.
 	\item Access Control: Policies and rules enforcing which clients can access which resources under which conditions.
 	\item Auditing: Logging client access and activities to ensure compliance and security.
 \end{itemize}
-
+\cite{iam}
 The main drivers of IAM are the concepts of role-based and attribute-based access controls and the protocols Open ID Connect as well as OAuth2. 
 
 \subsection{RBAC and ABAC}
 Role-Based Access Control (RBAC) is a commonly implemented access control model that allocates permissions to users based on their organizational roles. In RBAC, roles are defined by job functions, and users receive access to resources and actions that correspond to 
 their roles. This model simplifies administration by enabling system administrators to manage permissions via roles instead of individual user basis. For instance, a software developer might have a role that permits access to certain repositories, whereas a
-database administrator might have a role that allows access to certain databases and system maintenance tools. The main benefit of RBAC is its ease of implementation and scalability in organizations with clear hierarchical structures.
+database administrator might have a role that allows access to certain databases and system maintenance tools. \cite{mohamed2022authorization}
 \newline
 Attribute-Based Access Control (ABAC) is a more adaptable and flexible access control model that grants access based on a combination of attributes about the user, the resource, and the environment. These attributes can include user details (such as department, job title, or clearance level), 
 resource characteristics (such as data sensitivity or classification), and contextual factors (such as time of day or location). ABAC policies leverage these attributes to create intricate, fine-grained rules for access control. For instance, an ABAC policy might permit a system engineer to access 
-certain servers only during business hours and exclusively from within the corporate network. This degree of granularity makes ABAC effective in environments where access requirements are complex and highly variable.
+certain servers only during business hours and exclusively from within the corporate network. This degree of granularity makes ABAC effective in environments where access requirements are complex and highly variable. \cite{mohamed2022authorization}
 \newline
 ABAC is more suitable for ZT because it provides the flexibility and granularity needed to implement dynamic and context-aware access controls essential for ZT. Unlike RBAC, which is relatively static and role-centric, ABAC can evaluate multiple attributes in real-time to 
 determine access permissions, ensuring that only authenticated and authorized users can access resources under specific conditions. This aligns with ZT's core tenet of minimizing trust and continuously verifying every access request based on a comprehensive set of criteria, 
@@ -969,6 +970,7 @@ In the context of this thesis, a service running inside the Kubernetes cluster m
 	\item The client receives the token and adds it to subsequent requests to the resource server. The token is added in the 'Authorization' HTTP header. 
 	\item The resource server validates the access token by veryfying its signature, using the public key obtained from the PKI endpoint of the authorization server. If the token is valid, the resource server returns the requested resource. 
 \end{enumerate}
+\cite{oidcflow}
 
 However, in this thesis' setup, the validation of the access token is not done by the resource service itself. This step is done by the Istio service mesh. The Istio sidecar-proxy in every appliaction pod abstracts this handling of OIDC tokens. That way,
 a request does not even reach the resource server in case of invalid credentials. 
@@ -989,7 +991,7 @@ Authentik, Keycloak, Gluu and Okta are four IAM solutions which were inspected f
 
 Based on the documentations, all four solutions have comprehensive offerings for above mentioned criteria. OAuth2, OIDC, MFA and extensive granularity have become non-negotiable features of proper IAM solutions and are 
 achieved in equal measure across Authentik, Okta, Keycloak and Gluu. Out of these, there is no product which unambiguously surpasses the other when it comes to the requirements of this setup specifically. Nonetheless, 
-Keycloak was chosen because of its substantial community support on GitHub issues and StackOverflow, its great Kubernetes compatibility due to officially provided Helm charts and its clear, extensive documentation. 
+Keycloak was chosen because of its substantial community support on GitHub issues and StackOverflow, its great Kubernetes compatibility due to officially provided Helm charts and its clear, extensive documentation.
 
 \begin{figure}[htbp]
   \centering

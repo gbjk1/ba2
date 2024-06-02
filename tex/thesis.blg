@@ -14,45 +14,45 @@ Database file #1: testBib.bib
 Warning--empty journal in primbs2023oidc2
 
 Done.
-You've used 48 entries,
+You've used 53 entries,
             4087 wiz_defined-function locations,
-            1014 strings with 13677 characters,
-and the built_in function-call counts, 18461 in all, are:
-= -- 1423
-> -- 198
+            1032 strings with 14226 characters,
+and the built_in function-call counts, 20068 in all, are:
+= -- 1539
+> -- 203
 < -- 17
-+ -- 113
++ -- 118
 - -- 39
-* -- 759
-:= -- 3223
-add.period$ -- 96
-call.type$ -- 48
-change.case$ -- 90
+* -- 819
+:= -- 3493
+add.period$ -- 106
+call.type$ -- 53
+change.case$ -- 100
 chr.to.int$ -- 21
-cite$ -- 49
-duplicate$ -- 1595
-empty$ -- 1739
+cite$ -- 54
+duplicate$ -- 1745
+empty$ -- 1909
 format.name$ -- 45
-if$ -- 4057
+if$ -- 4413
 int.to.chr$ -- 0
-int.to.str$ -- 48
-missing$ -- 373
-newline$ -- 263
+int.to.str$ -- 53
+missing$ -- 408
+newline$ -- 288
 num.names$ -- 19
-pop$ -- 1140
+pop$ -- 1260
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1386
+skip$ -- 1506
 stack$ -- 0
-substring$ -- 199
-swap$ -- 889
+substring$ -- 214
+swap$ -- 959
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 48
+type$ -- 53
 warning$ -- 1
 while$ -- 24
-width$ -- 50
-write$ -- 491
+width$ -- 55
+write$ -- 536
 (There was 1 warning)

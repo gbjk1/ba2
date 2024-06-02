@@ -250,6 +250,26 @@ A.~M. Mostafa, M.~Ezz, M.~K. Elbashir, M.~Alruily, E.~Hamouda, M.~Alsarhani, and
 ``Understanding mtls and its role in zero trust security,'' [Accessed 23.05.2024]. [Online]. Available: \url{https://www.ejbca.org/resources/understanding-mtls-and-its-role-in-zero-trust-security/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{helmistio}
+\BIBentryALTinterwordspacing
+``Install with helm,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://istio.io/latest/docs/setup/install/helm/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{istioarch}
+\BIBentryALTinterwordspacing
+``Architecture,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://istio.io/latest/docs/ops/deployment/architecture/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{istioingress}
+\BIBentryALTinterwordspacing
+``Ingress gateways,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://istio.io/latest/docs/tasks/traffic-management/ingress/ingress-control/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{iam}
+\BIBentryALTinterwordspacing
+``What is identity and access management? guide to iam,'' [Accessed 26.05.2024]. [Online]. Available: \url{https://www.techtarget.com/searchsecurity/definition/identity-access-management-IAM-system}
+\BIBentrySTDinterwordspacing
+
 \bibitem{mohamed2022authorization}
 \BIBentryALTinterwordspacing
 A.~K. Y.~S. Mohamed, D.~Auer, D.~Hofer, and J.~Küng, ``A systematic literature review for authorization and access control: definitions, strategies and models,'' \emph{International Journal of Web Information Systems}, vol.~18, no. 2/3, pp. 156--180, August 2022. [Online]. Available: \url{https://www.emerald.com/insight/content/doi/10.1108/IJWIS-04-2022-0077/full/html}
@@ -258,6 +278,11 @@ A.~K. Y.~S. Mohamed, D.~Auer, D.~Hofer, and J.~Küng, ``A systematic literature 
 \bibitem{primbs2023oidc2}
 \BIBentryALTinterwordspacing
 J.~Primbs and M.~Menth, ``Oidc²: Open identity certification with openid connect,'' July 2023. [Online]. Available: \url{https://arxiv.org/pdf/2307.16607v2}
+\BIBentrySTDinterwordspacing
+
+\bibitem{oidcflow}
+\BIBentryALTinterwordspacing
+``Oauth 2.0 and openid connect overview,'' [Accessed 26.05.2024]. [Online]. Available: \url{https://developer.okta.com/docs/concepts/oauth-openid/}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
