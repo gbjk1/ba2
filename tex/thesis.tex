@@ -567,8 +567,6 @@ utilized, even though Kubernetes' integrated network support, kubenet, provides 
 can be assigned using IP Address Management (IPAM) plugins. Calico and Cilium, for instance, offer flexibility in selecting the optimal networking solutions for certain needs and settings by 
 providing both network and IPAM plugins and integrating with other CNI plugins. \cite{networkplugins}
 
-[cite tigera, cilium, k8s docs]
-
 
 
 \chapter{Creating the Zero Trust Cluster}
@@ -683,7 +681,7 @@ With securely downloaded and installed dependencies in place, the following sect
 
 Kubernetes clusters are administered and accessed by various different professionals: security engineers, database administrators, software developers, DevOps engineers, general system administrators and others. Commandline clients such as 'kubectl' or 'helm' are used to manage the cluster.
 Such access must happen in a secure, granular and audited fashion in order for it to fulfill ZT requirements. The default way of accessing the cluster is done by using static client keys and 
-certificates placed under .kube/config of the client machine. However, access to the cluster can also happen by means of a dedicated authentication-proxy solution. cite[k8s]
+certificates placed under .kube/config of the client machine. However, access to the cluster can also happen by means of a dedicated authentication-proxy solution. \cite{kubeconfig}
 \newline
 \newline
 Kubeconfig, Teleport, Okta and Hoop are ways of accessing the cluster which were researched for suitability for the setup of this thesis. Kubeconfig means accessing the cluster through a manually issued kubeconfig file. Teleport, Okta and Hoop were identified as authentication-proxy 
@@ -699,11 +697,11 @@ solutions to the cluster, aiming to implement ZT. To identify the most appropria
 \end{itemize}
 
 Out of the box, Kubernetes offers its standard kubeconfig file, consumed by kubectl and helm, to manage Kubernetes clusters. This is inherently Kubernetes friendly, free and open source. This method offers RBAC as part of Kubernetes' integrated RBAC implementation, 
-achieved through Role, ClusterRole, RoleBinding and ClusterRoleBinding resources. This method fundamentally lacks the features needed to come closer to a ZT approach. Kubernetes itself does not offer one centralized way of creating, issuing and rotating these credentials. They
+achieved through Role, ClusterRole, RoleBinding and ClusterRoleBinding resources. \cite{kubeconfig} \cite{kubeconfigrbac} This method fundamentally lacks the features needed to come closer to a ZT approach. Kubernetes itself does not offer one centralized way of creating, issuing and rotating these credentials. They
 are permanently valid until they are manually invalidated, creating a long-lived, single point of compromise. For this reason, authentication proxies such as Teleport, Okta, and Hoop are more appropriate solutions for cluster access. Okta is a mature identity and access management platform
-offering strong security features for ZT. It can act as an access gateway in front of Kubernetes clusters. However, this feature is not free and open source software and cannot be self-hosted. It was therefore not taken into further consideration. Hoop.dev and Teleport remain 
+offering strong security features for ZT. It can act as an access gateway in front of Kubernetes clusters. However, this feature is not free and open source software and cannot be self-hosted. \cite{okta} It was therefore not taken into further consideration. Hoop.dev and Teleport remain 
 as promising solutions. Apart from paid subscriptions they both offer free, self hosted versions and therefore qualify for the setup. The decision for Teleport comes down to the fact that Teleport natively provides even more granular access control through ABAC, implemented by Teleport predicate 
-language. 
+language. \cite{predicate}
 The comparison is summarized in Figure 3.7.
 
 \begin{figure}[htbp]
@@ -716,20 +714,20 @@ With Teleport, critical features are implemented, which help shaping the cluster
 
 \subsubsection{Identity-Driven Authentication and Authorization}
 Teleport acts as a gateway for accessing corporate resources, both on-premises and in the cloud, by leveraging identity-based authentication and authorization. This method eliminates the need for traditional VPNs and password management tools, 
-focusing instead on verifying the identity of users rather than their network location, which is central to the Zero Trust philosophy, as aforementioned in section 2.1. cite[teleport]
+focusing instead on verifying the identity of users rather than their network location, which is central to the Zero Trust philosophy, as aforementioned in section 2.1. \cite{endpassword}
 
 \subsubsection{Elimination of Static Credentials}
 Teleport issues short-lived identity certificates instead of static credentials. This practice minimizes the risk associated with credential theft, as these certificates automatically expire after a 
-certain period, contrasting sharply with the long-term validity of static credentials. This strategy is consistent with the Zero Trust ethos of minimizing vulnerabilities by avoiding the use of persistent secrets. cite[teleport]
+certain period, contrasting sharply with the long-term validity of static credentials. This strategy is consistent with the Zero Trust ethos of minimizing vulnerabilities by avoiding the use of persistent secrets. \cite{endpassword}
 
 \subsubsection{Role and Attribute Based Access Control and Auditing}
 Teleport implements role-based access control, allowing access to resources within the corporate infrastructure based on the roles and attributes assigned to individual users' identities. Additionally, it can record all sessions and actions. 
 This offers tge ability to monitor and trace access to the infrastructure securely. Such level of control and oversight is crucial for implementing ZT principles, which advocate for continuous verification of access rights and 
-thorough monitoring for potential security threats, as mentioned in NIST800-207, and as summarized in chapter two. cite[teleport]
+thorough monitoring for potential security threats, as mentioned in NIST800-207, and as summarized in chapter two. \cite{teleportrbac}
 
-\subsubsection{Public-Facing Proxy and Just-In-Time Access}
+\subsubsection{Public-Facing Proxy}
 Teleport runs a public-facing proxy service that facilitates secure access to resources without the necessity of a VPN. This feature enables just-in-time access, where users are granted temporary privileges to access specific resources or roles as required.
-This method strenghtens security by ensuring that users and devices are only granted access based on their immediate needs, reducing the likelihood of unauthorized access or lateral movement within the network. cite[teleport]
+This method strenghtens security by ensuring that users and devices are only granted access based on their immediate needs, reducing the likelihood of unauthorized access or lateral movement within the network. \cite{teleportproxy}
 
 \subsubsection{Multi-Factor Authentication}
 

@@ -175,6 +175,41 @@ N.~Brown, ``Overlay filesystem,'' [Accessed 21.05.2024]. [Online]. Available: \u
 ``Creating a cluster with kubeadm,'' [Accessed 21.05.2024]. [Online]. Available: \url{https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{kubeconfig}
+\BIBentryALTinterwordspacing
+``Organizing cluster access using kubeconfig files,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{kubeconfigrbac}
+\BIBentryALTinterwordspacing
+``Using rbac authorization,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://kubernetes.io/docs/reference/access-authn-authz/rbac/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{okta}
+\BIBentryALTinterwordspacing
+``Kubernetes access management,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://help.okta.com/en-us/content/topics/privileged-access/pam-kubernetes.htm}
+\BIBentrySTDinterwordspacing
+
+\bibitem{predicate}
+\BIBentryALTinterwordspacing
+``Scoping allow/deny rules in role resources,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://goteleport.com/docs/reference/predicate-language/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{endpassword}
+\BIBentryALTinterwordspacing
+W.~Loy, ``Talking the end of passwords with friends and family,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://goteleport.com/docs/reference/predicate-language/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{teleportrbac}
+\BIBentryALTinterwordspacing
+``Talking the end of passwords with friends and family,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://goteleport.com/docs/server-access/rbac/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{teleportproxy}
+\BIBentryALTinterwordspacing
+``Teleport identity-aware proxy service,'' [Accessed 25.05.2024]. [Online]. Available: \url{https://goteleport.com/docs/architecture/proxy/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{mostafa2023mfa1}
 \BIBentryALTinterwordspacing
 A.~M. Mostafa, M.~Ezz, M.~K. Elbashir, M.~Alruily, E.~Hamouda, M.~Alsarhani, and W.~Said, ``Strengthening cloud security: An innovative multi-factor multi-layer authentication framework for cloud user authentication,'' \emph{MPDI}, vol.~13, no.~19, p. 10871, October 2023. [Online]. Available: \url{https://www.mdpi.com/2076-3417/13/19/10871}

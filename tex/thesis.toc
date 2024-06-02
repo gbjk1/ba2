@@ -40,7 +40,7 @@
 \contentsline {subsubsection}{\nonumberline Identity-Driven Authentication and Authorization}{15}{subsubsection*.45}%
 \contentsline {subsubsection}{\nonumberline Elimination of Static Credentials}{15}{subsubsection*.47}%
 \contentsline {subsubsection}{\nonumberline Role and Attribute Based Access Control and Auditing}{15}{subsubsection*.49}%
-\contentsline {subsubsection}{\nonumberline Public-Facing Proxy and Just-In-Time Access}{15}{subsubsection*.51}%
+\contentsline {subsubsection}{\nonumberline Public-Facing Proxy}{15}{subsubsection*.51}%
 \contentsline {subsubsection}{\nonumberline Multi-Factor Authentication}{15}{subsubsection*.53}%
 \contentsline {subsection}{\numberline {3.3.2}Installation and setup}{16}{subsection.3.3.2}%
 \contentsline {subsubsection}{\nonumberline Authy}{17}{subsubsection*.55}%

@@ -39,6 +39,15 @@
 \backcite {devops}{{13}{3.4}{figure.3.4}}
 \backcite {kubeadm}{{13}{3.5}{figure.3.5}}
 \backcite {kubeadm}{{13}{3.6}{figure.3.6}}
+\backcite {kubeconfig}{{14}{3.3.1}{subsection.3.3.1}}
+\backcite {kubeconfig}{{14}{3.3.1}{subsection.3.3.1}}
+\backcite {kubeconfigrbac}{{14}{3.3.1}{subsection.3.3.1}}
+\backcite {okta}{{14}{3.3.1}{subsection.3.3.1}}
+\backcite {predicate}{{14}{3.3.1}{subsection.3.3.1}}
+\backcite {endpassword}{{15}{3.3.1}{subsubsection*.45}}
+\backcite {endpassword}{{15}{3.3.1}{subsubsection*.47}}
+\backcite {teleportrbac}{{15}{3.3.1}{subsubsection*.49}}
+\backcite {teleportproxy}{{15}{3.3.1}{subsubsection*.51}}
 \backcite {mostafa2023mfa1}{{16}{3.3.1}{subsubsection*.53}}
 \backcite {mtls}{{19}{3.4.2}{subsection.3.4.2}}
 \backcite {mohamed2022authorization}{{23}{3.5.2}{subsection.3.5.2}}
